@@ -1,4 +1,4 @@
-# Project3
+# Project 3
 
 https://www.hackingwithswift.com/100/22
 
