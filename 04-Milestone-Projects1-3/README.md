@@ -8,5 +8,7 @@ Bonus:
 - custom cells with rounded flags and margins
 - swipe or tap left/right to switch to previous/next flag.
 
+## Screenshots
+
 ![screenshot1](screenshots/screen01.png)
 ![screenshot2](screenshots/screen02.png)
