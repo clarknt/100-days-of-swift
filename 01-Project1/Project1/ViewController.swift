@@ -17,20 +17,27 @@ class ViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
 
+        // project 9 challenge: load pictures in background thread
+        performSelector(inBackground: #selector(loadPictures), with: nil)
+    }
+    
+    @objc func loadPictures() {
         let fm = FileManager.default
         
         // accept the forced unwrapping and try danger - if this does not work this app has no point in existing
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
-
+        
         for item in items {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
             }
         }
-
+        
         pictures.sort()
         print("Pictures: \(pictures)")
+        
+        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
