@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A27710F228F06A00008F484 /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A27710E228F06A00008F484 /* english.txt */; };
 		0A61284A228D016F0075F166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A612849228D016F0075F166 /* AppDelegate.swift */; };
 		0A61284C228D016F0075F166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61284B228D016F0075F166 /* ViewController.swift */; };
 		0A61284F228D01700075F166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A61284D228D01700075F166 /* Main.storyboard */; };
 		0A612851228D01750075F166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A612850228D01750075F166 /* Assets.xcassets */; };
 		0A612854228D01750075F166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A612852228D01750075F166 /* LaunchScreen.storyboard */; };
-		0A612865228D02C30075F166 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A61285B228D02C30075F166 /* words.txt */; };
 		0A612866228D02C30075F166 /* hangman0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A61285D228D02C30075F166 /* hangman0.png */; };
 		0A612867228D02C30075F166 /* hangman1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A61285E228D02C30075F166 /* hangman1.png */; };
 		0A612868228D02C30075F166 /* hangman3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A61285F228D02C30075F166 /* hangman3.png */; };
@@ -21,9 +21,11 @@
 		0A61286B228D02C30075F166 /* hangman7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A612862228D02C30075F166 /* hangman7.png */; };
 		0A61286C228D02C30075F166 /* hangman5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A612863228D02C30075F166 /* hangman5.png */; };
 		0A61286D228D02C30075F166 /* hangman4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A612864228D02C30075F166 /* hangman4.png */; };
+		0A612893228EF9240075F166 /* french.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A612892228EF9240075F166 /* french.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A27710E228F06A00008F484 /* english.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english.txt; sourceTree = "<group>"; };
 		0A612846228D016F0075F166 /* MilestoneProjects7-9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MilestoneProjects7-9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A612849228D016F0075F166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A61284B228D016F0075F166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +33,6 @@
 		0A612850228D01750075F166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A612853228D01750075F166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A612855228D01750075F166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A61285B228D02C30075F166 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		0A61285D228D02C30075F166 /* hangman0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman0.png; sourceTree = "<group>"; };
 		0A61285E228D02C30075F166 /* hangman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman1.png; sourceTree = "<group>"; };
 		0A61285F228D02C30075F166 /* hangman3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman3.png; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		0A612862228D02C30075F166 /* hangman7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman7.png; sourceTree = "<group>"; };
 		0A612863228D02C30075F166 /* hangman5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman5.png; sourceTree = "<group>"; };
 		0A612864228D02C30075F166 /* hangman4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman4.png; sourceTree = "<group>"; };
+		0A612892228EF9240075F166 /* french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = french.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 				0A612850228D01750075F166 /* Assets.xcassets */,
 				0A612852228D01750075F166 /* LaunchScreen.storyboard */,
 				0A612855228D01750075F166 /* Info.plist */,
-				0A61285B228D02C30075F166 /* words.txt */,
+				0A27710E228F06A00008F484 /* english.txt */,
+				0A612892228EF9240075F166 /* french.txt */,
 				0A61285C228D02C30075F166 /* pictures */,
 			);
 			path = "MilestoneProjects7-9";
@@ -161,10 +164,11 @@
 				0A612854228D01750075F166 /* LaunchScreen.storyboard in Resources */,
 				0A612851228D01750075F166 /* Assets.xcassets in Resources */,
 				0A612869228D02C30075F166 /* hangman2.png in Resources */,
-				0A612865228D02C30075F166 /* words.txt in Resources */,
 				0A61286C228D02C30075F166 /* hangman5.png in Resources */,
 				0A612866228D02C30075F166 /* hangman0.png in Resources */,
+				0A27710F228F06A00008F484 /* english.txt in Resources */,
 				0A61286A228D02C30075F166 /* hangman6.png in Resources */,
+				0A612893228EF9240075F166 /* french.txt in Resources */,
 				0A61284F228D01700075F166 /* Main.storyboard in Resources */,
 				0A61286D228D02C30075F166 /* hangman4.png in Resources */,
 				0A61286B228D02C30075F166 /* hangman7.png in Resources */,

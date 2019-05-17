@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     var correctLetters = [String]()
     var score = 0
     
+    let supportedLanguages = ["English", "French"]
+    
     let activeButtonColor = UIColor.black
     let inactiveButtonColor = UIColor(red: 198/255, green: 216/255, blue: 0, alpha: 1)
     
@@ -72,15 +74,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New game", style: .plain, target: self, action: #selector(startGame))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New game", style: .plain, target: self, action: #selector(newGameTapped))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(showScore))
 
-        performSelector(inBackground: #selector(loadWords), with: nil)
+        performSelector(inBackground: #selector(loadWords), with: supportedLanguages[0].lowercased())
     }
 
+    @objc func newGameTapped() {
+        let ac = UIAlertController(title: "New game", message: nil, preferredStyle: .actionSheet)
+        
+        for language in supportedLanguages {
+            ac.addAction(UIAlertAction(title: language, style: .default, handler: newGameWithLanguageTapped))
+        }
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        ac.popoverPresentationController?.barButtonItem = navigationItem.leftBarButtonItem
+        present(ac, animated: true)
+    }
+    
+    @objc func newGameWithLanguageTapped(action: UIAlertAction) {
+        guard let actionTitle = action.title else {
+            return
+        }
+        
+        performSelector(inBackground: #selector(loadWords), with: actionTitle.lowercased())
+    }
+    
     // meant to be executed on background thread
-    @objc func loadWords() {
-        if let wordsUrl = Bundle.main.url(forResource: "words", withExtension: "txt") {
+    @objc func loadWords(language: String) {
+        if let wordsUrl = Bundle.main.url(forResource: language, withExtension: "txt") {
             if let wordsString = try? String(contentsOf: wordsUrl) {
                 words = wordsString.components(separatedBy: "\n")
             }
@@ -119,7 +141,8 @@ class ViewController: UIViewController {
     @objc func letterTapped(_ sender: UIButton) {
         let letter = sender.titleLabel?.text
         
-        if currentWord.contains(letter!) {
+        // compare without accents for languages with accentuated letters
+        if currentWord.folding(options: .diacriticInsensitive, locale: .current).contains(letter!) {
             correctLetters.append(letter!)
             
             manageCorrectGuess()
@@ -140,7 +163,8 @@ class ViewController: UIViewController {
         for l in currentWord {
             let strLetter = String(l)
             
-            if correctLetters.contains(strLetter) {
+            // compare without accents for languages with accentuated letters
+            if correctLetters.contains(strLetter.folding(options: .diacriticInsensitive, locale: .current)) {
                 wordText += "\(strLetter) "
             } else {
                 wordText += "_ "
