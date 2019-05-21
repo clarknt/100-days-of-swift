@@ -10,6 +10,8 @@ class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
     var selectedImage: String?
+    
+    // challenge 3
     var position: (position: Int, total: Int)?
     
     override func viewDidLoad() {
@@ -19,12 +21,14 @@ class DetailViewController: UIViewController {
             print("No image provided")
             return
         }
+        
+        // challenge 3
         guard let position = position else {
             print("No position provided")
             return
         }
-        
         title = selectedImage + " - \(position.position)/\(position.total)"
+
         navigationItem.largeTitleDisplayMode = .never
         
         imageView.image = UIImage(named: selectedImage)

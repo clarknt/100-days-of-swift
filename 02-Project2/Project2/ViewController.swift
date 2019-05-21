@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var score = 0
     var correctAnswer = 0
     var currentQuestion = 0
+    
+    // challenge 2
     let maxQuestion = 10
     
     override func viewDidLoad() {
@@ -30,15 +32,13 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(scoreTapped))
-        
         askQuestion()
     }
 
     func askQuestion(action: UIAlertAction! = nil) {
         currentQuestion += 1
         
-        // end of the game
+        // challenge 2
         if currentQuestion > maxQuestion {
             showResult()
             return
@@ -51,11 +51,12 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
 
-        
+        // challenge 1
         updateTitle()
     }
     
-    fileprivate func showResult() {
+    // challenge 2
+    func showResult() {
         let ac = UIAlertController(title: "End of the game", message: "Questions asked: \(maxQuestion)\nFinal score: \(score)", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Restart game", style: .default, handler: askQuestion))
 
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
         present(ac, animated: true)
     }
     
-    
+    // challenge 1
     func updateTitle() {
         title = "\(countries[correctAnswer].uppercased())? - Score [\(score)] - \(currentQuestion)/\(maxQuestion)"
     }
@@ -83,6 +84,8 @@ class ViewController: UIViewController {
         else {
             title = "Wrong"
             score -= 1
+            
+            // challenge 3
             message = """
                 You picked: \(countries[sender.tag].uppercased())
                 Flag of \(countries[correctAnswer].uppercased()) was: #\(correctAnswer + 1)
@@ -95,12 +98,6 @@ class ViewController: UIViewController {
         
         // update title before presenting the alert to have a matching score in the titlebar
         updateTitle()
-        present(ac, animated: true)
-    }
-    
-    @objc func scoreTapped() {
-        let ac = UIAlertController(title: "Score", message: String(score), preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(ac, animated: true)
     }
 }
