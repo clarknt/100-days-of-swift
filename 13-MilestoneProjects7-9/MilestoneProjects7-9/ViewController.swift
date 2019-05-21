@@ -179,7 +179,7 @@ class ViewController: UIViewController {
                 button.isUserInteractionEnabled = false
             }
             
-            score += 1
+            score += 2
             
             let ac = UIAlertController(title: "Congratulations!", message: "Word found:\n\(currentWord)", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
