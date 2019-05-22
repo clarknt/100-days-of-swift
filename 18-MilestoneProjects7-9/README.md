@@ -11,6 +11,6 @@ Bonus:
 ## Screenshots
 
 ![screenshot1](screenshots/screen01.png)
-![screenshot1](screenshots/screen02.png)
-![screenshot1](screenshots/screen03.png)
-![screenshot1](screenshots/screen04.png)
+![screenshot2](screenshots/screen02.png)
+![screenshot3](screenshots/screen03.png)
+![screenshot4](screenshots/screen04.png)
