@@ -10,7 +10,7 @@ Each project contains screenshots and specific links.
 
 ## Folder structure
 
-Challenges concerning the current project are included with the project itself, challenges concerning another project gets a dedicated project.
+Challenges concerning the current project are included with the project itself, challenges concerning another project gets a dedicated folder.
 
 ### Example
 
