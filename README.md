@@ -6,4 +6,17 @@ https://www.hackingwithswift.com/100
 
 ## Projects
 
-Enter each project for screenshots and specific links
+Each project contains screenshots and specific links.
+
+## Folder structure
+
+Challenges concerning the current project are included with the project itself, challenges concerning another project gets a dedicated folder.
+
+### Example
+
+- Project 3
+  - Challenge 1 concerns Project 3: challenge is included with Project 3
+  - Challenge 2 concerns Project 1: Project 1 is duplicated as "Project3-Challenge2" and challenge is found there
+  - Challenge 3 concerns Project 2: Project 2 is duplicated as "Project3-Challenge3" and challenge is found there
+- Project 4
+  - Challenge 1, 2, 3 concern Project 4: all are included with Project 4
