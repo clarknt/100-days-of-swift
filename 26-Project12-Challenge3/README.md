@@ -1,4 +1,4 @@
-# Project 5
+# Challenge 3 from Project 12
 
 https://www.hackingwithswift.com/100/27
 
