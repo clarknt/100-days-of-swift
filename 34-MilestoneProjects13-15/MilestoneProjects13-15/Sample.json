@@ -1,0 +1,7102 @@
+[
+    {
+        "currencies": [
+            {
+                "code": "AFN",
+                "name": "Afghan afghani",
+                "symbol": "؋"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ps",
+                "iso639_2": "pus",
+                "name": "Pashto",
+                "nativeName": "پښتو"
+            },
+            {
+                "iso639_1": "uz",
+                "iso639_2": "uzb",
+                "name": "Uzbek",
+                "nativeName": "Oʻzbek"
+            },
+            {
+                "iso639_1": "tk",
+                "iso639_2": "tuk",
+                "name": "Turkmen",
+                "nativeName": "Türkmen"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/afg.svg",
+        "name": "Afghanistan",
+        "alpha2Code": "AF",
+        "capital": "Kabul",
+        "population": 27657145,
+        "demonym": "Afghan",
+        "area": 652230.0,
+        "nativeName": "افغانستان"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sv",
+                "iso639_2": "swe",
+                "name": "Swedish",
+                "nativeName": "svenska"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ala.svg",
+        "name": "Åland Islands",
+        "alpha2Code": "AX",
+        "capital": "Mariehamn",
+        "population": 28875,
+        "demonym": "Ålandish",
+        "area": 1580.0,
+        "nativeName": "Åland"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ALL",
+                "name": "Albanian lek",
+                "symbol": "L"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sq",
+                "iso639_2": "sqi",
+                "name": "Albanian",
+                "nativeName": "Shqip"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/alb.svg",
+        "name": "Albania",
+        "alpha2Code": "AL",
+        "capital": "Tirana",
+        "population": 2886026,
+        "demonym": "Albanian",
+        "area": 28748.0,
+        "nativeName": "Shqipëria"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DZD",
+                "name": "Algerian dinar",
+                "symbol": "د.ج"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/dza.svg",
+        "name": "Algeria",
+        "alpha2Code": "DZ",
+        "capital": "Algiers",
+        "population": 40400000,
+        "demonym": "Algerian",
+        "area": 2381741.0,
+        "nativeName": "الجزائر"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United State Dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "sm",
+                "iso639_2": "smo",
+                "name": "Samoan",
+                "nativeName": "gagana fa'a Samoa"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/asm.svg",
+        "name": "American Samoa",
+        "alpha2Code": "AS",
+        "capital": "Pago Pago",
+        "population": 57100,
+        "demonym": "American Samoan",
+        "area": 199.0,
+        "nativeName": "American Samoa"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ca",
+                "iso639_2": "cat",
+                "name": "Catalan",
+                "nativeName": "català"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/and.svg",
+        "name": "Andorra",
+        "alpha2Code": "AD",
+        "capital": "Andorra la Vella",
+        "population": 78014,
+        "demonym": "Andorran",
+        "area": 468.0,
+        "nativeName": "Andorra"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AOA",
+                "name": "Angolan kwanza",
+                "symbol": "Kz"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ago.svg",
+        "name": "Angola",
+        "alpha2Code": "AO",
+        "capital": "Luanda",
+        "population": 25868000,
+        "demonym": "Angolan",
+        "area": 1246700.0,
+        "nativeName": "Angola"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/aia.svg",
+        "name": "Anguilla",
+        "alpha2Code": "AI",
+        "capital": "The Valley",
+        "population": 13452,
+        "demonym": "Anguillian",
+        "area": 91.0,
+        "nativeName": "Anguilla"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ata.svg",
+        "name": "Antarctica",
+        "alpha2Code": "AQ",
+        "capital": "",
+        "population": 1000,
+        "demonym": "",
+        "area": 1.4E7,
+        "nativeName": "Antarctica"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/atg.svg",
+        "name": "Antigua and Barbuda",
+        "alpha2Code": "AG",
+        "capital": "Saint John's",
+        "population": 86295,
+        "demonym": "Antiguan, Barbudan",
+        "area": 442.0,
+        "nativeName": "Antigua and Barbuda"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ARS",
+                "name": "Argentine peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            },
+            {
+                "iso639_1": "gn",
+                "iso639_2": "grn",
+                "name": "Guaraní",
+                "nativeName": "Avañe'ẽ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/arg.svg",
+        "name": "Argentina",
+        "alpha2Code": "AR",
+        "capital": "Buenos Aires",
+        "population": 43590400,
+        "demonym": "Argentinean",
+        "area": 2780400.0,
+        "nativeName": "Argentina"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AMD",
+                "name": "Armenian dram"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "hy",
+                "iso639_2": "hye",
+                "name": "Armenian",
+                "nativeName": "Հայերեն"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/arm.svg",
+        "name": "Armenia",
+        "alpha2Code": "AM",
+        "capital": "Yerevan",
+        "population": 2994400,
+        "demonym": "Armenian",
+        "area": 29743.0,
+        "nativeName": "Հայաստան"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AWG",
+                "name": "Aruban florin",
+                "symbol": "ƒ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            },
+            {
+                "iso639_1": "pa",
+                "iso639_2": "pan",
+                "name": "(Eastern) Punjabi",
+                "nativeName": "ਪੰਜਾਬੀ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/abw.svg",
+        "name": "Aruba",
+        "alpha2Code": "AW",
+        "capital": "Oranjestad",
+        "population": 107394,
+        "demonym": "Aruban",
+        "area": 180.0,
+        "nativeName": "Aruba"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/aus.svg",
+        "name": "Australia",
+        "alpha2Code": "AU",
+        "capital": "Canberra",
+        "population": 24117360,
+        "demonym": "Australian",
+        "area": 7692024.0,
+        "nativeName": "Australia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/aut.svg",
+        "name": "Austria",
+        "alpha2Code": "AT",
+        "capital": "Vienna",
+        "population": 8725931,
+        "demonym": "Austrian",
+        "area": 83871.0,
+        "nativeName": "Österreich"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AZN",
+                "name": "Azerbaijani manat"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "az",
+                "iso639_2": "aze",
+                "name": "Azerbaijani",
+                "nativeName": "azərbaycan dili"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/aze.svg",
+        "name": "Azerbaijan",
+        "alpha2Code": "AZ",
+        "capital": "Baku",
+        "population": 9730500,
+        "demonym": "Azerbaijani",
+        "area": 86600.0,
+        "nativeName": "Azərbaycan"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BSD",
+                "name": "Bahamian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bhs.svg",
+        "name": "Bahamas",
+        "alpha2Code": "BS",
+        "capital": "Nassau",
+        "population": 378040,
+        "demonym": "Bahamian",
+        "area": 13943.0,
+        "nativeName": "Bahamas"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BHD",
+                "name": "Bahraini dinar",
+                "symbol": ".د.ب"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bhr.svg",
+        "name": "Bahrain",
+        "alpha2Code": "BH",
+        "capital": "Manama",
+        "population": 1404900,
+        "demonym": "Bahraini",
+        "area": 765.0,
+        "nativeName": "‏البحرين"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BDT",
+                "name": "Bangladeshi taka",
+                "symbol": "৳"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "bn",
+                "iso639_2": "ben",
+                "name": "Bengali",
+                "nativeName": "বাংলা"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bgd.svg",
+        "name": "Bangladesh",
+        "alpha2Code": "BD",
+        "capital": "Dhaka",
+        "population": 161006790,
+        "demonym": "Bangladeshi",
+        "area": 147570.0,
+        "nativeName": "Bangladesh"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BBD",
+                "name": "Barbadian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/brb.svg",
+        "name": "Barbados",
+        "alpha2Code": "BB",
+        "capital": "Bridgetown",
+        "population": 285000,
+        "demonym": "Barbadian",
+        "area": 430.0,
+        "nativeName": "Barbados"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BYN",
+                "name": "New Belarusian ruble",
+                "symbol": "Br"
+            },
+            {
+                "code": "BYR",
+                "name": "Old Belarusian ruble",
+                "symbol": "Br"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "be",
+                "iso639_2": "bel",
+                "name": "Belarusian",
+                "nativeName": "беларуская мова"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/blr.svg",
+        "name": "Belarus",
+        "alpha2Code": "BY",
+        "capital": "Minsk",
+        "population": 9498700,
+        "demonym": "Belarusian",
+        "area": 207600.0,
+        "nativeName": "Белару́сь"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bel.svg",
+        "name": "Belgium",
+        "alpha2Code": "BE",
+        "capital": "Brussels",
+        "population": 11319511,
+        "demonym": "Belgian",
+        "area": 30528.0,
+        "nativeName": "België"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BZD",
+                "name": "Belize dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/blz.svg",
+        "name": "Belize",
+        "alpha2Code": "BZ",
+        "capital": "Belmopan",
+        "population": 370300,
+        "demonym": "Belizean",
+        "area": 22966.0,
+        "nativeName": "Belize"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ben.svg",
+        "name": "Benin",
+        "alpha2Code": "BJ",
+        "capital": "Porto-Novo",
+        "population": 10653654,
+        "demonym": "Beninese",
+        "area": 112622.0,
+        "nativeName": "Bénin"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BMD",
+                "name": "Bermudian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bmu.svg",
+        "name": "Bermuda",
+        "alpha2Code": "BM",
+        "capital": "Hamilton",
+        "population": 61954,
+        "demonym": "Bermudian",
+        "area": 54.0,
+        "nativeName": "Bermuda"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BTN",
+                "name": "Bhutanese ngultrum",
+                "symbol": "Nu."
+            },
+            {
+                "code": "INR",
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "dz",
+                "iso639_2": "dzo",
+                "name": "Dzongkha",
+                "nativeName": "རྫོང་ཁ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/btn.svg",
+        "name": "Bhutan",
+        "alpha2Code": "BT",
+        "capital": "Thimphu",
+        "population": 775620,
+        "demonym": "Bhutanese",
+        "area": 38394.0,
+        "nativeName": "ʼbrug-yul"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BOB",
+                "name": "Bolivian boliviano",
+                "symbol": "Bs."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            },
+            {
+                "iso639_1": "ay",
+                "iso639_2": "aym",
+                "name": "Aymara",
+                "nativeName": "aymar aru"
+            },
+            {
+                "iso639_1": "qu",
+                "iso639_2": "que",
+                "name": "Quechua",
+                "nativeName": "Runa Simi"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bol.svg",
+        "name": "Bolivia (Plurinational State of)",
+        "alpha2Code": "BO",
+        "capital": "Sucre",
+        "population": 10985059,
+        "demonym": "Bolivian",
+        "area": 1098581.0,
+        "nativeName": "Bolivia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bes.svg",
+        "name": "Bonaire, Sint Eustatius and Saba",
+        "alpha2Code": "BQ",
+        "capital": "Kralendijk",
+        "population": 17408,
+        "demonym": "Dutch",
+        "area": 294.0,
+        "nativeName": "Bonaire"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BAM",
+                "name": "Bosnia and Herzegovina convertible mark"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "bs",
+                "iso639_2": "bos",
+                "name": "Bosnian",
+                "nativeName": "bosanski jezik"
+            },
+            {
+                "iso639_1": "hr",
+                "iso639_2": "hrv",
+                "name": "Croatian",
+                "nativeName": "hrvatski jezik"
+            },
+            {
+                "iso639_1": "sr",
+                "iso639_2": "srp",
+                "name": "Serbian",
+                "nativeName": "српски језик"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bih.svg",
+        "name": "Bosnia and Herzegovina",
+        "alpha2Code": "BA",
+        "capital": "Sarajevo",
+        "population": 3531159,
+        "demonym": "Bosnian, Herzegovinian",
+        "area": 51209.0,
+        "nativeName": "Bosna i Hercegovina"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BWP",
+                "name": "Botswana pula",
+                "symbol": "P"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "tn",
+                "iso639_2": "tsn",
+                "name": "Tswana",
+                "nativeName": "Setswana"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bwa.svg",
+        "name": "Botswana",
+        "alpha2Code": "BW",
+        "capital": "Gaborone",
+        "population": 2141206,
+        "demonym": "Motswana",
+        "area": 582000.0,
+        "nativeName": "Botswana"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NOK",
+                "name": "Norwegian krone",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "no",
+                "iso639_2": "nor",
+                "name": "Norwegian",
+                "nativeName": "Norsk"
+            },
+            {
+                "iso639_1": "nb",
+                "iso639_2": "nob",
+                "name": "Norwegian Bokmål",
+                "nativeName": "Norsk bokmål"
+            },
+            {
+                "iso639_1": "nn",
+                "iso639_2": "nno",
+                "name": "Norwegian Nynorsk",
+                "nativeName": "Norsk nynorsk"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bvt.svg",
+        "name": "Bouvet Island",
+        "alpha2Code": "BV",
+        "capital": "",
+        "population": 0,
+        "demonym": "",
+        "area": 49.0,
+        "nativeName": "Bouvetøya"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BRL",
+                "name": "Brazilian real",
+                "symbol": "R$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bra.svg",
+        "name": "Brazil",
+        "alpha2Code": "BR",
+        "capital": "Brasília",
+        "population": 206135893,
+        "demonym": "Brazilian",
+        "area": 8515767.0,
+        "nativeName": "Brasil"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/iot.svg",
+        "name": "British Indian Ocean Territory",
+        "alpha2Code": "IO",
+        "capital": "Diego Garcia",
+        "population": 3000,
+        "demonym": "Indian",
+        "area": 60.0,
+        "nativeName": "British Indian Ocean Territory"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States Dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/umi.svg",
+        "name": "United States Minor Outlying Islands",
+        "alpha2Code": "UM",
+        "capital": "",
+        "population": 300,
+        "demonym": "American",
+        "nativeName": "United States Minor Outlying Islands"
+    },
+    {
+        "currencies": [
+            {
+                "name": "[D]",
+                "symbol": "$"
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vgb.svg",
+        "name": "Virgin Islands (British)",
+        "alpha2Code": "VG",
+        "capital": "Road Town",
+        "population": 28514,
+        "demonym": "Virgin Islander",
+        "area": 151.0,
+        "nativeName": "British Virgin Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vir.svg",
+        "name": "Virgin Islands (U.S.)",
+        "alpha2Code": "VI",
+        "capital": "Charlotte Amalie",
+        "population": 114743,
+        "demonym": "Virgin Islander",
+        "area": 346.36,
+        "nativeName": "Virgin Islands of the United States"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BND",
+                "name": "Brunei dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "SGD",
+                "name": "Singapore dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ms",
+                "iso639_2": "msa",
+                "name": "Malay",
+                "nativeName": "bahasa Melayu"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/brn.svg",
+        "name": "Brunei Darussalam",
+        "alpha2Code": "BN",
+        "capital": "Bandar Seri Begawan",
+        "population": 411900,
+        "demonym": "Bruneian",
+        "area": 5765.0,
+        "nativeName": "Negara Brunei Darussalam"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BGN",
+                "name": "Bulgarian lev",
+                "symbol": "лв"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "bg",
+                "iso639_2": "bul",
+                "name": "Bulgarian",
+                "nativeName": "български език"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bgr.svg",
+        "name": "Bulgaria",
+        "alpha2Code": "BG",
+        "capital": "Sofia",
+        "population": 7153784,
+        "demonym": "Bulgarian",
+        "area": 110879.0,
+        "nativeName": "България"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ff",
+                "iso639_2": "ful",
+                "name": "Fula",
+                "nativeName": "Fulfulde"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bfa.svg",
+        "name": "Burkina Faso",
+        "alpha2Code": "BF",
+        "capital": "Ouagadougou",
+        "population": 19034397,
+        "demonym": "Burkinabe",
+        "area": 272967.0,
+        "nativeName": "Burkina Faso"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BIF",
+                "name": "Burundian franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "rn",
+                "iso639_2": "run",
+                "name": "Kirundi",
+                "nativeName": "Ikirundi"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/bdi.svg",
+        "name": "Burundi",
+        "alpha2Code": "BI",
+        "capital": "Bujumbura",
+        "population": 10114505,
+        "demonym": "Burundian",
+        "area": 27834.0,
+        "nativeName": "Burundi"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KHR",
+                "name": "Cambodian riel",
+                "symbol": "៛"
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "km",
+                "iso639_2": "khm",
+                "name": "Khmer",
+                "nativeName": "ខ្មែរ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/khm.svg",
+        "name": "Cambodia",
+        "alpha2Code": "KH",
+        "capital": "Phnom Penh",
+        "population": 15626444,
+        "demonym": "Cambodian",
+        "area": 181035.0,
+        "nativeName": "Kâmpŭchéa"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cmr.svg",
+        "name": "Cameroon",
+        "alpha2Code": "CM",
+        "capital": "Yaoundé",
+        "population": 22709892,
+        "demonym": "Cameroonian",
+        "area": 475442.0,
+        "nativeName": "Cameroon"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CAD",
+                "name": "Canadian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/can.svg",
+        "name": "Canada",
+        "alpha2Code": "CA",
+        "capital": "Ottawa",
+        "population": 36155487,
+        "demonym": "Canadian",
+        "area": 9984670.0,
+        "nativeName": "Canada"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CVE",
+                "name": "Cape Verdean escudo",
+                "symbol": "Esc"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cpv.svg",
+        "name": "Cabo Verde",
+        "alpha2Code": "CV",
+        "capital": "Praia",
+        "population": 531239,
+        "demonym": "Cape Verdian",
+        "area": 4033.0,
+        "nativeName": "Cabo Verde"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KYD",
+                "name": "Cayman Islands dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cym.svg",
+        "name": "Cayman Islands",
+        "alpha2Code": "KY",
+        "capital": "George Town",
+        "population": 58238,
+        "demonym": "Caymanian",
+        "area": 264.0,
+        "nativeName": "Cayman Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "sg",
+                "iso639_2": "sag",
+                "name": "Sango",
+                "nativeName": "yângâ tî sängö"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/caf.svg",
+        "name": "Central African Republic",
+        "alpha2Code": "CF",
+        "capital": "Bangui",
+        "population": 4998000,
+        "demonym": "Central African",
+        "area": 622984.0,
+        "nativeName": "Ködörösêse tî Bêafrîka"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tcd.svg",
+        "name": "Chad",
+        "alpha2Code": "TD",
+        "capital": "N'Djamena",
+        "population": 14497000,
+        "demonym": "Chadian",
+        "area": 1284000.0,
+        "nativeName": "Tchad"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CLP",
+                "name": "Chilean peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/chl.svg",
+        "name": "Chile",
+        "alpha2Code": "CL",
+        "capital": "Santiago",
+        "population": 18191900,
+        "demonym": "Chilean",
+        "area": 756102.0,
+        "nativeName": "Chile"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CNY",
+                "name": "Chinese yuan",
+                "symbol": "¥"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "zh",
+                "iso639_2": "zho",
+                "name": "Chinese",
+                "nativeName": "中文 (Zhōngwén)"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/chn.svg",
+        "name": "China",
+        "alpha2Code": "CN",
+        "capital": "Beijing",
+        "population": 1377422166,
+        "demonym": "Chinese",
+        "area": 9640011.0,
+        "nativeName": "中国"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cxr.svg",
+        "name": "Christmas Island",
+        "alpha2Code": "CX",
+        "capital": "Flying Fish Cove",
+        "population": 2072,
+        "demonym": "Christmas Island",
+        "area": 135.0,
+        "nativeName": "Christmas Island"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cck.svg",
+        "name": "Cocos (Keeling) Islands",
+        "alpha2Code": "CC",
+        "capital": "West Island",
+        "population": 550,
+        "demonym": "Cocos Islander",
+        "area": 14.0,
+        "nativeName": "Cocos (Keeling) Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "COP",
+                "name": "Colombian peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/col.svg",
+        "name": "Colombia",
+        "alpha2Code": "CO",
+        "capital": "Bogotá",
+        "population": 48759958,
+        "demonym": "Colombian",
+        "area": 1141748.0,
+        "nativeName": "Colombia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KMF",
+                "name": "Comorian franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/com.svg",
+        "name": "Comoros",
+        "alpha2Code": "KM",
+        "capital": "Moroni",
+        "population": 806153,
+        "demonym": "Comoran",
+        "area": 1862.0,
+        "nativeName": "Komori"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ln",
+                "iso639_2": "lin",
+                "name": "Lingala",
+                "nativeName": "Lingála"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cog.svg",
+        "name": "Congo",
+        "alpha2Code": "CG",
+        "capital": "Brazzaville",
+        "population": 4741000,
+        "demonym": "Congolese",
+        "area": 342000.0,
+        "nativeName": "République du Congo"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CDF",
+                "name": "Congolese franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ln",
+                "iso639_2": "lin",
+                "name": "Lingala",
+                "nativeName": "Lingála"
+            },
+            {
+                "iso639_1": "kg",
+                "iso639_2": "kon",
+                "name": "Kongo",
+                "nativeName": "Kikongo"
+            },
+            {
+                "iso639_1": "sw",
+                "iso639_2": "swa",
+                "name": "Swahili",
+                "nativeName": "Kiswahili"
+            },
+            {
+                "iso639_1": "lu",
+                "iso639_2": "lub",
+                "name": "Luba-Katanga",
+                "nativeName": "Tshiluba"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cod.svg",
+        "name": "Congo (Democratic Republic of the)",
+        "alpha2Code": "CD",
+        "capital": "Kinshasa",
+        "population": 85026000,
+        "demonym": "Congolese",
+        "area": 2344858.0,
+        "nativeName": "République démocratique du Congo"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NZD",
+                "name": "New Zealand dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "CKD",
+                "name": "Cook Islands dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cok.svg",
+        "name": "Cook Islands",
+        "alpha2Code": "CK",
+        "capital": "Avarua",
+        "population": 18100,
+        "demonym": "Cook Islander",
+        "area": 236.0,
+        "nativeName": "Cook Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CRC",
+                "name": "Costa Rican colón",
+                "symbol": "₡"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cri.svg",
+        "name": "Costa Rica",
+        "alpha2Code": "CR",
+        "capital": "San José",
+        "population": 4890379,
+        "demonym": "Costa Rican",
+        "area": 51100.0,
+        "nativeName": "Costa Rica"
+    },
+    {
+        "currencies": [
+            {
+                "code": "HRK",
+                "name": "Croatian kuna",
+                "symbol": "kn"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "hr",
+                "iso639_2": "hrv",
+                "name": "Croatian",
+                "nativeName": "hrvatski jezik"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hrv.svg",
+        "name": "Croatia",
+        "alpha2Code": "HR",
+        "capital": "Zagreb",
+        "population": 4190669,
+        "demonym": "Croatian",
+        "area": 56594.0,
+        "nativeName": "Hrvatska"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CUC",
+                "name": "Cuban convertible peso",
+                "symbol": "$"
+            },
+            {
+                "code": "CUP",
+                "name": "Cuban peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cub.svg",
+        "name": "Cuba",
+        "alpha2Code": "CU",
+        "capital": "Havana",
+        "population": 11239004,
+        "demonym": "Cuban",
+        "area": 109884.0,
+        "nativeName": "Cuba"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ANG",
+                "name": "Netherlands Antillean guilder",
+                "symbol": "ƒ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            },
+            {
+                "iso639_1": "pa",
+                "iso639_2": "pan",
+                "name": "(Eastern) Punjabi",
+                "nativeName": "ਪੰਜਾਬੀ"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cuw.svg",
+        "name": "Curaçao",
+        "alpha2Code": "CW",
+        "capital": "Willemstad",
+        "population": 154843,
+        "demonym": "Dutch",
+        "area": 444.0,
+        "nativeName": "Curaçao"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "el",
+                "iso639_2": "ell",
+                "name": "Greek (modern)",
+                "nativeName": "ελληνικά"
+            },
+            {
+                "iso639_1": "tr",
+                "iso639_2": "tur",
+                "name": "Turkish",
+                "nativeName": "Türkçe"
+            },
+            {
+                "iso639_1": "hy",
+                "iso639_2": "hye",
+                "name": "Armenian",
+                "nativeName": "Հայերեն"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cyp.svg",
+        "name": "Cyprus",
+        "alpha2Code": "CY",
+        "capital": "Nicosia",
+        "population": 847000,
+        "demonym": "Cypriot",
+        "area": 9251.0,
+        "nativeName": "Κύπρος"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CZK",
+                "name": "Czech koruna",
+                "symbol": "Kč"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "cs",
+                "iso639_2": "ces",
+                "name": "Czech",
+                "nativeName": "čeština"
+            },
+            {
+                "iso639_1": "sk",
+                "iso639_2": "slk",
+                "name": "Slovak",
+                "nativeName": "slovenčina"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/cze.svg",
+        "name": "Czech Republic",
+        "alpha2Code": "CZ",
+        "capital": "Prague",
+        "population": 10558524,
+        "demonym": "Czech",
+        "area": 78865.0,
+        "nativeName": "Česká republika"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DKK",
+                "name": "Danish krone",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "da",
+                "iso639_2": "dan",
+                "name": "Danish",
+                "nativeName": "dansk"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/dnk.svg",
+        "name": "Denmark",
+        "alpha2Code": "DK",
+        "capital": "Copenhagen",
+        "population": 5717014,
+        "demonym": "Danish",
+        "area": 43094.0,
+        "nativeName": "Danmark"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DJF",
+                "name": "Djiboutian franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/dji.svg",
+        "name": "Djibouti",
+        "alpha2Code": "DJ",
+        "capital": "Djibouti",
+        "population": 900000,
+        "demonym": "Djibouti",
+        "area": 23200.0,
+        "nativeName": "Djibouti"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/dma.svg",
+        "name": "Dominica",
+        "alpha2Code": "DM",
+        "capital": "Roseau",
+        "population": 71293,
+        "demonym": "Dominican",
+        "area": 751.0,
+        "nativeName": "Dominica"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DOP",
+                "name": "Dominican peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/dom.svg",
+        "name": "Dominican Republic",
+        "alpha2Code": "DO",
+        "capital": "Santo Domingo",
+        "population": 10075045,
+        "demonym": "Dominican",
+        "area": 48671.0,
+        "nativeName": "República Dominicana"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ecu.svg",
+        "name": "Ecuador",
+        "alpha2Code": "EC",
+        "capital": "Quito",
+        "population": 16545799,
+        "demonym": "Ecuadorean",
+        "area": 276841.0,
+        "nativeName": "Ecuador"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EGP",
+                "name": "Egyptian pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/egy.svg",
+        "name": "Egypt",
+        "alpha2Code": "EG",
+        "capital": "Cairo",
+        "population": 91290000,
+        "demonym": "Egyptian",
+        "area": 1002450.0,
+        "nativeName": "مصر‎"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/slv.svg",
+        "name": "El Salvador",
+        "alpha2Code": "SV",
+        "capital": "San Salvador",
+        "population": 6520675,
+        "demonym": "Salvadoran",
+        "area": 21041.0,
+        "nativeName": "El Salvador"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gnq.svg",
+        "name": "Equatorial Guinea",
+        "alpha2Code": "GQ",
+        "capital": "Malabo",
+        "population": 1222442,
+        "demonym": "Equatorial Guinean",
+        "area": 28051.0,
+        "nativeName": "Guinea Ecuatorial"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ERN",
+                "name": "Eritrean nakfa",
+                "symbol": "Nfk"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ti",
+                "iso639_2": "tir",
+                "name": "Tigrinya",
+                "nativeName": "ትግርኛ"
+            },
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/eri.svg",
+        "name": "Eritrea",
+        "alpha2Code": "ER",
+        "capital": "Asmara",
+        "population": 5352000,
+        "demonym": "Eritrean",
+        "area": 117600.0,
+        "nativeName": "ኤርትራ"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "et",
+                "iso639_2": "est",
+                "name": "Estonian",
+                "nativeName": "eesti"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/est.svg",
+        "name": "Estonia",
+        "alpha2Code": "EE",
+        "capital": "Tallinn",
+        "population": 1315944,
+        "demonym": "Estonian",
+        "area": 45227.0,
+        "nativeName": "Eesti"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ETB",
+                "name": "Ethiopian birr",
+                "symbol": "Br"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "am",
+                "iso639_2": "amh",
+                "name": "Amharic",
+                "nativeName": "አማርኛ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/eth.svg",
+        "name": "Ethiopia",
+        "alpha2Code": "ET",
+        "capital": "Addis Ababa",
+        "population": 92206005,
+        "demonym": "Ethiopian",
+        "area": 1104300.0,
+        "nativeName": "ኢትዮጵያ"
+    },
+    {
+        "currencies": [
+            {
+                "code": "FKP",
+                "name": "Falkland Islands pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/flk.svg",
+        "name": "Falkland Islands (Malvinas)",
+        "alpha2Code": "FK",
+        "capital": "Stanley",
+        "population": 2563,
+        "demonym": "Falkland Islander",
+        "area": 12173.0,
+        "nativeName": "Falkland Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DKK",
+                "name": "Danish krone",
+                "symbol": "kr"
+            },
+            {
+                "code": "(none)",
+                "name": "Faroese króna",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fo",
+                "iso639_2": "fao",
+                "name": "Faroese",
+                "nativeName": "føroyskt"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/fro.svg",
+        "name": "Faroe Islands",
+        "alpha2Code": "FO",
+        "capital": "Tórshavn",
+        "population": 49376,
+        "demonym": "Faroese",
+        "area": 1393.0,
+        "nativeName": "Føroyar"
+    },
+    {
+        "currencies": [
+            {
+                "code": "FJD",
+                "name": "Fijian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fj",
+                "iso639_2": "fij",
+                "name": "Fijian",
+                "nativeName": "vosa Vakaviti"
+            },
+            {
+                "iso639_1": "hi",
+                "iso639_2": "hin",
+                "name": "Hindi",
+                "nativeName": "हिन्दी"
+            },
+            {
+                "iso639_1": "ur",
+                "iso639_2": "urd",
+                "name": "Urdu",
+                "nativeName": "اردو"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/fji.svg",
+        "name": "Fiji",
+        "alpha2Code": "FJ",
+        "capital": "Suva",
+        "population": 867000,
+        "demonym": "Fijian",
+        "area": 18272.0,
+        "nativeName": "Fiji"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fi",
+                "iso639_2": "fin",
+                "name": "Finnish",
+                "nativeName": "suomi"
+            },
+            {
+                "iso639_1": "sv",
+                "iso639_2": "swe",
+                "name": "Swedish",
+                "nativeName": "svenska"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/fin.svg",
+        "name": "Finland",
+        "alpha2Code": "FI",
+        "capital": "Helsinki",
+        "population": 5491817,
+        "demonym": "Finnish",
+        "area": 338424.0,
+        "nativeName": "Suomi"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/fra.svg",
+        "name": "France",
+        "alpha2Code": "FR",
+        "capital": "Paris",
+        "population": 66710000,
+        "demonym": "French",
+        "area": 640679.0,
+        "nativeName": "France"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/guf.svg",
+        "name": "French Guiana",
+        "alpha2Code": "GF",
+        "capital": "Cayenne",
+        "population": 254541,
+        "demonym": "",
+        "nativeName": "Guyane française"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XPF",
+                "name": "CFP franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pyf.svg",
+        "name": "French Polynesia",
+        "alpha2Code": "PF",
+        "capital": "Papeetē",
+        "population": 271800,
+        "demonym": "French Polynesian",
+        "area": 4167.0,
+        "nativeName": "Polynésie française"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/atf.svg",
+        "name": "French Southern Territories",
+        "alpha2Code": "TF",
+        "capital": "Port-aux-Français",
+        "population": 140,
+        "demonym": "French",
+        "area": 7747.0,
+        "nativeName": "Territoire des Terres australes et antarctiques françaises"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XAF",
+                "name": "Central African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gab.svg",
+        "name": "Gabon",
+        "alpha2Code": "GA",
+        "capital": "Libreville",
+        "population": 1802278,
+        "demonym": "Gabonese",
+        "area": 267668.0,
+        "nativeName": "Gabon"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GMD",
+                "name": "Gambian dalasi",
+                "symbol": "D"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gmb.svg",
+        "name": "Gambia",
+        "alpha2Code": "GM",
+        "capital": "Banjul",
+        "population": 1882450,
+        "demonym": "Gambian",
+        "area": 11295.0,
+        "nativeName": "Gambia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GEL",
+                "name": "Georgian Lari",
+                "symbol": "ლ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ka",
+                "iso639_2": "kat",
+                "name": "Georgian",
+                "nativeName": "ქართული"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/geo.svg",
+        "name": "Georgia",
+        "alpha2Code": "GE",
+        "capital": "Tbilisi",
+        "population": 3720400,
+        "demonym": "Georgian",
+        "area": 69700.0,
+        "nativeName": "საქართველო"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/deu.svg",
+        "name": "Germany",
+        "alpha2Code": "DE",
+        "capital": "Berlin",
+        "population": 81770900,
+        "demonym": "German",
+        "area": 357114.0,
+        "nativeName": "Deutschland"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GHS",
+                "name": "Ghanaian cedi",
+                "symbol": "₵"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gha.svg",
+        "name": "Ghana",
+        "alpha2Code": "GH",
+        "capital": "Accra",
+        "population": 27670174,
+        "demonym": "Ghanaian",
+        "area": 238533.0,
+        "nativeName": "Ghana"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GIP",
+                "name": "Gibraltar pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gib.svg",
+        "name": "Gibraltar",
+        "alpha2Code": "GI",
+        "capital": "Gibraltar",
+        "population": 33140,
+        "demonym": "Gibraltar",
+        "area": 6.0,
+        "nativeName": "Gibraltar"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "el",
+                "iso639_2": "ell",
+                "name": "Greek (modern)",
+                "nativeName": "ελληνικά"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/grc.svg",
+        "name": "Greece",
+        "alpha2Code": "GR",
+        "capital": "Athens",
+        "population": 10858018,
+        "demonym": "Greek",
+        "area": 131990.0,
+        "nativeName": "Ελλάδα"
+    },
+    {
+        "currencies": [
+            {
+                "code": "DKK",
+                "name": "Danish krone",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "kl",
+                "iso639_2": "kal",
+                "name": "Kalaallisut",
+                "nativeName": "kalaallisut"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/grl.svg",
+        "name": "Greenland",
+        "alpha2Code": "GL",
+        "capital": "Nuuk",
+        "population": 55847,
+        "demonym": "Greenlandic",
+        "area": 2166086.0,
+        "nativeName": "Kalaallit Nunaat"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/grd.svg",
+        "name": "Grenada",
+        "alpha2Code": "GD",
+        "capital": "St. George's",
+        "population": 103328,
+        "demonym": "Grenadian",
+        "area": 344.0,
+        "nativeName": "Grenada"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/glp.svg",
+        "name": "Guadeloupe",
+        "alpha2Code": "GP",
+        "capital": "Basse-Terre",
+        "population": 400132,
+        "demonym": "Guadeloupian",
+        "nativeName": "Guadeloupe"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ch",
+                "iso639_2": "cha",
+                "name": "Chamorro",
+                "nativeName": "Chamoru"
+            },
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gum.svg",
+        "name": "Guam",
+        "alpha2Code": "GU",
+        "capital": "Hagåtña",
+        "population": 184200,
+        "demonym": "Guamanian",
+        "area": 549.0,
+        "nativeName": "Guam"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GTQ",
+                "name": "Guatemalan quetzal",
+                "symbol": "Q"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gtm.svg",
+        "name": "Guatemala",
+        "alpha2Code": "GT",
+        "capital": "Guatemala City",
+        "population": 16176133,
+        "demonym": "Guatemalan",
+        "area": 108889.0,
+        "nativeName": "Guatemala"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            },
+            {
+                "code": "(none)",
+                "name": "Guernsey pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ggy.svg",
+        "name": "Guernsey",
+        "alpha2Code": "GG",
+        "capital": "St. Peter Port",
+        "population": 62999,
+        "demonym": "Channel Islander",
+        "area": 78.0,
+        "nativeName": "Guernsey"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GNF",
+                "name": "Guinean franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ff",
+                "iso639_2": "ful",
+                "name": "Fula",
+                "nativeName": "Fulfulde"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gin.svg",
+        "name": "Guinea",
+        "alpha2Code": "GN",
+        "capital": "Conakry",
+        "population": 12947000,
+        "demonym": "Guinean",
+        "area": 245857.0,
+        "nativeName": "Guinée"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gnb.svg",
+        "name": "Guinea-Bissau",
+        "alpha2Code": "GW",
+        "capital": "Bissau",
+        "population": 1547777,
+        "demonym": "Guinea-Bissauan",
+        "area": 36125.0,
+        "nativeName": "Guiné-Bissau"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GYD",
+                "name": "Guyanese dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/guy.svg",
+        "name": "Guyana",
+        "alpha2Code": "GY",
+        "capital": "Georgetown",
+        "population": 746900,
+        "demonym": "Guyanese",
+        "area": 214969.0,
+        "nativeName": "Guyana"
+    },
+    {
+        "currencies": [
+            {
+                "code": "HTG",
+                "name": "Haitian gourde",
+                "symbol": "G"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "ht",
+                "iso639_2": "hat",
+                "name": "Haitian",
+                "nativeName": "Kreyòl ayisyen"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hti.svg",
+        "name": "Haiti",
+        "alpha2Code": "HT",
+        "capital": "Port-au-Prince",
+        "population": 11078033,
+        "demonym": "Haitian",
+        "area": 27750.0,
+        "nativeName": "Haïti"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hmd.svg",
+        "name": "Heard Island and McDonald Islands",
+        "alpha2Code": "HM",
+        "capital": "",
+        "population": 0,
+        "demonym": "Heard and McDonald Islander",
+        "area": 412.0,
+        "nativeName": "Heard Island and McDonald Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "la",
+                "iso639_2": "lat",
+                "name": "Latin",
+                "nativeName": "latine"
+            },
+            {
+                "iso639_1": "it",
+                "iso639_2": "ita",
+                "name": "Italian",
+                "nativeName": "Italiano"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vat.svg",
+        "name": "Holy See",
+        "alpha2Code": "VA",
+        "capital": "Rome",
+        "population": 451,
+        "demonym": "",
+        "area": 0.44,
+        "nativeName": "Sancta Sedes"
+    },
+    {
+        "currencies": [
+            {
+                "code": "HNL",
+                "name": "Honduran lempira",
+                "symbol": "L"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hnd.svg",
+        "name": "Honduras",
+        "alpha2Code": "HN",
+        "capital": "Tegucigalpa",
+        "population": 8576532,
+        "demonym": "Honduran",
+        "area": 112492.0,
+        "nativeName": "Honduras"
+    },
+    {
+        "currencies": [
+            {
+                "code": "HKD",
+                "name": "Hong Kong dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "zh",
+                "iso639_2": "zho",
+                "name": "Chinese",
+                "nativeName": "中文 (Zhōngwén)"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hkg.svg",
+        "name": "Hong Kong",
+        "alpha2Code": "HK",
+        "capital": "City of Victoria",
+        "population": 7324300,
+        "demonym": "Chinese",
+        "area": 1104.0,
+        "nativeName": "香港"
+    },
+    {
+        "currencies": [
+            {
+                "code": "HUF",
+                "name": "Hungarian forint",
+                "symbol": "Ft"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "hu",
+                "iso639_2": "hun",
+                "name": "Hungarian",
+                "nativeName": "magyar"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/hun.svg",
+        "name": "Hungary",
+        "alpha2Code": "HU",
+        "capital": "Budapest",
+        "population": 9823000,
+        "demonym": "Hungarian",
+        "area": 93028.0,
+        "nativeName": "Magyarország"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ISK",
+                "name": "Icelandic króna",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "is",
+                "iso639_2": "isl",
+                "name": "Icelandic",
+                "nativeName": "Íslenska"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/isl.svg",
+        "name": "Iceland",
+        "alpha2Code": "IS",
+        "capital": "Reykjavík",
+        "population": 334300,
+        "demonym": "Icelander",
+        "area": 103000.0,
+        "nativeName": "Ísland"
+    },
+    {
+        "currencies": [
+            {
+                "code": "INR",
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "hi",
+                "iso639_2": "hin",
+                "name": "Hindi",
+                "nativeName": "हिन्दी"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ind.svg",
+        "name": "India",
+        "alpha2Code": "IN",
+        "capital": "New Delhi",
+        "population": 1295210000,
+        "demonym": "Indian",
+        "area": 3287590.0,
+        "nativeName": "भारत"
+    },
+    {
+        "currencies": [
+            {
+                "code": "IDR",
+                "name": "Indonesian rupiah",
+                "symbol": "Rp"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "id",
+                "iso639_2": "ind",
+                "name": "Indonesian",
+                "nativeName": "Bahasa Indonesia"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/idn.svg",
+        "name": "Indonesia",
+        "alpha2Code": "ID",
+        "capital": "Jakarta",
+        "population": 258705000,
+        "demonym": "Indonesian",
+        "area": 1904569.0,
+        "nativeName": "Indonesia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/civ.svg",
+        "name": "Côte d'Ivoire",
+        "alpha2Code": "CI",
+        "capital": "Yamoussoukro",
+        "population": 22671331,
+        "demonym": "Ivorian",
+        "area": 322463.0,
+        "nativeName": "Côte d'Ivoire"
+    },
+    {
+        "currencies": [
+            {
+                "code": "IRR",
+                "name": "Iranian rial",
+                "symbol": "﷼"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fa",
+                "iso639_2": "fas",
+                "name": "Persian (Farsi)",
+                "nativeName": "فارسی"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/irn.svg",
+        "name": "Iran (Islamic Republic of)",
+        "alpha2Code": "IR",
+        "capital": "Tehran",
+        "population": 79369900,
+        "demonym": "Iranian",
+        "area": 1648195.0,
+        "nativeName": "ایران"
+    },
+    {
+        "currencies": [
+            {
+                "code": "IQD",
+                "name": "Iraqi dinar",
+                "symbol": "ع.د"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            },
+            {
+                "iso639_1": "ku",
+                "iso639_2": "kur",
+                "name": "Kurdish",
+                "nativeName": "Kurdî"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/irq.svg",
+        "name": "Iraq",
+        "alpha2Code": "IQ",
+        "capital": "Baghdad",
+        "population": 37883543,
+        "demonym": "Iraqi",
+        "area": 438317.0,
+        "nativeName": "العراق"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ga",
+                "iso639_2": "gle",
+                "name": "Irish",
+                "nativeName": "Gaeilge"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/irl.svg",
+        "name": "Ireland",
+        "alpha2Code": "IE",
+        "capital": "Dublin",
+        "population": 6378000,
+        "demonym": "Irish",
+        "area": 70273.0,
+        "nativeName": "Éire"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            },
+            {
+                "code": "IMP[G]",
+                "name": "Manx pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "gv",
+                "iso639_2": "glv",
+                "name": "Manx",
+                "nativeName": "Gaelg"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/imn.svg",
+        "name": "Isle of Man",
+        "alpha2Code": "IM",
+        "capital": "Douglas",
+        "population": 84497,
+        "demonym": "Manx",
+        "area": 572.0,
+        "nativeName": "Isle of Man"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ILS",
+                "name": "Israeli new shekel",
+                "symbol": "₪"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "he",
+                "iso639_2": "heb",
+                "name": "Hebrew (modern)",
+                "nativeName": "עברית"
+            },
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/isr.svg",
+        "name": "Israel",
+        "alpha2Code": "IL",
+        "capital": "Jerusalem",
+        "population": 8527400,
+        "demonym": "Israeli",
+        "area": 20770.0,
+        "nativeName": "יִשְׂרָאֵל"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "it",
+                "iso639_2": "ita",
+                "name": "Italian",
+                "nativeName": "Italiano"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ita.svg",
+        "name": "Italy",
+        "alpha2Code": "IT",
+        "capital": "Rome",
+        "population": 60665551,
+        "demonym": "Italian",
+        "area": 301336.0,
+        "nativeName": "Italia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "JMD",
+                "name": "Jamaican dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/jam.svg",
+        "name": "Jamaica",
+        "alpha2Code": "JM",
+        "capital": "Kingston",
+        "population": 2723246,
+        "demonym": "Jamaican",
+        "area": 10991.0,
+        "nativeName": "Jamaica"
+    },
+    {
+        "currencies": [
+            {
+                "code": "JPY",
+                "name": "Japanese yen",
+                "symbol": "¥"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ja",
+                "iso639_2": "jpn",
+                "name": "Japanese",
+                "nativeName": "日本語 (にほんご)"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/jpn.svg",
+        "name": "Japan",
+        "alpha2Code": "JP",
+        "capital": "Tokyo",
+        "population": 126960000,
+        "demonym": "Japanese",
+        "area": 377930.0,
+        "nativeName": "日本"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            },
+            {
+                "code": "JEP[G]",
+                "name": "Jersey pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/jey.svg",
+        "name": "Jersey",
+        "alpha2Code": "JE",
+        "capital": "Saint Helier",
+        "population": 100800,
+        "demonym": "Channel Islander",
+        "area": 116.0,
+        "nativeName": "Jersey"
+    },
+    {
+        "currencies": [
+            {
+                "code": "JOD",
+                "name": "Jordanian dinar",
+                "symbol": "د.ا"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/jor.svg",
+        "name": "Jordan",
+        "alpha2Code": "JO",
+        "capital": "Amman",
+        "population": 9531712,
+        "demonym": "Jordanian",
+        "area": 89342.0,
+        "nativeName": "الأردن"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KZT",
+                "name": "Kazakhstani tenge"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "kk",
+                "iso639_2": "kaz",
+                "name": "Kazakh",
+                "nativeName": "қазақ тілі"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kaz.svg",
+        "name": "Kazakhstan",
+        "alpha2Code": "KZ",
+        "capital": "Astana",
+        "population": 17753200,
+        "demonym": "Kazakhstani",
+        "area": 2724900.0,
+        "nativeName": "Қазақстан"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KES",
+                "name": "Kenyan shilling",
+                "symbol": "Sh"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "sw",
+                "iso639_2": "swa",
+                "name": "Swahili",
+                "nativeName": "Kiswahili"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ken.svg",
+        "name": "Kenya",
+        "alpha2Code": "KE",
+        "capital": "Nairobi",
+        "population": 47251000,
+        "demonym": "Kenyan",
+        "area": 580367.0,
+        "nativeName": "Kenya"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "(none)",
+                "name": "Kiribati dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kir.svg",
+        "name": "Kiribati",
+        "alpha2Code": "KI",
+        "capital": "South Tarawa",
+        "population": 113400,
+        "demonym": "I-Kiribati",
+        "area": 811.0,
+        "nativeName": "Kiribati"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KWD",
+                "name": "Kuwaiti dinar",
+                "symbol": "د.ك"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kwt.svg",
+        "name": "Kuwait",
+        "alpha2Code": "KW",
+        "capital": "Kuwait City",
+        "population": 4183658,
+        "demonym": "Kuwaiti",
+        "area": 17818.0,
+        "nativeName": "الكويت"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KGS",
+                "name": "Kyrgyzstani som",
+                "symbol": "с"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ky",
+                "iso639_2": "kir",
+                "name": "Kyrgyz",
+                "nativeName": "Кыргызча"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kgz.svg",
+        "name": "Kyrgyzstan",
+        "alpha2Code": "KG",
+        "capital": "Bishkek",
+        "population": 6047800,
+        "demonym": "Kirghiz",
+        "area": 199951.0,
+        "nativeName": "Кыргызстан"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LAK",
+                "name": "Lao kip",
+                "symbol": "₭"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "lo",
+                "iso639_2": "lao",
+                "name": "Lao",
+                "nativeName": "ພາສາລາວ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lao.svg",
+        "name": "Lao People's Democratic Republic",
+        "alpha2Code": "LA",
+        "capital": "Vientiane",
+        "population": 6492400,
+        "demonym": "Laotian",
+        "area": 236800.0,
+        "nativeName": "ສປປລາວ"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "lv",
+                "iso639_2": "lav",
+                "name": "Latvian",
+                "nativeName": "latviešu valoda"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lva.svg",
+        "name": "Latvia",
+        "alpha2Code": "LV",
+        "capital": "Riga",
+        "population": 1961600,
+        "demonym": "Latvian",
+        "area": 64559.0,
+        "nativeName": "Latvija"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LBP",
+                "name": "Lebanese pound",
+                "symbol": "ل.ل"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lbn.svg",
+        "name": "Lebanon",
+        "alpha2Code": "LB",
+        "capital": "Beirut",
+        "population": 5988000,
+        "demonym": "Lebanese",
+        "area": 10452.0,
+        "nativeName": "لبنان"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LSL",
+                "name": "Lesotho loti",
+                "symbol": "L"
+            },
+            {
+                "code": "ZAR",
+                "name": "South African rand",
+                "symbol": "R"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "st",
+                "iso639_2": "sot",
+                "name": "Southern Sotho",
+                "nativeName": "Sesotho"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lso.svg",
+        "name": "Lesotho",
+        "alpha2Code": "LS",
+        "capital": "Maseru",
+        "population": 1894194,
+        "demonym": "Mosotho",
+        "area": 30355.0,
+        "nativeName": "Lesotho"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LRD",
+                "name": "Liberian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lbr.svg",
+        "name": "Liberia",
+        "alpha2Code": "LR",
+        "capital": "Monrovia",
+        "population": 4615000,
+        "demonym": "Liberian",
+        "area": 111369.0,
+        "nativeName": "Liberia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LYD",
+                "name": "Libyan dinar",
+                "symbol": "ل.د"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lby.svg",
+        "name": "Libya",
+        "alpha2Code": "LY",
+        "capital": "Tripoli",
+        "population": 6385000,
+        "demonym": "Libyan",
+        "area": 1759540.0,
+        "nativeName": "‏ليبيا"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CHF",
+                "name": "Swiss franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lie.svg",
+        "name": "Liechtenstein",
+        "alpha2Code": "LI",
+        "capital": "Vaduz",
+        "population": 37623,
+        "demonym": "Liechtensteiner",
+        "area": 160.0,
+        "nativeName": "Liechtenstein"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "lt",
+                "iso639_2": "lit",
+                "name": "Lithuanian",
+                "nativeName": "lietuvių kalba"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ltu.svg",
+        "name": "Lithuania",
+        "alpha2Code": "LT",
+        "capital": "Vilnius",
+        "population": 2872294,
+        "demonym": "Lithuanian",
+        "area": 65300.0,
+        "nativeName": "Lietuva"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            },
+            {
+                "iso639_1": "lb",
+                "iso639_2": "ltz",
+                "name": "Luxembourgish",
+                "nativeName": "Lëtzebuergesch"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lux.svg",
+        "name": "Luxembourg",
+        "alpha2Code": "LU",
+        "capital": "Luxembourg",
+        "population": 576200,
+        "demonym": "Luxembourger",
+        "area": 2586.0,
+        "nativeName": "Luxembourg"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MOP",
+                "name": "Macanese pataca",
+                "symbol": "P"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "zh",
+                "iso639_2": "zho",
+                "name": "Chinese",
+                "nativeName": "中文 (Zhōngwén)"
+            },
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mac.svg",
+        "name": "Macao",
+        "alpha2Code": "MO",
+        "capital": "",
+        "population": 649100,
+        "demonym": "Chinese",
+        "area": 30.0,
+        "nativeName": "澳門"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MKD",
+                "name": "Macedonian denar",
+                "symbol": "ден"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "mk",
+                "iso639_2": "mkd",
+                "name": "Macedonian",
+                "nativeName": "македонски јазик"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mkd.svg",
+        "name": "Macedonia (the former Yugoslav Republic of)",
+        "alpha2Code": "MK",
+        "capital": "Skopje",
+        "population": 2058539,
+        "demonym": "Macedonian",
+        "area": 25713.0,
+        "nativeName": "Македонија"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MGA",
+                "name": "Malagasy ariary",
+                "symbol": "Ar"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "mg",
+                "iso639_2": "mlg",
+                "name": "Malagasy",
+                "nativeName": "fiteny malagasy"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mdg.svg",
+        "name": "Madagascar",
+        "alpha2Code": "MG",
+        "capital": "Antananarivo",
+        "population": 22434363,
+        "demonym": "Malagasy",
+        "area": 587041.0,
+        "nativeName": "Madagasikara"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MWK",
+                "name": "Malawian kwacha",
+                "symbol": "MK"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ny",
+                "iso639_2": "nya",
+                "name": "Chichewa",
+                "nativeName": "chiCheŵa"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mwi.svg",
+        "name": "Malawi",
+        "alpha2Code": "MW",
+        "capital": "Lilongwe",
+        "population": 16832910,
+        "demonym": "Malawian",
+        "area": 118484.0,
+        "nativeName": "Malawi"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MYR",
+                "name": "Malaysian ringgit",
+                "symbol": "RM"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_2": "zsm",
+                "name": "Malaysian",
+                "nativeName": "بهاس مليسيا"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mys.svg",
+        "name": "Malaysia",
+        "alpha2Code": "MY",
+        "capital": "Kuala Lumpur",
+        "population": 31405416,
+        "demonym": "Malaysian",
+        "area": 330803.0,
+        "nativeName": "Malaysia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MVR",
+                "name": "Maldivian rufiyaa",
+                "symbol": ".ރ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "dv",
+                "iso639_2": "div",
+                "name": "Divehi",
+                "nativeName": "ދިވެހި"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mdv.svg",
+        "name": "Maldives",
+        "alpha2Code": "MV",
+        "capital": "Malé",
+        "population": 344023,
+        "demonym": "Maldivan",
+        "area": 300.0,
+        "nativeName": "Maldives"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mli.svg",
+        "name": "Mali",
+        "alpha2Code": "ML",
+        "capital": "Bamako",
+        "population": 18135000,
+        "demonym": "Malian",
+        "area": 1240192.0,
+        "nativeName": "Mali"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "mt",
+                "iso639_2": "mlt",
+                "name": "Maltese",
+                "nativeName": "Malti"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mlt.svg",
+        "name": "Malta",
+        "alpha2Code": "MT",
+        "capital": "Valletta",
+        "population": 425384,
+        "demonym": "Maltese",
+        "area": 316.0,
+        "nativeName": "Malta"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "mh",
+                "iso639_2": "mah",
+                "name": "Marshallese",
+                "nativeName": "Kajin M̧ajeļ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mhl.svg",
+        "name": "Marshall Islands",
+        "alpha2Code": "MH",
+        "capital": "Majuro",
+        "population": 54880,
+        "demonym": "Marshallese",
+        "area": 181.0,
+        "nativeName": "M̧ajeļ"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mtq.svg",
+        "name": "Martinique",
+        "alpha2Code": "MQ",
+        "capital": "Fort-de-France",
+        "population": 378243,
+        "demonym": "French",
+        "nativeName": "Martinique"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MRO",
+                "name": "Mauritanian ouguiya",
+                "symbol": "UM"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mrt.svg",
+        "name": "Mauritania",
+        "alpha2Code": "MR",
+        "capital": "Nouakchott",
+        "population": 3718678,
+        "demonym": "Mauritanian",
+        "area": 1030700.0,
+        "nativeName": "موريتانيا"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MUR",
+                "name": "Mauritian rupee",
+                "symbol": "₨"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mus.svg",
+        "name": "Mauritius",
+        "alpha2Code": "MU",
+        "capital": "Port Louis",
+        "population": 1262879,
+        "demonym": "Mauritian",
+        "area": 2040.0,
+        "nativeName": "Maurice"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/myt.svg",
+        "name": "Mayotte",
+        "alpha2Code": "YT",
+        "capital": "Mamoudzou",
+        "population": 226915,
+        "demonym": "French",
+        "nativeName": "Mayotte"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MXN",
+                "name": "Mexican peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mex.svg",
+        "name": "Mexico",
+        "alpha2Code": "MX",
+        "capital": "Mexico City",
+        "population": 122273473,
+        "demonym": "Mexican",
+        "area": 1964375.0,
+        "nativeName": "México"
+    },
+    {
+        "currencies": [
+            {
+                "name": "[D]",
+                "symbol": "$"
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/fsm.svg",
+        "name": "Micronesia (Federated States of)",
+        "alpha2Code": "FM",
+        "capital": "Palikir",
+        "population": 102800,
+        "demonym": "Micronesian",
+        "area": 702.0,
+        "nativeName": "Micronesia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MDL",
+                "name": "Moldovan leu",
+                "symbol": "L"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ro",
+                "iso639_2": "ron",
+                "name": "Romanian",
+                "nativeName": "Română"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mda.svg",
+        "name": "Moldova (Republic of)",
+        "alpha2Code": "MD",
+        "capital": "Chișinău",
+        "population": 3553100,
+        "demonym": "Moldovan",
+        "area": 33846.0,
+        "nativeName": "Moldova"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mco.svg",
+        "name": "Monaco",
+        "alpha2Code": "MC",
+        "capital": "Monaco",
+        "population": 38400,
+        "demonym": "Monegasque",
+        "area": 2.02,
+        "nativeName": "Monaco"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MNT",
+                "name": "Mongolian tögrög",
+                "symbol": "₮"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "mn",
+                "iso639_2": "mon",
+                "name": "Mongolian",
+                "nativeName": "Монгол хэл"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mng.svg",
+        "name": "Mongolia",
+        "alpha2Code": "MN",
+        "capital": "Ulan Bator",
+        "population": 3093100,
+        "demonym": "Mongolian",
+        "area": 1564110.0,
+        "nativeName": "Монгол улс"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sr",
+                "iso639_2": "srp",
+                "name": "Serbian",
+                "nativeName": "српски језик"
+            },
+            {
+                "iso639_1": "bs",
+                "iso639_2": "bos",
+                "name": "Bosnian",
+                "nativeName": "bosanski jezik"
+            },
+            {
+                "iso639_1": "sq",
+                "iso639_2": "sqi",
+                "name": "Albanian",
+                "nativeName": "Shqip"
+            },
+            {
+                "iso639_1": "hr",
+                "iso639_2": "hrv",
+                "name": "Croatian",
+                "nativeName": "hrvatski jezik"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mne.svg",
+        "name": "Montenegro",
+        "alpha2Code": "ME",
+        "capital": "Podgorica",
+        "population": 621810,
+        "demonym": "Montenegrin",
+        "area": 13812.0,
+        "nativeName": "Црна Гора"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/msr.svg",
+        "name": "Montserrat",
+        "alpha2Code": "MS",
+        "capital": "Plymouth",
+        "population": 4922,
+        "demonym": "Montserratian",
+        "area": 102.0,
+        "nativeName": "Montserrat"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MAD",
+                "name": "Moroccan dirham",
+                "symbol": "د.م."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mar.svg",
+        "name": "Morocco",
+        "alpha2Code": "MA",
+        "capital": "Rabat",
+        "population": 33337529,
+        "demonym": "Moroccan",
+        "area": 446550.0,
+        "nativeName": "المغرب"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MZN",
+                "name": "Mozambican metical",
+                "symbol": "MT"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/moz.svg",
+        "name": "Mozambique",
+        "alpha2Code": "MZ",
+        "capital": "Maputo",
+        "population": 26423700,
+        "demonym": "Mozambican",
+        "area": 801590.0,
+        "nativeName": "Moçambique"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MMK",
+                "name": "Burmese kyat",
+                "symbol": "Ks"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "my",
+                "iso639_2": "mya",
+                "name": "Burmese",
+                "nativeName": "ဗမာစာ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mmr.svg",
+        "name": "Myanmar",
+        "alpha2Code": "MM",
+        "capital": "Naypyidaw",
+        "population": 51419420,
+        "demonym": "Burmese",
+        "area": 676578.0,
+        "nativeName": "Myanma"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NAD",
+                "name": "Namibian dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "ZAR",
+                "name": "South African rand",
+                "symbol": "R"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "af",
+                "iso639_2": "afr",
+                "name": "Afrikaans",
+                "nativeName": "Afrikaans"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nam.svg",
+        "name": "Namibia",
+        "alpha2Code": "NA",
+        "capital": "Windhoek",
+        "population": 2324388,
+        "demonym": "Namibian",
+        "area": 825615.0,
+        "nativeName": "Namibia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "(none)",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "na",
+                "iso639_2": "nau",
+                "name": "Nauruan",
+                "nativeName": "Dorerin Naoero"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nru.svg",
+        "name": "Nauru",
+        "alpha2Code": "NR",
+        "capital": "Yaren",
+        "population": 10084,
+        "demonym": "Nauruan",
+        "area": 21.0,
+        "nativeName": "Nauru"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NPR",
+                "name": "Nepalese rupee",
+                "symbol": "₨"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ne",
+                "iso639_2": "nep",
+                "name": "Nepali",
+                "nativeName": "नेपाली"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/npl.svg",
+        "name": "Nepal",
+        "alpha2Code": "NP",
+        "capital": "Kathmandu",
+        "population": 28431500,
+        "demonym": "Nepalese",
+        "area": 147181.0,
+        "nativeName": "नेपाल"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nld.svg",
+        "name": "Netherlands",
+        "alpha2Code": "NL",
+        "capital": "Amsterdam",
+        "population": 17019800,
+        "demonym": "Dutch",
+        "area": 41850.0,
+        "nativeName": "Nederland"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XPF",
+                "name": "CFP franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ncl.svg",
+        "name": "New Caledonia",
+        "alpha2Code": "NC",
+        "capital": "Nouméa",
+        "population": 268767,
+        "demonym": "New Caledonian",
+        "area": 18575.0,
+        "nativeName": "Nouvelle-Calédonie"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NZD",
+                "name": "New Zealand dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "mi",
+                "iso639_2": "mri",
+                "name": "Māori",
+                "nativeName": "te reo Māori"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nzl.svg",
+        "name": "New Zealand",
+        "alpha2Code": "NZ",
+        "capital": "Wellington",
+        "population": 4697854,
+        "demonym": "New Zealander",
+        "area": 270467.0,
+        "nativeName": "New Zealand"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NIO",
+                "name": "Nicaraguan córdoba",
+                "symbol": "C$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nic.svg",
+        "name": "Nicaragua",
+        "alpha2Code": "NI",
+        "capital": "Managua",
+        "population": 6262703,
+        "demonym": "Nicaraguan",
+        "area": 130373.0,
+        "nativeName": "Nicaragua"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ner.svg",
+        "name": "Niger",
+        "alpha2Code": "NE",
+        "capital": "Niamey",
+        "population": 20715000,
+        "demonym": "Nigerien",
+        "area": 1267000.0,
+        "nativeName": "Niger"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NGN",
+                "name": "Nigerian naira",
+                "symbol": "₦"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nga.svg",
+        "name": "Nigeria",
+        "alpha2Code": "NG",
+        "capital": "Abuja",
+        "population": 186988000,
+        "demonym": "Nigerian",
+        "area": 923768.0,
+        "nativeName": "Nigeria"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NZD",
+                "name": "New Zealand dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "(none)",
+                "name": "Niue dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/niu.svg",
+        "name": "Niue",
+        "alpha2Code": "NU",
+        "capital": "Alofi",
+        "population": 1470,
+        "demonym": "Niuean",
+        "area": 260.0,
+        "nativeName": "Niuē"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nfk.svg",
+        "name": "Norfolk Island",
+        "alpha2Code": "NF",
+        "capital": "Kingston",
+        "population": 2302,
+        "demonym": "Norfolk Islander",
+        "area": 36.0,
+        "nativeName": "Norfolk Island"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KPW",
+                "name": "North Korean won",
+                "symbol": "₩"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ko",
+                "iso639_2": "kor",
+                "name": "Korean",
+                "nativeName": "한국어"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/prk.svg",
+        "name": "Korea (Democratic People's Republic of)",
+        "alpha2Code": "KP",
+        "capital": "Pyongyang",
+        "population": 25281000,
+        "demonym": "North Korean",
+        "area": 120538.0,
+        "nativeName": "북한"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ch",
+                "iso639_2": "cha",
+                "name": "Chamorro",
+                "nativeName": "Chamoru"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/mnp.svg",
+        "name": "Northern Mariana Islands",
+        "alpha2Code": "MP",
+        "capital": "Saipan",
+        "population": 56940,
+        "demonym": "American",
+        "area": 464.0,
+        "nativeName": "Northern Mariana Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NOK",
+                "name": "Norwegian krone",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "no",
+                "iso639_2": "nor",
+                "name": "Norwegian",
+                "nativeName": "Norsk"
+            },
+            {
+                "iso639_1": "nb",
+                "iso639_2": "nob",
+                "name": "Norwegian Bokmål",
+                "nativeName": "Norsk bokmål"
+            },
+            {
+                "iso639_1": "nn",
+                "iso639_2": "nno",
+                "name": "Norwegian Nynorsk",
+                "nativeName": "Norsk nynorsk"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/nor.svg",
+        "name": "Norway",
+        "alpha2Code": "NO",
+        "capital": "Oslo",
+        "population": 5223256,
+        "demonym": "Norwegian",
+        "area": 323802.0,
+        "nativeName": "Norge"
+    },
+    {
+        "currencies": [
+            {
+                "code": "OMR",
+                "name": "Omani rial",
+                "symbol": "ر.ع."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/omn.svg",
+        "name": "Oman",
+        "alpha2Code": "OM",
+        "capital": "Muscat",
+        "population": 4420133,
+        "demonym": "Omani",
+        "area": 309500.0,
+        "nativeName": "عمان"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PKR",
+                "name": "Pakistani rupee",
+                "symbol": "₨"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ur",
+                "iso639_2": "urd",
+                "name": "Urdu",
+                "nativeName": "اردو"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pak.svg",
+        "name": "Pakistan",
+        "alpha2Code": "PK",
+        "capital": "Islamabad",
+        "population": 194125062,
+        "demonym": "Pakistani",
+        "area": 881912.0,
+        "nativeName": "Pakistan"
+    },
+    {
+        "currencies": [
+            {
+                "code": "(none)",
+                "name": "[E]",
+                "symbol": "$"
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/plw.svg",
+        "name": "Palau",
+        "alpha2Code": "PW",
+        "capital": "Ngerulmud",
+        "population": 17950,
+        "demonym": "Palauan",
+        "area": 459.0,
+        "nativeName": "Palau"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ILS",
+                "name": "Israeli new sheqel",
+                "symbol": "₪"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pse.svg",
+        "name": "Palestine, State of",
+        "alpha2Code": "PS",
+        "capital": "Ramallah",
+        "population": 4682467,
+        "demonym": "Palestinian",
+        "nativeName": "فلسطين"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PAB",
+                "name": "Panamanian balboa",
+                "symbol": "B/."
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pan.svg",
+        "name": "Panama",
+        "alpha2Code": "PA",
+        "capital": "Panama City",
+        "population": 3814672,
+        "demonym": "Panamanian",
+        "area": 75417.0,
+        "nativeName": "Panamá"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PGK",
+                "name": "Papua New Guinean kina",
+                "symbol": "K"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/png.svg",
+        "name": "Papua New Guinea",
+        "alpha2Code": "PG",
+        "capital": "Port Moresby",
+        "population": 8083700,
+        "demonym": "Papua New Guinean",
+        "area": 462840.0,
+        "nativeName": "Papua Niugini"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PYG",
+                "name": "Paraguayan guaraní",
+                "symbol": "₲"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            },
+            {
+                "iso639_1": "gn",
+                "iso639_2": "grn",
+                "name": "Guaraní",
+                "nativeName": "Avañe'ẽ"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pry.svg",
+        "name": "Paraguay",
+        "alpha2Code": "PY",
+        "capital": "Asunción",
+        "population": 6854536,
+        "demonym": "Paraguayan",
+        "area": 406752.0,
+        "nativeName": "Paraguay"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PEN",
+                "name": "Peruvian sol",
+                "symbol": "S/."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/per.svg",
+        "name": "Peru",
+        "alpha2Code": "PE",
+        "capital": "Lima",
+        "population": 31488700,
+        "demonym": "Peruvian",
+        "area": 1285216.0,
+        "nativeName": "Perú"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PHP",
+                "name": "Philippine peso",
+                "symbol": "₱"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/phl.svg",
+        "name": "Philippines",
+        "alpha2Code": "PH",
+        "capital": "Manila",
+        "population": 103279800,
+        "demonym": "Filipino",
+        "area": 342353.0,
+        "nativeName": "Pilipinas"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NZD",
+                "name": "New Zealand dollar",
+                "symbol": "$"
+            },
+            {
+                "name": "Pitcairn Islands dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pcn.svg",
+        "name": "Pitcairn",
+        "alpha2Code": "PN",
+        "capital": "Adamstown",
+        "population": 56,
+        "demonym": "Pitcairn Islander",
+        "area": 47.0,
+        "nativeName": "Pitcairn Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "PLN",
+                "name": "Polish złoty",
+                "symbol": "zł"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pl",
+                "iso639_2": "pol",
+                "name": "Polish",
+                "nativeName": "język polski"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pol.svg",
+        "name": "Poland",
+        "alpha2Code": "PL",
+        "capital": "Warsaw",
+        "population": 38437239,
+        "demonym": "Polish",
+        "area": 312679.0,
+        "nativeName": "Polska"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/prt.svg",
+        "name": "Portugal",
+        "alpha2Code": "PT",
+        "capital": "Lisbon",
+        "population": 10374822,
+        "demonym": "Portuguese",
+        "area": 92090.0,
+        "nativeName": "Portugal"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/pri.svg",
+        "name": "Puerto Rico",
+        "alpha2Code": "PR",
+        "capital": "San Juan",
+        "population": 3474182,
+        "demonym": "Puerto Rican",
+        "area": 8870.0,
+        "nativeName": "Puerto Rico"
+    },
+    {
+        "currencies": [
+            {
+                "code": "QAR",
+                "name": "Qatari riyal",
+                "symbol": "ر.ق"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/qat.svg",
+        "name": "Qatar",
+        "alpha2Code": "QA",
+        "capital": "Doha",
+        "population": 2587564,
+        "demonym": "Qatari",
+        "area": 11586.0,
+        "nativeName": "قطر"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sq",
+                "iso639_2": "sqi",
+                "name": "Albanian",
+                "nativeName": "Shqip"
+            },
+            {
+                "iso639_1": "sr",
+                "iso639_2": "srp",
+                "name": "Serbian",
+                "nativeName": "српски језик"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kos.svg",
+        "name": "Republic of Kosovo",
+        "alpha2Code": "XK",
+        "capital": "Pristina",
+        "population": 1733842,
+        "demonym": "Kosovar",
+        "area": 10908.0,
+        "nativeName": "Republika e Kosovës"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/reu.svg",
+        "name": "Réunion",
+        "alpha2Code": "RE",
+        "capital": "Saint-Denis",
+        "population": 840974,
+        "demonym": "French",
+        "nativeName": "La Réunion"
+    },
+    {
+        "currencies": [
+            {
+                "code": "RON",
+                "name": "Romanian leu",
+                "symbol": "lei"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ro",
+                "iso639_2": "ron",
+                "name": "Romanian",
+                "nativeName": "Română"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/rou.svg",
+        "name": "Romania",
+        "alpha2Code": "RO",
+        "capital": "Bucharest",
+        "population": 19861408,
+        "demonym": "Romanian",
+        "area": 238391.0,
+        "nativeName": "România"
+    },
+    {
+        "currencies": [
+            {
+                "code": "RUB",
+                "name": "Russian ruble",
+                "symbol": "₽"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/rus.svg",
+        "name": "Russian Federation",
+        "alpha2Code": "RU",
+        "capital": "Moscow",
+        "population": 146599183,
+        "demonym": "Russian",
+        "area": 1.7124442E7,
+        "nativeName": "Россия"
+    },
+    {
+        "currencies": [
+            {
+                "code": "RWF",
+                "name": "Rwandan franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "rw",
+                "iso639_2": "kin",
+                "name": "Kinyarwanda",
+                "nativeName": "Ikinyarwanda"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/rwa.svg",
+        "name": "Rwanda",
+        "alpha2Code": "RW",
+        "capital": "Kigali",
+        "population": 11553188,
+        "demonym": "Rwandan",
+        "area": 26338.0,
+        "nativeName": "Rwanda"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/blm.svg",
+        "name": "Saint Barthélemy",
+        "alpha2Code": "BL",
+        "capital": "Gustavia",
+        "population": 9417,
+        "demonym": "Saint Barthélemy Islander",
+        "area": 21.0,
+        "nativeName": "Saint-Barthélemy"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SHP",
+                "name": "Saint Helena pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/shn.svg",
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "alpha2Code": "SH",
+        "capital": "Jamestown",
+        "population": 4255,
+        "demonym": "Saint Helenian",
+        "nativeName": "Saint Helena"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kna.svg",
+        "name": "Saint Kitts and Nevis",
+        "alpha2Code": "KN",
+        "capital": "Basseterre",
+        "population": 46204,
+        "demonym": "Kittian and Nevisian",
+        "area": 261.0,
+        "nativeName": "Saint Kitts and Nevis"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lca.svg",
+        "name": "Saint Lucia",
+        "alpha2Code": "LC",
+        "capital": "Castries",
+        "population": 186000,
+        "demonym": "Saint Lucian",
+        "area": 616.0,
+        "nativeName": "Saint Lucia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/maf.svg",
+        "name": "Saint Martin (French part)",
+        "alpha2Code": "MF",
+        "capital": "Marigot",
+        "population": 36979,
+        "demonym": "Saint Martin Islander",
+        "area": 53.0,
+        "nativeName": "Saint-Martin"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/spm.svg",
+        "name": "Saint Pierre and Miquelon",
+        "alpha2Code": "PM",
+        "capital": "Saint-Pierre",
+        "population": 6069,
+        "demonym": "French",
+        "area": 242.0,
+        "nativeName": "Saint-Pierre-et-Miquelon"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XCD",
+                "name": "East Caribbean dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vct.svg",
+        "name": "Saint Vincent and the Grenadines",
+        "alpha2Code": "VC",
+        "capital": "Kingstown",
+        "population": 109991,
+        "demonym": "Saint Vincentian",
+        "area": 389.0,
+        "nativeName": "Saint Vincent and the Grenadines"
+    },
+    {
+        "currencies": [
+            {
+                "code": "WST",
+                "name": "Samoan tālā",
+                "symbol": "T"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sm",
+                "iso639_2": "smo",
+                "name": "Samoan",
+                "nativeName": "gagana fa'a Samoa"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/wsm.svg",
+        "name": "Samoa",
+        "alpha2Code": "WS",
+        "capital": "Apia",
+        "population": 194899,
+        "demonym": "Samoan",
+        "area": 2842.0,
+        "nativeName": "Samoa"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "it",
+                "iso639_2": "ita",
+                "name": "Italian",
+                "nativeName": "Italiano"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/smr.svg",
+        "name": "San Marino",
+        "alpha2Code": "SM",
+        "capital": "City of San Marino",
+        "population": 33005,
+        "demonym": "Sammarinese",
+        "area": 61.0,
+        "nativeName": "San Marino"
+    },
+    {
+        "currencies": [
+            {
+                "code": "STD",
+                "name": "São Tomé and Príncipe dobra",
+                "symbol": "Db"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/stp.svg",
+        "name": "Sao Tome and Principe",
+        "alpha2Code": "ST",
+        "capital": "São Tomé",
+        "population": 187356,
+        "demonym": "Sao Tomean",
+        "area": 964.0,
+        "nativeName": "São Tomé e Príncipe"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SAR",
+                "name": "Saudi riyal",
+                "symbol": "ر.س"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sau.svg",
+        "name": "Saudi Arabia",
+        "alpha2Code": "SA",
+        "capital": "Riyadh",
+        "population": 32248200,
+        "demonym": "Saudi Arabian",
+        "area": 2149690.0,
+        "nativeName": "العربية السعودية"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sen.svg",
+        "name": "Senegal",
+        "alpha2Code": "SN",
+        "capital": "Dakar",
+        "population": 14799859,
+        "demonym": "Senegalese",
+        "area": 196722.0,
+        "nativeName": "Sénégal"
+    },
+    {
+        "currencies": [
+            {
+                "code": "RSD",
+                "name": "Serbian dinar",
+                "symbol": "дин."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sr",
+                "iso639_2": "srp",
+                "name": "Serbian",
+                "nativeName": "српски језик"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/srb.svg",
+        "name": "Serbia",
+        "alpha2Code": "RS",
+        "capital": "Belgrade",
+        "population": 7076372,
+        "demonym": "Serbian",
+        "area": 88361.0,
+        "nativeName": "Србија"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SCR",
+                "name": "Seychellois rupee",
+                "symbol": "₨"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/syc.svg",
+        "name": "Seychelles",
+        "alpha2Code": "SC",
+        "capital": "Victoria",
+        "population": 91400,
+        "demonym": "Seychellois",
+        "area": 452.0,
+        "nativeName": "Seychelles"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SLL",
+                "name": "Sierra Leonean leone",
+                "symbol": "Le"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sle.svg",
+        "name": "Sierra Leone",
+        "alpha2Code": "SL",
+        "capital": "Freetown",
+        "population": 7075641,
+        "demonym": "Sierra Leonean",
+        "area": 71740.0,
+        "nativeName": "Sierra Leone"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BND",
+                "name": "Brunei dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "SGD",
+                "name": "Singapore dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ms",
+                "iso639_2": "msa",
+                "name": "Malay",
+                "nativeName": "bahasa Melayu"
+            },
+            {
+                "iso639_1": "ta",
+                "iso639_2": "tam",
+                "name": "Tamil",
+                "nativeName": "தமிழ்"
+            },
+            {
+                "iso639_1": "zh",
+                "iso639_2": "zho",
+                "name": "Chinese",
+                "nativeName": "中文 (Zhōngwén)"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sgp.svg",
+        "name": "Singapore",
+        "alpha2Code": "SG",
+        "capital": "Singapore",
+        "population": 5535000,
+        "demonym": "Singaporean",
+        "area": 710.0,
+        "nativeName": "Singapore"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ANG",
+                "name": "Netherlands Antillean guilder",
+                "symbol": "ƒ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sxm.svg",
+        "name": "Sint Maarten (Dutch part)",
+        "alpha2Code": "SX",
+        "capital": "Philipsburg",
+        "population": 38247,
+        "demonym": "Dutch",
+        "area": 34.0,
+        "nativeName": "Sint Maarten"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sk",
+                "iso639_2": "slk",
+                "name": "Slovak",
+                "nativeName": "slovenčina"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/svk.svg",
+        "name": "Slovakia",
+        "alpha2Code": "SK",
+        "capital": "Bratislava",
+        "population": 5426252,
+        "demonym": "Slovak",
+        "area": 49037.0,
+        "nativeName": "Slovensko"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sl",
+                "iso639_2": "slv",
+                "name": "Slovene",
+                "nativeName": "slovenski jezik"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/svn.svg",
+        "name": "Slovenia",
+        "alpha2Code": "SI",
+        "capital": "Ljubljana",
+        "population": 2064188,
+        "demonym": "Slovene",
+        "area": 20273.0,
+        "nativeName": "Slovenija"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SBD",
+                "name": "Solomon Islands dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/slb.svg",
+        "name": "Solomon Islands",
+        "alpha2Code": "SB",
+        "capital": "Honiara",
+        "population": 642000,
+        "demonym": "Solomon Islander",
+        "area": 28896.0,
+        "nativeName": "Solomon Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SOS",
+                "name": "Somali shilling",
+                "symbol": "Sh"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "so",
+                "iso639_2": "som",
+                "name": "Somali",
+                "nativeName": "Soomaaliga"
+            },
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/som.svg",
+        "name": "Somalia",
+        "alpha2Code": "SO",
+        "capital": "Mogadishu",
+        "population": 11079000,
+        "demonym": "Somali",
+        "area": 637657.0,
+        "nativeName": "Soomaaliya"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ZAR",
+                "name": "South African rand",
+                "symbol": "R"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "af",
+                "iso639_2": "afr",
+                "name": "Afrikaans",
+                "nativeName": "Afrikaans"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "nr",
+                "iso639_2": "nbl",
+                "name": "Southern Ndebele",
+                "nativeName": "isiNdebele"
+            },
+            {
+                "iso639_1": "st",
+                "iso639_2": "sot",
+                "name": "Southern Sotho",
+                "nativeName": "Sesotho"
+            },
+            {
+                "iso639_1": "ss",
+                "iso639_2": "ssw",
+                "name": "Swati",
+                "nativeName": "SiSwati"
+            },
+            {
+                "iso639_1": "tn",
+                "iso639_2": "tsn",
+                "name": "Tswana",
+                "nativeName": "Setswana"
+            },
+            {
+                "iso639_1": "ts",
+                "iso639_2": "tso",
+                "name": "Tsonga",
+                "nativeName": "Xitsonga"
+            },
+            {
+                "iso639_1": "ve",
+                "iso639_2": "ven",
+                "name": "Venda",
+                "nativeName": "Tshivenḓa"
+            },
+            {
+                "iso639_1": "xh",
+                "iso639_2": "xho",
+                "name": "Xhosa",
+                "nativeName": "isiXhosa"
+            },
+            {
+                "iso639_1": "zu",
+                "iso639_2": "zul",
+                "name": "Zulu",
+                "nativeName": "isiZulu"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/zaf.svg",
+        "name": "South Africa",
+        "alpha2Code": "ZA",
+        "capital": "Pretoria",
+        "population": 55653654,
+        "demonym": "South African",
+        "area": 1221037.0,
+        "nativeName": "South Africa"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            },
+            {
+                "code": "(none)",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sgs.svg",
+        "name": "South Georgia and the South Sandwich Islands",
+        "alpha2Code": "GS",
+        "capital": "King Edward Point",
+        "population": 30,
+        "demonym": "South Georgia and the South Sandwich Islander",
+        "nativeName": "South Georgia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "KRW",
+                "name": "South Korean won",
+                "symbol": "₩"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ko",
+                "iso639_2": "kor",
+                "name": "Korean",
+                "nativeName": "한국어"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/kor.svg",
+        "name": "Korea (Republic of)",
+        "alpha2Code": "KR",
+        "capital": "Seoul",
+        "population": 50801405,
+        "demonym": "South Korean",
+        "area": 100210.0,
+        "nativeName": "대한민국"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SSP",
+                "name": "South Sudanese pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ssd.svg",
+        "name": "South Sudan",
+        "alpha2Code": "SS",
+        "capital": "Juba",
+        "population": 12131000,
+        "demonym": "South Sudanese",
+        "area": 619745.0,
+        "nativeName": "South Sudan"
+    },
+    {
+        "currencies": [
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/esp.svg",
+        "name": "Spain",
+        "alpha2Code": "ES",
+        "capital": "Madrid",
+        "population": 46438422,
+        "demonym": "Spanish",
+        "area": 505992.0,
+        "nativeName": "España"
+    },
+    {
+        "currencies": [
+            {
+                "code": "LKR",
+                "name": "Sri Lankan rupee",
+                "symbol": "Rs"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "si",
+                "iso639_2": "sin",
+                "name": "Sinhalese",
+                "nativeName": "සිංහල"
+            },
+            {
+                "iso639_1": "ta",
+                "iso639_2": "tam",
+                "name": "Tamil",
+                "nativeName": "தமிழ்"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/lka.svg",
+        "name": "Sri Lanka",
+        "alpha2Code": "LK",
+        "capital": "Colombo",
+        "population": 20966000,
+        "demonym": "Sri Lankan",
+        "area": 65610.0,
+        "nativeName": "śrī laṃkāva"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SDG",
+                "name": "Sudanese pound",
+                "symbol": "ج.س."
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sdn.svg",
+        "name": "Sudan",
+        "alpha2Code": "SD",
+        "capital": "Khartoum",
+        "population": 39598700,
+        "demonym": "Sudanese",
+        "area": 1886068.0,
+        "nativeName": "السودان"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SRD",
+                "name": "Surinamese dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "nl",
+                "iso639_2": "nld",
+                "name": "Dutch",
+                "nativeName": "Nederlands"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sur.svg",
+        "name": "Suriname",
+        "alpha2Code": "SR",
+        "capital": "Paramaribo",
+        "population": 541638,
+        "demonym": "Surinamer",
+        "area": 163820.0,
+        "nativeName": "Suriname"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NOK",
+                "name": "Norwegian krone",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "no",
+                "iso639_2": "nor",
+                "name": "Norwegian",
+                "nativeName": "Norsk"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/sjm.svg",
+        "name": "Svalbard and Jan Mayen",
+        "alpha2Code": "SJ",
+        "capital": "Longyearbyen",
+        "population": 2562,
+        "demonym": "Norwegian",
+        "nativeName": "Svalbard og Jan Mayen"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SZL",
+                "name": "Swazi lilangeni",
+                "symbol": "L"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "ss",
+                "iso639_2": "ssw",
+                "name": "Swati",
+                "nativeName": "SiSwati"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/swz.svg",
+        "name": "Swaziland",
+        "alpha2Code": "SZ",
+        "capital": "Lobamba",
+        "population": 1132657,
+        "demonym": "Swazi",
+        "area": 17364.0,
+        "nativeName": "Swaziland"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SEK",
+                "name": "Swedish krona",
+                "symbol": "kr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sv",
+                "iso639_2": "swe",
+                "name": "Swedish",
+                "nativeName": "svenska"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/swe.svg",
+        "name": "Sweden",
+        "alpha2Code": "SE",
+        "capital": "Stockholm",
+        "population": 9894888,
+        "demonym": "Swedish",
+        "area": 450295.0,
+        "nativeName": "Sverige"
+    },
+    {
+        "currencies": [
+            {
+                "code": "CHF",
+                "name": "Swiss franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "de",
+                "iso639_2": "deu",
+                "name": "German",
+                "nativeName": "Deutsch"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            },
+            {
+                "iso639_1": "it",
+                "iso639_2": "ita",
+                "name": "Italian",
+                "nativeName": "Italiano"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/che.svg",
+        "name": "Switzerland",
+        "alpha2Code": "CH",
+        "capital": "Bern",
+        "population": 8341600,
+        "demonym": "Swiss",
+        "area": 41284.0,
+        "nativeName": "Schweiz"
+    },
+    {
+        "currencies": [
+            {
+                "code": "SYP",
+                "name": "Syrian pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/syr.svg",
+        "name": "Syrian Arab Republic",
+        "alpha2Code": "SY",
+        "capital": "Damascus",
+        "population": 18564000,
+        "demonym": "Syrian",
+        "area": 185180.0,
+        "nativeName": "سوريا"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TWD",
+                "name": "New Taiwan dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "zh",
+                "iso639_2": "zho",
+                "name": "Chinese",
+                "nativeName": "中文 (Zhōngwén)"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/twn.svg",
+        "name": "Taiwan",
+        "alpha2Code": "TW",
+        "capital": "Taipei",
+        "population": 23503349,
+        "demonym": "Taiwanese",
+        "area": 36193.0,
+        "nativeName": "臺灣"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TJS",
+                "name": "Tajikistani somoni",
+                "symbol": "ЅМ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "tg",
+                "iso639_2": "tgk",
+                "name": "Tajik",
+                "nativeName": "тоҷикӣ"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tjk.svg",
+        "name": "Tajikistan",
+        "alpha2Code": "TJ",
+        "capital": "Dushanbe",
+        "population": 8593600,
+        "demonym": "Tadzhik",
+        "area": 143100.0,
+        "nativeName": "Тоҷикистон"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TZS",
+                "name": "Tanzanian shilling",
+                "symbol": "Sh"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "sw",
+                "iso639_2": "swa",
+                "name": "Swahili",
+                "nativeName": "Kiswahili"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tza.svg",
+        "name": "Tanzania, United Republic of",
+        "alpha2Code": "TZ",
+        "capital": "Dodoma",
+        "population": 55155000,
+        "demonym": "Tanzanian",
+        "area": 945087.0,
+        "nativeName": "Tanzania"
+    },
+    {
+        "currencies": [
+            {
+                "code": "THB",
+                "name": "Thai baht",
+                "symbol": "฿"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "th",
+                "iso639_2": "tha",
+                "name": "Thai",
+                "nativeName": "ไทย"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tha.svg",
+        "name": "Thailand",
+        "alpha2Code": "TH",
+        "capital": "Bangkok",
+        "population": 65327652,
+        "demonym": "Thai",
+        "area": 513120.0,
+        "nativeName": "ประเทศไทย"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            },
+            {}
+        ],
+        "languages": [
+            {
+                "iso639_1": "pt",
+                "iso639_2": "por",
+                "name": "Portuguese",
+                "nativeName": "Português"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tls.svg",
+        "name": "Timor-Leste",
+        "alpha2Code": "TL",
+        "capital": "Dili",
+        "population": 1167242,
+        "demonym": "East Timorese",
+        "area": 14874.0,
+        "nativeName": "Timor-Leste"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XOF",
+                "name": "West African CFA franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tgo.svg",
+        "name": "Togo",
+        "alpha2Code": "TG",
+        "capital": "Lomé",
+        "population": 7143000,
+        "demonym": "Togolese",
+        "area": 56785.0,
+        "nativeName": "Togo"
+    },
+    {
+        "currencies": [
+            {
+                "code": "NZD",
+                "name": "New Zealand dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tkl.svg",
+        "name": "Tokelau",
+        "alpha2Code": "TK",
+        "capital": "Fakaofo",
+        "population": 1411,
+        "demonym": "Tokelauan",
+        "area": 12.0,
+        "nativeName": "Tokelau"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TOP",
+                "name": "Tongan paʻanga",
+                "symbol": "T$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "to",
+                "iso639_2": "ton",
+                "name": "Tonga (Tonga Islands)",
+                "nativeName": "faka Tonga"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ton.svg",
+        "name": "Tonga",
+        "alpha2Code": "TO",
+        "capital": "Nuku'alofa",
+        "population": 103252,
+        "demonym": "Tongan",
+        "area": 747.0,
+        "nativeName": "Tonga"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TTD",
+                "name": "Trinidad and Tobago dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tto.svg",
+        "name": "Trinidad and Tobago",
+        "alpha2Code": "TT",
+        "capital": "Port of Spain",
+        "population": 1349667,
+        "demonym": "Trinidadian",
+        "area": 5130.0,
+        "nativeName": "Trinidad and Tobago"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TND",
+                "name": "Tunisian dinar",
+                "symbol": "د.ت"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tun.svg",
+        "name": "Tunisia",
+        "alpha2Code": "TN",
+        "capital": "Tunis",
+        "population": 11154400,
+        "demonym": "Tunisian",
+        "area": 163610.0,
+        "nativeName": "تونس"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TRY",
+                "name": "Turkish lira"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "tr",
+                "iso639_2": "tur",
+                "name": "Turkish",
+                "nativeName": "Türkçe"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tur.svg",
+        "name": "Turkey",
+        "alpha2Code": "TR",
+        "capital": "Ankara",
+        "population": 78741053,
+        "demonym": "Turkish",
+        "area": 783562.0,
+        "nativeName": "Türkiye"
+    },
+    {
+        "currencies": [
+            {
+                "code": "TMT",
+                "name": "Turkmenistan manat",
+                "symbol": "m"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "tk",
+                "iso639_2": "tuk",
+                "name": "Turkmen",
+                "nativeName": "Türkmen"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tkm.svg",
+        "name": "Turkmenistan",
+        "alpha2Code": "TM",
+        "capital": "Ashgabat",
+        "population": 4751120,
+        "demonym": "Turkmen",
+        "area": 488100.0,
+        "nativeName": "Türkmenistan"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tca.svg",
+        "name": "Turks and Caicos Islands",
+        "alpha2Code": "TC",
+        "capital": "Cockburn Town",
+        "population": 31458,
+        "demonym": "Turks and Caicos Islander",
+        "area": 948.0,
+        "nativeName": "Turks and Caicos Islands"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AUD",
+                "name": "Australian dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "TVD[G]",
+                "name": "Tuvaluan dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/tuv.svg",
+        "name": "Tuvalu",
+        "alpha2Code": "TV",
+        "capital": "Funafuti",
+        "population": 10640,
+        "demonym": "Tuvaluan",
+        "area": 26.0,
+        "nativeName": "Tuvalu"
+    },
+    {
+        "currencies": [
+            {
+                "code": "UGX",
+                "name": "Ugandan shilling",
+                "symbol": "Sh"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "sw",
+                "iso639_2": "swa",
+                "name": "Swahili",
+                "nativeName": "Kiswahili"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/uga.svg",
+        "name": "Uganda",
+        "alpha2Code": "UG",
+        "capital": "Kampala",
+        "population": 33860700,
+        "demonym": "Ugandan",
+        "area": 241550.0,
+        "nativeName": "Uganda"
+    },
+    {
+        "currencies": [
+            {
+                "code": "UAH",
+                "name": "Ukrainian hryvnia",
+                "symbol": "₴"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "uk",
+                "iso639_2": "ukr",
+                "name": "Ukrainian",
+                "nativeName": "Українська"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ukr.svg",
+        "name": "Ukraine",
+        "alpha2Code": "UA",
+        "capital": "Kiev",
+        "population": 42692393,
+        "demonym": "Ukrainian",
+        "area": 603700.0,
+        "nativeName": "Україна"
+    },
+    {
+        "currencies": [
+            {
+                "code": "AED",
+                "name": "United Arab Emirates dirham",
+                "symbol": "د.إ"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/are.svg",
+        "name": "United Arab Emirates",
+        "alpha2Code": "AE",
+        "capital": "Abu Dhabi",
+        "population": 9856000,
+        "demonym": "Emirati",
+        "area": 83600.0,
+        "nativeName": "دولة الإمارات العربية المتحدة"
+    },
+    {
+        "currencies": [
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/gbr.svg",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "alpha2Code": "GB",
+        "capital": "London",
+        "population": 65110000,
+        "demonym": "British",
+        "area": 242900.0,
+        "nativeName": "United Kingdom"
+    },
+    {
+        "currencies": [
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "capital": "Washington, D.C.",
+        "population": 323947000,
+        "demonym": "American",
+        "area": 9629091.0,
+        "nativeName": "United States"
+    },
+    {
+        "currencies": [
+            {
+                "code": "UYU",
+                "name": "Uruguayan peso",
+                "symbol": "$"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ury.svg",
+        "name": "Uruguay",
+        "alpha2Code": "UY",
+        "capital": "Montevideo",
+        "population": 3480222,
+        "demonym": "Uruguayan",
+        "area": 181034.0,
+        "nativeName": "Uruguay"
+    },
+    {
+        "currencies": [
+            {
+                "code": "UZS",
+                "name": "Uzbekistani so'm"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "uz",
+                "iso639_2": "uzb",
+                "name": "Uzbek",
+                "nativeName": "Oʻzbek"
+            },
+            {
+                "iso639_1": "ru",
+                "iso639_2": "rus",
+                "name": "Russian",
+                "nativeName": "Русский"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/uzb.svg",
+        "name": "Uzbekistan",
+        "alpha2Code": "UZ",
+        "capital": "Tashkent",
+        "population": 31576400,
+        "demonym": "Uzbekistani",
+        "area": 447400.0,
+        "nativeName": "O‘zbekiston"
+    },
+    {
+        "currencies": [
+            {
+                "code": "VUV",
+                "name": "Vanuatu vatu",
+                "symbol": "Vt"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "bi",
+                "iso639_2": "bis",
+                "name": "Bislama",
+                "nativeName": "Bislama"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vut.svg",
+        "name": "Vanuatu",
+        "alpha2Code": "VU",
+        "capital": "Port Vila",
+        "population": 277500,
+        "demonym": "Ni-Vanuatu",
+        "area": 12189.0,
+        "nativeName": "Vanuatu"
+    },
+    {
+        "currencies": [
+            {
+                "code": "VEF",
+                "name": "Venezuelan bolívar",
+                "symbol": "Bs F"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/ven.svg",
+        "name": "Venezuela (Bolivarian Republic of)",
+        "alpha2Code": "VE",
+        "capital": "Caracas",
+        "population": 31028700,
+        "demonym": "Venezuelan",
+        "area": 916445.0,
+        "nativeName": "Venezuela"
+    },
+    {
+        "currencies": [
+            {
+                "code": "VND",
+                "name": "Vietnamese đồng",
+                "symbol": "₫"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "vi",
+                "iso639_2": "vie",
+                "name": "Vietnamese",
+                "nativeName": "Tiếng Việt"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/vnm.svg",
+        "name": "Viet Nam",
+        "alpha2Code": "VN",
+        "capital": "Hanoi",
+        "population": 92700000,
+        "demonym": "Vietnamese",
+        "area": 331212.0,
+        "nativeName": "Việt Nam"
+    },
+    {
+        "currencies": [
+            {
+                "code": "XPF",
+                "name": "CFP franc",
+                "symbol": "Fr"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "fr",
+                "iso639_2": "fra",
+                "name": "French",
+                "nativeName": "français"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/wlf.svg",
+        "name": "Wallis and Futuna",
+        "alpha2Code": "WF",
+        "capital": "Mata-Utu",
+        "population": 11750,
+        "demonym": "Wallis and Futuna Islander",
+        "area": 142.0,
+        "nativeName": "Wallis et Futuna"
+    },
+    {
+        "currencies": [
+            {
+                "code": "MAD",
+                "name": "Moroccan dirham",
+                "symbol": "د.م."
+            },
+            {
+                "code": "DZD",
+                "name": "Algerian dinar",
+                "symbol": "د.ج"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "es",
+                "iso639_2": "spa",
+                "name": "Spanish",
+                "nativeName": "Español"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/esh.svg",
+        "name": "Western Sahara",
+        "alpha2Code": "EH",
+        "capital": "El Aaiún",
+        "population": 510713,
+        "demonym": "Sahrawi",
+        "area": 266000.0,
+        "nativeName": "الصحراء الغربية"
+    },
+    {
+        "currencies": [
+            {
+                "code": "YER",
+                "name": "Yemeni rial",
+                "symbol": "﷼"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ar",
+                "iso639_2": "ara",
+                "name": "Arabic",
+                "nativeName": "العربية"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/yem.svg",
+        "name": "Yemen",
+        "alpha2Code": "YE",
+        "capital": "Sana'a",
+        "population": 27478000,
+        "demonym": "Yemeni",
+        "area": 527968.0,
+        "nativeName": "اليَمَن"
+    },
+    {
+        "currencies": [
+            {
+                "code": "ZMW",
+                "name": "Zambian kwacha",
+                "symbol": "ZK"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/zmb.svg",
+        "name": "Zambia",
+        "alpha2Code": "ZM",
+        "capital": "Lusaka",
+        "population": 15933883,
+        "demonym": "Zambian",
+        "area": 752612.0,
+        "nativeName": "Zambia"
+    },
+    {
+        "currencies": [
+            {
+                "code": "BWP",
+                "name": "Botswana pula",
+                "symbol": "P"
+            },
+            {
+                "code": "GBP",
+                "name": "British pound",
+                "symbol": "£"
+            },
+            {
+                "code": "CNY",
+                "name": "Chinese yuan",
+                "symbol": "¥"
+            },
+            {
+                "code": "EUR",
+                "name": "Euro",
+                "symbol": "€"
+            },
+            {
+                "code": "INR",
+                "name": "Indian rupee",
+                "symbol": "₹"
+            },
+            {
+                "code": "JPY",
+                "name": "Japanese yen",
+                "symbol": "¥"
+            },
+            {
+                "code": "ZAR",
+                "name": "South African rand",
+                "symbol": "Rs"
+            },
+            {
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
+            },
+            {
+                "code": "(none)"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            },
+            {
+                "iso639_1": "sn",
+                "iso639_2": "sna",
+                "name": "Shona",
+                "nativeName": "chiShona"
+            },
+            {
+                "iso639_1": "nd",
+                "iso639_2": "nde",
+                "name": "Northern Ndebele",
+                "nativeName": "isiNdebele"
+            }
+        ],
+        "flag": "https://restcountries.eu/data/zwe.svg",
+        "name": "Zimbabwe",
+        "alpha2Code": "ZW",
+        "capital": "Harare",
+        "population": 14240168,
+        "demonym": "Zimbabwean",
+        "area": 390757.0,
+        "nativeName": "Zimbabwe"
+    }
+]
