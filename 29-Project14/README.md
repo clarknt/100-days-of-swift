@@ -6,6 +6,9 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/14/
 
 Game Over sounds under [CC Attribution license](https://creativecommons.org/licenses/by/3.0/legalcode) thanks to [notchfilter](https://freesound.org/people/notchfilter/sounds/43698/) and [tim.kahn](https://freesound.org/people/tim.kahn/sounds/72866/)
 
+Bonus:
+- New game option
+
 ## Challenges
 
 1. Record your own voice saying "Game over!" and have it play when the game ends.
