@@ -52,8 +52,8 @@ Project                                                                |Screensh
 [Project 12 - Challenge 2](25-Project12-Challenge2) (base: project 2)  | ![screen1](25-Project12-Challenge2/screenshots/small/screen01.png) |
 [Project 12 - Challenge 3](26-Project12-Challenge3) (base: project 5)  | ![screen1](26-Project12-Challenge3/screenshots/small/screen01.png) |
 [Milestone projects 10-12](27-MilestoneProjects10-12)                  | ![screen1](27-MilestoneProjects10-12/screenshots/small/screen01.png) ![screen2](27-MilestoneProjects10-12/screenshots/small/screen02.png) |
-[Project 13](28-Project13)                                             | ![screen1](28-Project13/screenshots/small/screen01.png) ![screen2](28-Project13/screenshots/small/screen02.png) |
-[Project 14](29-Project14)                                             | ![screen1](29-Project14/screenshots/small/screen01.png) ![screen2](29-Project14/screenshots/small/screen02.png) |
+[Project 13](28-Project13) (with challenges)                           | ![screen1](28-Project13/screenshots/small/screen01.png) ![screen2](28-Project13/screenshots/small/screen02.png) |
+[Project 14](29-Project14) (with challenges)                           | ![screen1](29-Project14/screenshots/small/screen01.png) ![screen2](29-Project14/screenshots/small/screen02.png) |
 [Project 15](30-Project15)                                             | ![screen1](30-Project15/screenshots/small/screen01.png) |
 [Project 15 - Challenge 1](31-Project15-Challenge1) (base: project 8)  | ![screen1](31-Project15-Challenge1/screenshots/small/screen01.png) |
 [Project 15 - Challenge 2](32-Project15-Challenge2) (base: project 13) | ![screen1](32-Project15-Challenge2/screenshots/small/screen01.png) ![screen2](32-Project15-Challenge2/screenshots/small/screen02.png) |
