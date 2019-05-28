@@ -4,7 +4,7 @@ https://www.hackingwithswift.com/read/9/6/wrap-up
 
 ## Challenge
 
-Let users filter the petitions they see. This involves creating a second array of filtered items that contains only petitions matching a string the user entered. Use a UIAlertController with a text field to let them enter that string. This is a tough one, so I’ve included some hints below if you get stuck.
+Modify project 8 so that loading and parsing a level takes place in the background. Once you’re done, make sure you update the UI on the main thread!
 
 ## Screenshots
 

@@ -4,7 +4,7 @@ https://www.hackingwithswift.com/read/7/6/wrap-up
 
 ## Challenge
 
-Experiment with the HTML – this isn’t a HTML or CSS tutorial, but you can find lots of resources online to give you enough knowledge to tinker with the layout a little.
+Modify project 7 so that your filtering code takes place in the background. This filtering code was added in one of the challenges for the project, so hopefully you didn’t skip it!
 
 ## Screenshots
 
