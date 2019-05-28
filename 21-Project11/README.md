@@ -16,4 +16,5 @@ Bonus:
 
 ## Screenshots
 
-![screenshot1](screenshots/screen01.gif)
+![screenshot1](screenshots/screen01.png)
+![screenshot1](screenshots/screen02.png)

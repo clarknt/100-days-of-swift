@@ -1,4 +1,4 @@
-# Challenge 2 from Project 9
+# Project 9 Challenge 2
 
 https://www.hackingwithswift.com/read/9/6/wrap-up
 

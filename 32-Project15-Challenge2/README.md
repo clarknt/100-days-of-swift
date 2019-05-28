@@ -1,4 +1,4 @@
-# Challenge 2 from Project 15
+# Project 15 Challenge 2
 
 https://www.hackingwithswift.com/read/15/5/wrap-up
 

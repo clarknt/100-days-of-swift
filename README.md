@@ -45,7 +45,7 @@ Project                                                                |Screensh
 [Milestone projects 7-9](18-MilestoneProjects7-9)                      | ![screen1](18-MilestoneProjects7-9/screenshots/small/screen01.png) ![screen2](18-MilestoneProjects7-9/screenshots/small/screen02.png) ![screen3](18-MilestoneProjects7-9/screenshots/small/screen03.png) ![screen4](18-MilestoneProjects7-9/screenshots/small/screen04.png) |
 [Project 10](19-Project10) (with challenges 1 and 2)                   | ![screen1](19-Project10/screenshots/small/screen01.png) |
 [Project 10 - Challenge 3](20-Project10-Challenge3) (base: project 1)  | ![screen1](20-Project10-Challenge3/screenshots/small/screen01.png) ![screen2](20-Project10-Challenge3/screenshots/small/screen02.png) |
-[Project 11](21-Project11)                                             | ![screen1](21-Project11/screenshots/small/screen01.gif) |
+[Project 11](21-Project11)                                             | ![screen1](21-Project11/screenshots/small/screen01.png) ![screen1](21-Project11/screenshots/small/screen02.png) |
 [Project 12a](22-Project12a) (base: project 10)                        | ![screen1](22-Project12a/screenshots/small/screen01.png) |
 [Project 12b](23-Project12b) (base: project 10)                        | ![screen1](23-Project12b/screenshots/small/screen01.png) |
 [Project 12 - Challenge 1](24-Project12-Challenge1) (base: project 1)  | ![screen1](24-Project12-Challenge1/screenshots/small/screen01.png) ![screen2](24-Project12-Challenge1/screenshots/small/screen02.png) |
