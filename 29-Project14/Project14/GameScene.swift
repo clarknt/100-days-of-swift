@@ -13,6 +13,11 @@ class GameScene: SKScene {
     var popupTime = 0.85
     var numRounds = 0
     
+    var hitFriendSound: SKAction!
+    var hitEnemySound: SKAction!
+    var gameOverSound1: SKAction!
+    var gameOverSound2: SKAction!
+    
     var score = 0 {
         didSet {
             gameScore.text = "Score: \(score)"
@@ -38,6 +43,11 @@ class GameScene: SKScene {
         for i in 0..<5 { createSlot(at: CGPoint(x: 100 + (i * 170), y: 230)) }
         for i in 0..<4 { createSlot(at: CGPoint(x: 180 + (i * 170), y: 140)) }
         
+        hitFriendSound = SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: false)
+        hitEnemySound = SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false)
+        gameOverSound1 = SKAction.playSoundFileNamed("43698__notchfilter__game-over03.caf", waitForCompletion: true)
+        gameOverSound2 = SKAction.playSoundFileNamed("72866__tim-kahn__game-over.caf", waitForCompletion: false)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             self?.createEnemy()
         }
@@ -65,7 +75,7 @@ class GameScene: SKScene {
                 // they shouldn't have whacked this penguin
                 score -= 5
                 
-                run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: false))
+                run(hitFriendSound)
             }
             else if node.name == "charEnemy" {
                 // they should have whacked this one
@@ -74,7 +84,7 @@ class GameScene: SKScene {
                 
                 score += 1
                 
-                run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false))
+                run(hitEnemySound)
             }
         }
     }
@@ -127,9 +137,7 @@ class GameScene: SKScene {
             addChild(finalScore)
 
             // challenge 1
-            let gameOver1 = SKAction.playSoundFileNamed("43698__notchfilter__game-over03.caf", waitForCompletion: true)
-            let gameOver2 = SKAction.playSoundFileNamed("72866__tim-kahn__game-over.caf", waitForCompletion: false)
-            let gameOverSoundSequence = SKAction.sequence([gameOver1, gameOver2])
+            let gameOverSoundSequence = SKAction.sequence([gameOverSound1, gameOverSound2])
             run(gameOverSoundSequence)
 
             // add new game label
