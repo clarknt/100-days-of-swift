@@ -60,3 +60,7 @@ Project                                                                    |Scre
 [Project 15 - Challenge 3](33-Project15-Challenge3) (base: project 2)      | ![screen1](33-Project15-Challenge3/screenshots/small/screen01.png) |
 [Milestone projects 13-15](34-Milestone-Projects13-15)                      | ![screen1](34-Milestone-Projects13-15/screenshots/small/screen01.png) ![screen2](34-Milestone-Projects13-15/screenshots/small/screen02.png) |
 [Project 16](35-Project16)                                                 | ![screen1](35-Project16/screenshots/small/screen01.png) ![screen2](35-Project16/screenshots/small/screen02.png) ![screen"](35-Project16/screenshots/small/screen03.png) |
+[Project 17](36-Project17)                                                 | ![screen1](36-Project17/screenshots/small/screen01.png) ![screen2](36-Project17/screenshots/small/screen02.png) |
+[Project 18](37-Project18)                                                 | No screenshot |
+[Project 18 - Challenge 1-2](38-Project18-Challenges1-2) (base: project 1) | ![screen1](38-Project18-Challenges1-2/screenshots/small/screen01.png) ![screen2](38-Project18-Challenges1-2/screenshots/small/screen02.png) |
+[Milestone projects 16-18](39-Milestone-Projects16-18)                      | ![screen1](39-Milestone-Projects16-18/screenshots/small/screen01.png) ![screen2](39-Milestone-Projects16-18/screenshots/small/screen02.png) ![screen3](39-Milestone-Projects16-18/screenshots/small/screen03.png) |
