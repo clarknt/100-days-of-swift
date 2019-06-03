@@ -32,7 +32,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @objc func selectMapType() {
         let ac = UIAlertController(title: "Map type", message: nil, preferredStyle: .actionSheet)
         ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-        for mapType in mapTypes.keys {
+        for mapType in Array(mapTypes.keys).sorted(by: <) {
             ac.addAction(UIAlertAction(title: mapType, style: .default, handler: mapTypeSelected))
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
