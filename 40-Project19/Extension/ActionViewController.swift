@@ -49,7 +49,6 @@ class ActionViewController: UIViewController, ScriptLoaderDelegate {
                     
                     self?.loadData()
                     
-                    // weak self not needed, it's alreay weak
                     DispatchQueue.main.async {
                         self?.updateUI()
                     }

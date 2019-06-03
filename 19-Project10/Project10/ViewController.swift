@@ -86,7 +86,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             let person = Person(name: "Unknown", image: imageName)
             self?.people.append(person)
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.collectionView.reloadData()
                 self?.dismiss(animated: true)
             }
@@ -168,7 +168,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             // deletion ok
             self?.people.remove(at: indexPath.item)
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.collectionView.deleteItems(at: [indexPath])
             }
         }

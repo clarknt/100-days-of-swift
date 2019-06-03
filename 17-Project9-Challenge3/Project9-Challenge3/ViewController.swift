@@ -57,10 +57,11 @@ class ViewController: UITableViewController {
             self?.filterKeyword = ac?.textFields?[0].text ?? ""
             
             // project 9 challenge 3
-            DispatchQueue.global().async { [weak self] in
+            // no need for weak self (already weak as per above)
+            DispatchQueue.global().async {
                 self?.filterData()
 
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.tableView.reloadData()
                 }
             }

@@ -19,7 +19,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         DispatchQueue.global().async { [weak self] in
             self?.pictures = Utils.loadPictures()
             
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
@@ -70,12 +70,12 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
                 try? jpegData.write(to: Utils.getImageURL(for: imageName))
             }
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.dismiss(animated: true)
 
                 let ac = UIAlertController(title: "Caption?", message: "Enter a caption for this image", preferredStyle: .alert)
                 ac.addTextField()
-                ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self, weak ac] _ in
+                ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak ac] _ in
                     guard let caption = ac?.textFields?[0].text else { return }
                     self?.savePicture(imageName: imageName, caption: caption)
                 }))
@@ -95,7 +95,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
                 Utils.savePictures(pictures: pictures)
             }
             
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
@@ -139,7 +139,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
                     Utils.savePictures(pictures: pictures)
                 }
                 
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.tableView.deleteRows(at: [indexPath], with: .automatic)
                 }
             }

@@ -72,7 +72,7 @@ class ViewController: UITableViewController {
             DispatchQueue.global().async { [weak self] in
                 self?.saveViewCount()
 
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(vc, animated: true)
                     self?.tableView.reloadRows(at: [indexPath], with: .none)
                 }

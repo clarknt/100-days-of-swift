@@ -37,12 +37,12 @@ class DetailViewController: UIViewController {
             if let newCaption = ac?.textFields?[0].text {
                 self?.picture.caption = newCaption
 
-                DispatchQueue.global().async { [weak self] in
+                DispatchQueue.global().async {
                     if let pictures = self?.pictures {
                         Utils.savePictures(pictures: pictures)
                     }
                     
-                    DispatchQueue.main.async { [weak self] in
+                    DispatchQueue.main.async {
                         self?.title = self?.picture.caption
                     }
                 }

@@ -100,7 +100,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             self?.people.append(person)
             self?.save()
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.collectionView.reloadData()
                 self?.dismiss(animated: true)
             }
@@ -143,10 +143,10 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             }
             person.name = newName
             
-            DispatchQueue.global().async { [weak self] in
+            DispatchQueue.global().async {
                 self?.save()
 
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
             }
@@ -190,7 +190,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             self?.people.remove(at: indexPath.item)
             self?.save()
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.collectionView.deleteItems(at: [indexPath])
             }
         }

@@ -79,7 +79,7 @@ class ViewController: UITableViewController {
         DispatchQueue.global().async { [weak self] in
             self?.saveGameState()
             
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.loadGameStateView()
             }
         }
@@ -145,7 +145,7 @@ class ViewController: UITableViewController {
         DispatchQueue.global().async { [weak self] in
             self?.saveGameState()
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 // could have just called tableView.reloadData() but then the insertion wouldn't have been animated
                 let indexPath = IndexPath(row: 0, section: 0)
                 self?.tableView.insertRows(at: [indexPath], with: .automatic)
