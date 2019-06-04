@@ -6,13 +6,17 @@ https://www.hackingwithswift.com/100
 
 ## Projects
 
-Each project contains larger screenshots, links to the corresponding 100 days of swift projects, and a list of challenges if applicable.
+Within each project are larger screenshots, links to the corresponding 100 days of swift projects, and a list of challenges if applicable.
 
-## Challenges folder structure
+### Completion
+
+25/40 projects (62.5%)
+
+### Challenges folder structure
 
 Challenges concerning the current project are included with the project itself, challenges concerning another project gets a dedicated folder.
 
-### Example
+#### Example
 
 - Project 3
   - Challenge 1 concerns Project 3: challenge is included with Project 3
