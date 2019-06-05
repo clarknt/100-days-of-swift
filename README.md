@@ -6,15 +6,13 @@ https://www.hackingwithswift.com/100
 
 ## Projects
 
-### Content
+Each project includes the corresponding code and solutions to the challenges.
 
-Each project includes links to the corresponding "100 days of Swift" project, larger screenshots, project code, and solutions to the challenges.
-
-### Completion
-
-26/40 projects (65%)
+Completion status: 26/40 projects (65%)
 
 ## Preview
+
+*Within each project are larger versions of the screenshots.*
 
 Project                                                                    |Screenshots
 ---                                                                        |---
