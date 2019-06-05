@@ -2,7 +2,7 @@
 
 https://www.hackingwithswift.com/read/18/6/wrap-up
 
-For the sake of completion as it does not add much to Project 1.
+For the sake of completion as additions to Project 1 are limited.
 
 ## Challenges
 
