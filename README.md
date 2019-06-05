@@ -6,24 +6,13 @@ https://www.hackingwithswift.com/100
 
 ## Projects
 
-Within each project are larger screenshots, links to the corresponding 100 days of swift projects, and a list of challenges if applicable.
+### Content
+
+Each project includes links to the corresponding "100 days of Swift" project, larger screenshots, project code, and solutions to the challenges.
 
 ### Completion
 
 26/40 projects (65%)
-
-### Challenges folder structure
-
-Challenges concerning the current project are included with the project itself, challenges concerning another project gets a dedicated folder.
-
-#### Example
-
-- Project 3
-  - Challenge 1 concerns Project 3: challenge is included with Project 3
-  - Challenge 2 concerns Project 1: Project 1 is duplicated as "Project3-Challenge2" and challenge is found there
-  - Challenge 3 concerns Project 2: Project 2 is duplicated as "Project3-Challenge3" and challenge is found there
-- Project 4
-  - Challenge 1, 2, 3 concern Project 4: all are included with Project 4
 
 ## Preview
 
@@ -49,7 +38,7 @@ Project                                                                    |Scre
 [Milestone projects 7-9](18-Milestone-Projects7-9)                         | ![screen1](18-Milestone-Projects7-9/screenshots/small/screen01.png) ![screen2](18-Milestone-Projects7-9/screenshots/small/screen02.png) ![screen3](18-Milestone-Projects7-9/screenshots/small/screen03.png) ![screen4](18-Milestone-Projects7-9/screenshots/small/screen04.png) |
 [Project 10](19-Project10) (with challenges 1 and 2)                       | ![screen1](19-Project10/screenshots/small/screen01.png) |
 [Project 10 - Challenge 3](20-Project10-Challenge3) (base: project 1)      | ![screen1](20-Project10-Challenge3/screenshots/small/screen01.png) ![screen2](20-Project10-Challenge3/screenshots/small/screen02.png) |
-[Project 11](21-Project11)                                                 | ![screen1](21-Project11/screenshots/small/screen01.png) ![screen1](21-Project11/screenshots/small/screen02.png) |
+[Project 11](21-Project11)  (with challenges)                              | ![screen1](21-Project11/screenshots/small/screen01.png) ![screen1](21-Project11/screenshots/small/screen02.png) |
 [Project 12a](22-Project12a) (base: project 10)                            | ![screen1](22-Project12a/screenshots/small/screen01.png) |
 [Project 12b](23-Project12b) (base: project 10)                            | ![screen1](23-Project12b/screenshots/small/screen01.png) |
 [Project 12 - Challenge 1](24-Project12-Challenge1) (base: project 1)      | ![screen1](24-Project12-Challenge1/screenshots/small/screen01.png) ![screen2](24-Project12-Challenge1/screenshots/small/screen02.png) |
