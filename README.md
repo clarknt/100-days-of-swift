@@ -10,7 +10,7 @@ Within each project are larger screenshots, links to the corresponding 100 days 
 
 ### Completion
 
-25/40 projects (62.5%)
+26/40 projects (65%)
 
 ### Challenges folder structure
 
@@ -69,3 +69,4 @@ Project                                                                    |Scre
 [Project 18 - Challenge 1-2](38-Project18-Challenges1-2) (base: project 1) | ![screen1](38-Project18-Challenges1-2/screenshots/small/screen01.png) ![screen2](38-Project18-Challenges1-2/screenshots/small/screen02.png) |
 [Milestone projects 16-18](39-Milestone-Projects16-18)                     | ![screen1](39-Milestone-Projects16-18/screenshots/small/screen01.png) ![screen2](39-Milestone-Projects16-18/screenshots/small/screen02.png) ![screen3](39-Milestone-Projects16-18/screenshots/small/screen03.png) |
 [Project 19](40-Project19) (with challenges)                               | ![screen1](40-Project19/screenshots/small/screen01.png) ![screen2](40-Project19/screenshots/small/screen02.png) ![screen3](40-Project19/screenshots/small/screen03.png) ![screen4](40-Project19/screenshots/small/screen04.png) |
+[Project 20](41-Project20) (with challenges)                               | ![screen1](41-Project20/screenshots/small/screen01.png) ![screen2](41-Project20/screenshots/small/screen02.png) ![screen3](41-Project20/screenshots/small/screen03.png) |
