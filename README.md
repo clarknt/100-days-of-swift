@@ -1,14 +1,12 @@
 # 100-days-of-swift
 
-Solutions to Paul Hudson's "100 days of Swift" projects
+Solutions to Paul Hudson's "100 days of Swift" projects and challenges.
 
 https://www.hackingwithswift.com/100
 
-## Projects
+## Completion status
 
-Each project includes the corresponding code and solutions to the challenges.
-
-Completion status: 26/40 projects (65%)
+26/40 projects (65%)
 
 ## Preview
 
