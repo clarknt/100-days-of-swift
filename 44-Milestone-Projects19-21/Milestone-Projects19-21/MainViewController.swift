@@ -76,16 +76,6 @@ class MainViewController: UITableViewController, EditorDelegate {
     func reloadDataFromStorage() {
         DispatchQueue.global().async { [weak self] in
             self?.notes = Storage.load()
-            
-            
-            self?.notes = [Note]()
-            self?.notes.append(Note(text: "Swift links\nhttps://developer.apple.com/swift/\nhttps://www.hackingwithswift.com/", modificationDate: Date()))
-            self?.notes.append(Note(text: "Groceries\n\n- Fish\n\n- Rice\n\n- Bread\n- Cereal\n- Flour\n\n- Butter\n- Milk\n- Eggs\n- Yogurt\n\n- Onions\n- Garlic\n- Fruits\n- Vegetables\n\n- Soup\n\n- Pepper\n\n- Honey\n\n- Vinegar", modificationDate: Date() - 3600*24))
-            self?.notes.append(Note(text: "TODO\nPay bills\nPrepare for WWDC", modificationDate: Date() - 3600*24*25))
-            self?.notes.append(Note(text: "Beach vacation\n\nJune 23 through June 30.\nArrive Sunday afternoon. Pick-up rental car. Drive to the beach so the kids can wind down. Dinner at outdoor restaurant.\n\nTo do:\n- Pick up rental car (confirmation #X1234567890)\n- Check info hotel (confirmation #XX01234567)\n- Sign up for parasailing for four", modificationDate: Date() - 3600*24*32))
-            self?.notes.append(Note(text: "Chocolate cake recipe\nTime: 30min\nIngredients:", modificationDate: Date() - 3600*24*40))
-            
-
             self?.sortNotes()
             
             DispatchQueue.main.async {
