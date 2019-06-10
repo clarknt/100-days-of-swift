@@ -10,9 +10,9 @@ Bonus:
 
 ## Challenges
 
-1. [Challenge 1](../24-Project12-Challenge1)
-2. [Challenge 2](../25-Project12-Challenge2)
-3. [Challenge 3](../26-Project12-Challenge3)
+1. [Challenge 1](../25-Project12-Challenge1)
+2. [Challenge 2](../26-Project12-Challenge2)
+3. [Challenge 3](../27-Project12-Challenge3)
 
 ## Screenshots
 
