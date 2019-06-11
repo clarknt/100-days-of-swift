@@ -6,7 +6,7 @@ https://www.hackingwithswift.com/100
 
 ## Completion status
 
-28/40 projects (70%)
+29/40 projects (72.5%)
 
 ## Preview
 
@@ -59,3 +59,4 @@ Project                                                                    |Scre
 [Project 21](43-Project21) (with challenges)                               | ![screen1](43-Project21/screenshots/small/screen01.png) ![screen2](43-Project21/screenshots/small/screen02.png) ![screen3](43-Project21/screenshots/small/screen03.png) |
 [Project 21 - Challenge 3](44-Project21-Challenge3) (base: project 2)      | ![screen1](44-Project21-Challenge3/screenshots/small/screen01.png) ![screen2](44-Project21-Challenge3/screenshots/small/screen02.png) |
 [Milestone projects 19-21](45-Milestone-Projects19-21)                     | ![screen1](45-Milestone-Projects19-21/screenshots/small/screen01.png) ![screen2](45-Milestone-Projects19-21/screenshots/small/screen02.png) ![screen3](45-Milestone-Projects19-21/screenshots/small/screen03.png) ![screen4](45-Milestone-Projects19-21/screenshots/small/screen04.png) ![screen5](45-Milestone-Projects19-21/screenshots/small/screen05.png) |
+[Project 22](46-Project22) (with challenges)                               | ![screen1](46-Project22/screenshots/small/screen01.png) ![screen2](46-Project22/screenshots/small/screen02.png) ![screen3](46-Project22/screenshots/small/screen03.png) ![screen4](46-Project22/screenshots/small/screen04.png) |
