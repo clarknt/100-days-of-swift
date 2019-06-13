@@ -4,6 +4,9 @@ https://www.hackingwithswift.com/100/77
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/23/8/wrap-up).
 
+Bonus:
+- New game option
+
 ## Challenges
 
 1. Try removing the magic numbers in the createEnemy() method. Instead, define them as constant properties of your class, giving them useful names.
