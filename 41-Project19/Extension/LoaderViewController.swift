@@ -6,11 +6,11 @@
 import UIKit
 
 // challenge 3
-protocol LoadDelegate {
-    func load(script: String)
+protocol LoaderDelegate {
+    func loader(_ loader: LoaderViewController, didSelect script: String)
     
     // bonus: allow deleting scripts
-    func updateUserScripts(scripts: [UserScript])
+    func loader(_ loader: LoaderViewController, didUpdate scripts: [UserScript])
 }
 
 class LoaderViewController: UITableViewController {
@@ -18,14 +18,12 @@ class LoaderViewController: UITableViewController {
     var savedScriptsByName: [UserScript]!
     var savedScriptsByNameKey: String!
     
-    var delegate: LoadDelegate?
+    var delegate: LoaderDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard savedScriptsByName != nil
-            && savedScriptsByNameKey != nil
-            && delegate != nil else {
+        guard savedScriptsByName != nil && savedScriptsByNameKey != nil else {
             print("Parameters not set")
             navigationController?.popViewController(animated: true)
             return
@@ -43,7 +41,7 @@ class LoaderViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.load(script: savedScriptsByName[indexPath.row].script)
+        delegate?.loader(self, didSelect: savedScriptsByName[indexPath.row].script)
         navigationController?.popViewController(animated: true)
     }
     
@@ -53,7 +51,7 @@ class LoaderViewController: UITableViewController {
             savedScriptsByName.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
 
-            delegate?.updateUserScripts(scripts: self.savedScriptsByName)
+            delegate?.loader(self, didUpdate: self.savedScriptsByName)
             performSelector(inBackground: #selector(saveScriptsByName), with: nil)
         }
     }

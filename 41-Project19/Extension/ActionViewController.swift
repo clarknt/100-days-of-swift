@@ -6,7 +6,7 @@
 import UIKit
 import MobileCoreServices
 
-class ActionViewController: UIViewController, ScriptLoaderDelegate {
+class ActionViewController: UIViewController, LoaderDelegate {
 
     @IBOutlet var script: UITextView!
     
@@ -170,10 +170,10 @@ class ActionViewController: UIViewController, ScriptLoaderDelegate {
     
     // challenge 3
     func loadTapped() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoadViewController") as? LoadViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoadViewController") as? LoaderViewController {
             vc.savedScriptsByName = savedScriptsByName
             vc.savedScriptsByNameKey = savedScriptsByNameKey
-            vc.scriptLoaderDelegate = self
+            vc.delegate = self
             navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -190,12 +190,13 @@ class ActionViewController: UIViewController, ScriptLoaderDelegate {
     }
     
     // challenge 3
-    func setScriptToLoad(script: String) {
+    func loader(_ loader: LoaderViewController, didSelect script: String) {
         scriptToLoad = script
+
     }
     
     // bonus: allow the load page to delete scripts
-    func updateUserScripts(scripts: [UserScript]) {
+    func loader(_ loader: LoaderViewController, didUpdate scripts: [UserScript]) {
         savedScriptsByName = scripts
     }
     

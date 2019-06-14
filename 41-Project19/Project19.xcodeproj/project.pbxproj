@@ -18,7 +18,7 @@
 		0A5805B922A04FCC004C70C3 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A5805AD22A04FCC004C70C3 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A5805BF22A05F9F004C70C3 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A5805BE22A05F9F004C70C3 /* Action.js */; };
 		0A8D3B3B22A1A35C0055C098 /* ScriptExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D3B3A22A1A35C0055C098 /* ScriptExamples.swift */; };
-		0A8D3B3D22A1C56F0055C098 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D3B3C22A1C56F0055C098 /* LoadViewController.swift */; };
+		0A8D3B3D22A1C56F0055C098 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D3B3C22A1C56F0055C098 /* LoaderViewController.swift */; };
 		0A8D3B3F22A1C8050055C098 /* UserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D3B3E22A1C8050055C098 /* UserScript.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A58059422A04906004C70C3 /* Project19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A58059422A04906004C70C3 /* Project19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A58059722A04906004C70C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A58059922A04906004C70C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A58059C22A04906004C70C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		0A5805B622A04FCC004C70C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5805BE22A05F9F004C70C3 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 		0A8D3B3A22A1A35C0055C098 /* ScriptExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptExamples.swift; sourceTree = "<group>"; };
-		0A8D3B3C22A1C56F0055C098 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
+		0A8D3B3C22A1C56F0055C098 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		0A8D3B3E22A1C8050055C098 /* UserScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 				0A5805A022A0490D004C70C3 /* LaunchScreen.storyboard */,
 				0A5805A322A0490D004C70C3 /* Info.plist */,
 			);
-			path = "Project19";
+			path = Project19;
 			sourceTree = "<group>";
 		};
 		0A5805AE22A04FCC004C70C3 /* Extension */ = {
@@ -119,7 +119,7 @@
 			children = (
 				0A5805AF22A04FCC004C70C3 /* Media.xcassets */,
 				0A5805B122A04FCC004C70C3 /* ActionViewController.swift */,
-				0A8D3B3C22A1C56F0055C098 /* LoadViewController.swift */,
+				0A8D3B3C22A1C56F0055C098 /* LoaderViewController.swift */,
 				0A8D3B3E22A1C8050055C098 /* UserScript.swift */,
 				0A8D3B3A22A1A35C0055C098 /* ScriptExamples.swift */,
 				0A5805B322A04FCC004C70C3 /* MainInterface.storyboard */,
@@ -146,8 +146,8 @@
 			dependencies = (
 				0A5805B822A04FCC004C70C3 /* PBXTargetDependency */,
 			);
-			name = "Project19";
-			productName = "Project19";
+			name = Project19;
+			productName = Project19;
 			productReference = 0A58059422A04906004C70C3 /* Project19.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -242,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8D3B3D22A1C56F0055C098 /* LoadViewController.swift in Sources */,
+				0A8D3B3D22A1C56F0055C098 /* LoaderViewController.swift in Sources */,
 				0A5805B222A04FCC004C70C3 /* ActionViewController.swift in Sources */,
 				0A8D3B3B22A1A35C0055C098 /* ScriptExamples.swift in Sources */,
 				0A8D3B3F22A1C8050055C098 /* UserScript.swift in Sources */,
@@ -410,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Project19/Info.plist";
+				INFOPLIST_FILE = Project19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Project19/Info.plist";
+				INFOPLIST_FILE = Project19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
