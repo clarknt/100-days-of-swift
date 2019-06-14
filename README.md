@@ -8,8 +8,8 @@ https://www.hackingwithswift.com/100
 
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
-Projects           | 23 / 30 | 77%
-Challenges         | 69 / 90 | 77%
+Projects           | 24 / 30 | 80%
+Challenges         | 72 / 90 | 80%
 Milestone Projects | 7 / 10  | 70%
 
 ## Preview
@@ -65,3 +65,4 @@ Project                                                                    |Scre
 [Milestone projects 19-21](45-Milestone-Projects19-21)                     | ![screen1](45-Milestone-Projects19-21/screenshots/small/screen01.png) ![screen2](45-Milestone-Projects19-21/screenshots/small/screen02.png) ![screen3](45-Milestone-Projects19-21/screenshots/small/screen03.png) ![screen4](45-Milestone-Projects19-21/screenshots/small/screen04.png) ![screen5](45-Milestone-Projects19-21/screenshots/small/screen05.png) |
 [Project 22](46-Project22) (with challenges)                               | ![screen1](46-Project22/screenshots/small/screen01.png) ![screen2](46-Project22/screenshots/small/screen02.png) ![screen3](46-Project22/screenshots/small/screen03.png) ![screen4](46-Project22/screenshots/small/screen04.png) |
 [Project 23](47-Project23) (with challenges)                               | ![screen1](47-Project23/screenshots/small/screen01.png) ![screen2](47-Project23/screenshots/small/screen02.png) ![screen3](47-Project23/screenshots/small/screen03.png) |
+[Project 24](48-Project24) (with challenges)                               | No screenshot |
