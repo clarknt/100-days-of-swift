@@ -67,6 +67,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         currentLevelLabel.horizontalAlignmentMode = .left
         currentLevelLabel.position = CGPoint(x: 16, y: 730)
         currentLevelLabel.zPosition = 2
+        currentLevelLabel.name = "currentLevel"
         addChild(currentLevelLabel)
         
         prepareFinishLabels()
@@ -292,6 +293,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 score = 0
                 currentLevel = 1
                 restart()
+            }
+            else if node.name == "currentLevel" {
+                player.physicsBody?.isDynamic = false
+                addChild(nextLevelLabel)
+                addChild(restartLevelLabel)
+                addChild(restartGameLabel)
             }
         }
     }
