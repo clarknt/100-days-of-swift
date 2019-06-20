@@ -295,6 +295,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 restart()
             }
             else if node.name == "currentLevel" {
+                player.removeAllActions()
                 player.physicsBody?.isDynamic = false
                 addChild(nextLevelLabel)
                 addChild(restartLevelLabel)
@@ -312,6 +313,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         destroyLevel()
         loadLevel()
         createPlayer()
+        isGameOver = false
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
