@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         currentDrawType += 1
         
         // challenge 1
-        if currentDrawType > 6 {
+        if currentDrawType > 7 {
             currentDrawType = 0
         }
         
@@ -39,6 +39,9 @@ class ViewController: UIViewController {
         case 5:
             drawImagesAndText()
         case 6:
+            // challenge 1
+            drawSurprisedEmoji()
+        case 7:
             // challenge 1
             drawStarEmoji()
         default:
@@ -171,6 +174,41 @@ class ViewController: UIViewController {
             
             let mouse = UIImage(named: "mouse")
             mouse?.draw(at: CGPoint(x: 300, y: 150))
+        }
+        
+        imageView.image = image
+    }
+   
+    // challenge 1
+    func drawSurprisedEmoji() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            let face = CGRect(x: 0, y: 0, width: 512, height: 512).insetBy(dx: 20, dy: 20)
+            
+            ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
+            ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
+            ctx.cgContext.setLineWidth(5)
+            
+            ctx.cgContext.addEllipse(in: face)
+            ctx.cgContext.drawPath(using: .fillStroke)
+            
+            let eye = CGRect(x: 0, y: 0, width: 60, height: 70)
+            ctx.cgContext.setFillColor(UIColor.orange.cgColor)
+
+            ctx.cgContext.translateBy(x: 130, y: 150)
+            ctx.cgContext.addEllipse(in: eye)
+            ctx.cgContext.drawPath(using: .fill)
+            
+            ctx.cgContext.translateBy(x: 190, y: 0)
+            ctx.cgContext.addEllipse(in: eye)
+            ctx.cgContext.drawPath(using: .fill)
+
+            let mouth = CGRect(x: 0, y: 0, width: 100, height: 110)
+
+            ctx.cgContext.translateBy(x: -110, y: 150)
+            ctx.cgContext.addEllipse(in: mouth)
+            ctx.cgContext.drawPath(using: .fill)
         }
         
         imageView.image = image
