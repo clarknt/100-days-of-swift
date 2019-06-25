@@ -20,7 +20,8 @@ class ViewController: UIViewController {
     @IBAction func redrawTapped(_ sender: Any) {
         currentDrawType += 1
         
-        if currentDrawType > 5 {
+        // challenge 1
+        if currentDrawType > 6 {
             currentDrawType = 0
         }
         
@@ -37,6 +38,9 @@ class ViewController: UIViewController {
             drawLines()
         case 5:
             drawImagesAndText()
+        case 6:
+            // challenge 1
+            drawStarEmoji()
         default:
             break
         }
@@ -170,6 +174,50 @@ class ViewController: UIViewController {
         }
         
         imageView.image = image
+    }
+    
+    // challenge 1
+    func drawStarEmoji() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            ctx.cgContext.translateBy(x: 256, y: 270)
+            
+            let innerRadius: CGFloat = 94
+            let outerRadius: CGFloat = 245
+            let starPoints = 5
+            
+            let initialInnerPoint = pointOnCircle(radius: innerRadius, angle: 0)
+            ctx.cgContext.move(to: initialInnerPoint)
+
+            for _ in 1...starPoints {
+                let starPoints = CGFloat(starPoints)
+
+                let outerPoint = pointOnCircle(radius: outerRadius, angle: .pi * 2 / (starPoints * 2))
+                ctx.cgContext.addLine(to: outerPoint)
+                
+                let innerPoint = pointOnCircle(radius: innerRadius, angle: .pi * 2 / starPoints)
+                ctx.cgContext.addLine(to: innerPoint)
+
+                ctx.cgContext.rotate(by: -(.pi * 2 / starPoints))
+            }
+            
+            ctx.cgContext.closePath()
+
+            ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
+            ctx.cgContext.setLineWidth(10)
+
+            ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
+
+            ctx.cgContext.drawPath(using: .fillStroke)
+        }
+        
+        imageView.image = image
+    }
+    
+    // challenge 1
+    func pointOnCircle(radius: CGFloat, angle: CGFloat) -> CGPoint {
+        return CGPoint(x: radius * sin(angle), y: radius * cos(angle))
     }
 }
 
