@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         currentDrawType += 1
         
         // challenge 1
-        if currentDrawType > 7 {
+        if currentDrawType > 8 {
             currentDrawType = 0
         }
         
@@ -44,6 +44,9 @@ class ViewController: UIViewController {
         case 7:
             // challenge 1
             drawStarEmoji()
+        case 8:
+            // challenge 2
+            drawTwinText()
         default:
             break
         }
@@ -244,7 +247,7 @@ class ViewController: UIViewController {
 
             ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
             ctx.cgContext.setLineWidth(10)
-
+            
             ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
 
             ctx.cgContext.drawPath(using: .fillStroke)
@@ -256,6 +259,80 @@ class ViewController: UIViewController {
     // challenge 1
     func pointOnCircle(radius: CGFloat, angle: CGFloat) -> CGPoint {
         return CGPoint(x: radius * sin(angle), y: radius * cos(angle))
+    }
+    
+    // challenge 2
+    func drawTwinText() {
+        let imgWidth = 512
+        let imgHeight = 512
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: imgWidth, height: imgHeight))
+
+        // those 2 parameters alone determine the text size, and can be changed
+        let height = 150
+        let spacing = 40
+
+        // center text vertically
+        let top: Int = (imgHeight - height) / 2
+        let bottom = top + height
+        
+        // width is proportional to height
+        let width: Int = height * 2 / 3
+        
+        // center text horizontally
+        //                          T                 W             I             N
+        var startx = (imgWidth - (width + spacing + width + spacing + spacing + width)) / 2
+        
+        let image = renderer.image { ctx in           
+            drawT(ctx: ctx.cgContext, top: top, bottom: bottom, startx: startx, width: width)
+
+            startx += width + spacing
+            drawW(ctx: ctx.cgContext, top: top, bottom: bottom, startx: startx, width: width)
+
+            startx += width + spacing
+            drawI(ctx: ctx.cgContext, top: top, bottom: bottom, startx: startx, width: width)
+
+            startx += spacing
+            drawN(ctx: ctx.cgContext, top: top, bottom: bottom, startx: startx, width: width)
+
+            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
+            ctx.cgContext.setLineWidth(10)
+            ctx.cgContext.setLineJoin(.round)
+            ctx.cgContext.setLineCap(.round)
+            ctx.cgContext.drawPath(using: .stroke)
+        }
+
+        imageView.image = image
+    }
+    
+    // challenge 2
+    func drawT(ctx: CGContext, top: Int, bottom: Int, startx: Int, width: Int) {
+        ctx.move(to: CGPoint(x: startx, y: top))
+        ctx.addLine(to: CGPoint(x: startx + width, y: top))
+        ctx.move(to: CGPoint(x: startx + width/2, y: top))
+        ctx.addLine(to: CGPoint(x: startx + width/2, y: bottom))
+    }
+    
+    // challenge 2
+    func drawW(ctx: CGContext, top: Int, bottom: Int, startx: Int, width: Int) {
+        ctx.move(to: CGPoint(x: startx, y: top))
+        ctx.addLine(to: CGPoint(x: Double(startx) + Double(width) * 0.3, y: Double(bottom)))
+        ctx.addLine(to: CGPoint(x: Double(startx) + Double(width) * 0.5, y: Double((top + bottom) / 2)))
+        ctx.addLine(to: CGPoint(x: Double(startx) + Double(width) * 0.7, y: Double(bottom)))
+        ctx.addLine(to: CGPoint(x: startx + width, y: top))
+    }
+
+    // challenge 2
+    func drawI(ctx: CGContext, top: Int, bottom: Int, startx: Int, width: Int) {
+        ctx.move(to: CGPoint(x: startx, y: top))
+        ctx.addLine(to: CGPoint(x: startx, y: bottom))
+   }
+
+    // challenge 2
+    func drawN(ctx: CGContext, top: Int, bottom: Int, startx: Int, width: Int) {
+        ctx.move(to: CGPoint(x: startx, y: bottom))
+        ctx.addLine(to: CGPoint(x: startx, y: top))
+        ctx.addLine(to: CGPoint(x: startx + width, y: bottom))
+        ctx.addLine(to: CGPoint(x: startx + width, y: top))
     }
 }
 
