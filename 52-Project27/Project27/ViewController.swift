@@ -184,37 +184,79 @@ class ViewController: UIViewController {
    
     // challenge 1
     func drawSurprisedEmoji() {
-        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        let imgWidth = 512
+        let imgHeight = 512
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: imgWidth, height: imgHeight))
         
         let image = renderer.image { ctx in
-            let face = CGRect(x: 0, y: 0, width: 512, height: 512).insetBy(dx: 20, dy: 20)
             
-            ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
-            ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
-            ctx.cgContext.setLineWidth(5)
+            let faceWidth = imgWidth
+            let faceHeight = imgWidth
+            let faceInsets: CGFloat = 20
             
-            ctx.cgContext.addEllipse(in: face)
-            ctx.cgContext.drawPath(using: .fillStroke)
-            
-            let eye = CGRect(x: 0, y: 0, width: 60, height: 70)
-            ctx.cgContext.setFillColor(UIColor.orange.cgColor)
+            drawFace(ctx: ctx.cgContext, width: faceWidth, height: faceHeight, insets: faceInsets, startX: 0, startY: 0, fillColor: UIColor.yellow.cgColor, strokeColor: UIColor.orange.cgColor)
 
-            ctx.cgContext.translateBy(x: 130, y: 150)
-            ctx.cgContext.addEllipse(in: eye)
-            ctx.cgContext.drawPath(using: .fill)
+            let eyeHorizontalMargin: CGFloat = 130
+            let eyeTopMargin: CGFloat = 150
+            let eyeWidth = 60
+            let eyeHeight = 70
             
-            ctx.cgContext.translateBy(x: 190, y: 0)
-            ctx.cgContext.addEllipse(in: eye)
-            ctx.cgContext.drawPath(using: .fill)
+            let leftEyeStartX = eyeHorizontalMargin
+            let leftEyeStartY = eyeTopMargin
+            drawEye(ctx: ctx.cgContext, width: eyeWidth, height: eyeHeight, startX: leftEyeStartX, startY: leftEyeStartY, color: UIColor.orange.cgColor)
 
-            let mouth = CGRect(x: 0, y: 0, width: 100, height: 110)
+            let rightEyeStartX = CGFloat(imgWidth) - CGFloat(eyeWidth) - eyeHorizontalMargin
+            let rightEyrStartY = eyeTopMargin
+            drawEye(ctx: ctx.cgContext, width: eyeWidth, height: eyeHeight, startX: rightEyeStartX, startY: rightEyrStartY, color: UIColor.orange.cgColor)
 
-            ctx.cgContext.translateBy(x: -110, y: 150)
-            ctx.cgContext.addEllipse(in: mouth)
-            ctx.cgContext.drawPath(using: .fill)
+            let mouthWidth = 100
+            let mouthHeight = 110
+            let mouthStartx = CGFloat((imgWidth - mouthWidth) / 2)
+            let mouthStarty = CGFloat(300)
+
+            drawMouth(ctx: ctx.cgContext, width: mouthWidth, height: mouthHeight, startX: mouthStartx, startY: mouthStarty, color: UIColor.orange.cgColor)
         }
         
         imageView.image = image
+    }
+   
+    // challenge 1
+    func drawFace(ctx: CGContext, width: Int, height: Int, insets: CGFloat, startX: CGFloat, startY: CGFloat, fillColor: CGColor, strokeColor: CGColor) {
+        let face = CGRect(x: 0, y: 0, width: width, height: height).insetBy(dx: insets, dy: insets)
+        
+        ctx.setFillColor(UIColor.yellow.cgColor)
+        ctx.setStrokeColor(UIColor.orange.cgColor)
+        ctx.setLineWidth(5)
+        
+        ctx.translateBy(x: startX, y: startY)
+        ctx.addEllipse(in: face)
+        ctx.drawPath(using: .fillStroke)
+        ctx.translateBy(x: -startX, y: -startY)
+    }
+    
+    // challenge 1
+    func drawEye(ctx: CGContext, width: Int, height: Int, startX: CGFloat, startY: CGFloat, color: CGColor) {
+        let eye = CGRect(x: 0, y: 0, width: width, height: height)
+
+        ctx.setFillColor(color)
+
+        ctx.translateBy(x: startX, y: startY)
+        ctx.addEllipse(in: eye)
+        ctx.drawPath(using: .fill)
+        ctx.translateBy(x: -startX, y: -startY)
+    }
+    
+    // challenge 1
+    func drawMouth(ctx: CGContext, width: Int, height: Int, startX: CGFloat, startY: CGFloat, color: CGColor) {
+        let mouth = CGRect(x: 0, y: 0, width: width, height: height)
+        
+        ctx.setFillColor(color)
+
+        ctx.translateBy(x: startX, y: startY)
+        ctx.addEllipse(in: mouth)
+        ctx.drawPath(using: .fill)
+        ctx.translateBy(x: -startX, y: -startY)
+
     }
     
     // challenge 1
@@ -247,9 +289,9 @@ class ViewController: UIViewController {
 
             ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
             ctx.cgContext.setLineWidth(10)
-            
             ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
-
+            ctx.cgContext.setLineJoin(.round)
+            ctx.cgContext.setLineCap(.round)
             ctx.cgContext.drawPath(using: .fillStroke)
         }
         
