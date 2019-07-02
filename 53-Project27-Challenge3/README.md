@@ -10,3 +10,4 @@ Go back to project 3 and change the way the selected image is shared so that it 
 
 ![screenshot1](screenshots/screen01.png)
 ![screenshot2](screenshots/screen02.png)
+![screenshot3](screenshots/screen03.png)
