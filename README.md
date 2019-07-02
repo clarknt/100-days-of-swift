@@ -9,7 +9,7 @@ https://www.hackingwithswift.com/100
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
 Projects           | 27 / 30 | 90%
-Challenges         | 80 / 90 | 89%
+Challenges         | 81 / 90 | 90%
 Milestone Projects | 8 / 10  | 80%
 
 ## Preview
