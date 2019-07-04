@@ -71,3 +71,4 @@ Project                                                                    |Scre
 [Project 26](51-Project26) (with challenges)                               | ![screen1](51-Project26/screenshots/small/screen01.png) ![screen2](51-Project26/screenshots/small/screen02.png) ![screen3](51-Project26/screenshots/small/screen03.png) ![screen4](51-Project26/screenshots/small/screen04.png) |
 [Project 27](52-Project27) (with challenges 1 and 2)                       | ![screen1](52-Project27/screenshots/small/screen01.png) ![screen2](52-Project27/screenshots/small/screen02.png) |
 [Project 27 - Challenge 3](53-Project27-Challenge3) (base: project 3)      | ![screen1](53-Project27-Challenge3/screenshots/small/screen01.png) ![screen2](53-Project27-Challenge3/screenshots/small/screen02.png) ![screen3](53-Project27-Challenge3/screenshots/small/screen03.png) |
+[Core Graphics Redux](55-CoreGraphics-Redux)                               | No screenshot |
