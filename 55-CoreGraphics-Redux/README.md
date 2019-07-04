@@ -2,7 +2,7 @@
 
 https://www.hackingwithswift.com/100/91
 
-Solutions are directly below.
+The "Learn Core Graphics" playground (see link above) contains challenges to be solved directly within the playground. Solutions to these challenges are below.
 
 ## Challenges
 
