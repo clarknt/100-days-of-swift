@@ -11,6 +11,7 @@ Type               | Number  | Completion
 Projects           | 27 / 30 | 90%
 Challenges         | 81 / 90 | 90%
 Milestone Projects | 8 / 10  | 80%
+Other              |  1 / 1  | 100%
 
 ## Preview
 
