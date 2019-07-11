@@ -16,10 +16,39 @@ class GameViewController: UIViewController {
     @IBOutlet weak var velocityLabel: UILabel!
     @IBOutlet weak var launchButton: UIButton!
     @IBOutlet weak var playerNumber: UILabel!
+    @IBOutlet weak var newGameButton: UIButton!
+    
+    // challenge 1
+    @IBOutlet weak var player1ScoreLabel: UILabel!
+    @IBOutlet weak var player2ScoreLabel: UILabel!
+    
+    // challenge 1
+    var player1Score: Int = 0 {
+        didSet {
+            player1ScoreLabel.text = "Score: \(player1Score)"
+        }
+    }
+    var player2Score: Int = 0 {
+        didSet {
+            player2ScoreLabel.text = "Score: \(player2Score)"
+        }
+    }
+    
+    // challenge 1
+    var gameStopped = false {
+        didSet {
+            newGameButton.isHidden = !gameStopped
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // challenge 1
+        gameStopped = false
+        player1Score = 0
+        player2Score = 0
+
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -68,11 +97,7 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func launch(_ sender: Any) {
-        angleSlider.isHidden = true
-        angleLabel.isHidden = true
-        velocitySlider.isHidden = true
-        velocityLabel.isHidden = true
-        launchButton.isHidden = true
+        gameControls(isHidden: true)
         
         currentGame?.launch(angle: Int(angleSlider.value), velocity: Int(velocitySlider.value))
     }
@@ -85,11 +110,47 @@ class GameViewController: UIViewController {
             playerNumber.text = "PLAYER TWO >>>"
         }
         
-        angleSlider.isHidden = false
-        angleLabel.isHidden = false
-        velocitySlider.isHidden = false
-        velocityLabel.isHidden = false
-        launchButton.isHidden = false
+        gameControls(isHidden: false)
     }
     
+    func gameControls(isHidden: Bool) {
+        angleSlider.isHidden = isHidden
+        angleLabel.isHidden = isHidden
+        velocitySlider.isHidden = isHidden
+        velocityLabel.isHidden = isHidden
+        launchButton.isHidden = isHidden
+    }
+    
+    // challenge 1
+    func playerScored(player: Int) {
+        if player == 1 {
+            player1Score += 1
+        }
+        else {
+            player2Score += 1
+        }
+        
+        if player1Score == 3 {
+            playerNumber.text = "PLAYER 1 WINS"
+            stopGame()
+        }
+        else if player2Score == 3 {
+            playerNumber.text = "PLAYER 2 WINS"
+            stopGame()
+        }
+    }
+    
+    // challenge 1
+    func stopGame() {
+        gameControls(isHidden: true)
+        gameStopped = true
+    }
+    
+    // challenge 1
+    @IBAction func newGameAction(_ sender: Any) {
+        gameStopped = false
+        player1Score = 0
+        player2Score = 0
+        currentGame?.newGame()
+    }
 }

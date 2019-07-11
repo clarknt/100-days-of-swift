@@ -64,6 +64,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBe-6L-Eqv">
+                                <rect key="frame" x="20" y="71" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-Mq-7Q7">
+                                <rect key="frame" x="938" y="71" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQe-KB-4FW">
+                                <rect key="frame" x="465" y="107" width="94" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="NEW GAME">
+                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGameAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="g1f-ne-mez"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -72,6 +97,9 @@
                         <outlet property="angleLabel" destination="FEh-AO-0jn" id="MYF-dF-8p2"/>
                         <outlet property="angleSlider" destination="eCd-on-50t" id="Sb5-ey-iMH"/>
                         <outlet property="launchButton" destination="jIH-Hb-yDG" id="qjD-9M-gPc"/>
+                        <outlet property="newGameButton" destination="YQe-KB-4FW" id="EhU-mp-EFm"/>
+                        <outlet property="player1ScoreLabel" destination="rBe-6L-Eqv" id="cea-7t-9Zq"/>
+                        <outlet property="player2ScoreLabel" destination="ooX-Mq-7Q7" id="J9i-Ls-OnR"/>
                         <outlet property="playerNumber" destination="SG8-v4-fbe" id="kz4-Xq-NJu"/>
                         <outlet property="velocityLabel" destination="IJk-mc-wAa" id="OGV-Eg-GjR"/>
                         <outlet property="velocitySlider" destination="Rmx-Mr-B7M" id="dFG-w1-k1I"/>

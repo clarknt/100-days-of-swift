@@ -19,7 +19,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var player2: SKSpriteNode!
     var banana: SKSpriteNode!
     var currentPlayer = 1
-    
+        
     override func didMove(to view: SKView) {
         backgroundColor = UIColor(hue: 0.669, saturation: 0.99, brightness: 0.67, alpha: 1)
         createBuildings()
@@ -165,21 +165,36 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.removeFromParent()
         banana.removeFromParent()
         
-        // voluntary strong self here as weak self would not be kept forever
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            // prepare a new game scene to transition to
-            let newGame = GameScene(size: self.size)
-            newGame.viewController = self.viewController
-            self.viewController?.currentGame = newGame
-            
-            self.changePlayer()
-            newGame.currentPlayer = self.currentPlayer
-            
-            let transition = SKTransition.doorway(withDuration: 1.5)
-            self.view?.presentScene(newGame, transition: transition)
+        // challenge 1
+        if player == player1 {
+            viewController?.playerScored(player: 2)
+        }
+        else {
+            viewController?.playerScored(player: 1)
+        }
+        
+        // challenge 1
+        if viewController?.gameStopped == false {
+            // voluntary strong self here as weak self would not be kept forever
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.newGame()
+            }
         }
     }
 
+    func newGame() {
+        // prepare a new game scene to transition to
+        let newGame = GameScene(size: self.size)
+        newGame.viewController = viewController
+        viewController?.currentGame = newGame
+        
+        changePlayer()
+        newGame.currentPlayer = currentPlayer
+        
+        let transition = SKTransition.doorway(withDuration: 1.5)
+        view?.presentScene(newGame, transition: transition)
+    }
+    
     func bananaHit(building: SKNode, atPoint contactPoint: CGPoint) {
         guard let building = building as? BuildingNode else { return }
         // convert scene coordinates to building coordinates
