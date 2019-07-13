@@ -19,7 +19,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var player2: SKSpriteNode!
     var banana: SKSpriteNode!
     var currentPlayer = 1
-        
+    
     override func didMove(to view: SKView) {
         backgroundColor = UIColor(hue: 0.669, saturation: 0.99, brightness: 0.67, alpha: 1)
         createBuildings()
@@ -45,6 +45,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func launch(angle: Int, velocity: Int) {
+        // challenge 3
+        if let gravity = viewController?.wind.getGravity(player: currentPlayer) {
+            physicsWorld.gravity = gravity
+        }
+        
         let speed = Double(velocity) / 10
         let radians = deg2rad(degrees: angle)
         
@@ -228,7 +233,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func update(_ currentTime: TimeInterval) {
         guard banana != nil else { return }
         
-        if abs(banana.position.y) > 1000 {
+        if abs(banana.position.y) > 768 && abs(banana.position.x) > 1024 {
             banana.removeFromParent()
             banana = nil
             changePlayer()

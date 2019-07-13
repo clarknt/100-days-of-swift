@@ -41,6 +41,11 @@ class GameViewController: UIViewController {
         }
     }
     
+    // challenge 3
+    @IBOutlet weak var player1Wind: UILabel!
+    @IBOutlet weak var player2Wind: UILabel!
+    var wind: Wind!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +54,12 @@ class GameViewController: UIViewController {
         player1Score = 0
         player2Score = 0
 
+        // challenge 3
+        wind = Wind.getRandomWind()
+        player1Wind.attributedText = wind.getText()
+        player1Wind.isHidden = false
+        player2Wind.isHidden = true
+        
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -103,11 +114,21 @@ class GameViewController: UIViewController {
     }
     
     func activatePlayer(number: Int) {
+        wind = Wind.getRandomWind()
+
         if number == 1 {
             playerNumber.text = "<<< PLAYER ONE"
+            // challenge 3
+            player1Wind.attributedText = wind.getText()
+            player1Wind.isHidden = false
+            player2Wind.isHidden = true
         }
         else {
             playerNumber.text = "PLAYER TWO >>>"
+            // challenge 3
+            player2Wind.attributedText = wind.getText()
+            player2Wind.isHidden = false
+            player1Wind.isHidden = true
         }
         
         gameControls(isHidden: false)
