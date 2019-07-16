@@ -12,35 +12,35 @@ class ImageViewController: UIViewController {
     // break strong reference cycle
     // challenge 1 (bonus)
     weak var owner: SelectionViewController?
-	
+    
     // challenge 1 (bonus)
     var image: String?
     
     // challenge 1 (bonus): there's no point removing implicit unwraps here as these are created
     // internally within loadView (contrary to owner and image that are external parameters)
-	var animTimer: Timer!
-	var imageView: UIImageView!
+    var animTimer: Timer!
+    var imageView: UIImageView!
 
-	override func loadView() {
-		super.loadView()
-		
-		view.backgroundColor = UIColor.black
+    override func loadView() {
+        super.loadView()
+        
+        view.backgroundColor = UIColor.black
 
-		// create an image view that fills the screen
-		imageView = UIImageView()
-		imageView.contentMode = .scaleAspectFit
-		imageView.translatesAutoresizingMaskIntoConstraints = false
-		imageView.alpha = 0
+        // create an image view that fills the screen
+        imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.alpha = 0
 
-		view.addSubview(imageView)
+        view.addSubview(imageView)
 
-		// make the image view fill the screen
-		imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-		imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-		imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-		imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        // make the image view fill the screen
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
-		// schedule an animation that does something vaguely interesting
+        // schedule an animation that does something vaguely interesting
         animTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in
             // do something exciting with our image
             self.imageView.transform = CGAffineTransform.identity
@@ -49,7 +49,7 @@ class ImageViewController: UIViewController {
                 self.imageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
         }
-	}
+    }
 
     // destroy the timer to release strong reference to the view controller
     override func viewWillLayoutSubviews() {
@@ -62,47 +62,47 @@ class ImageViewController: UIViewController {
 
         // challenge 1
         guard let image = image else { return }
-		title = image.replacingOccurrences(of: "-Large.jpg", with: "")
+        title = image.replacingOccurrences(of: "-Large.jpg", with: "")
         
         // skip image cache as this large image won't be reused much
         // challenge 1
         guard let path = Bundle.main.path(forResource: image, ofType: nil) else { return }
         guard let original = UIImage(contentsOfFile: path) else { return }
 
-		let renderer = UIGraphicsImageRenderer(size: original.size)
+        let renderer = UIGraphicsImageRenderer(size: original.size)
 
-		let rounded = renderer.image { ctx in
-			ctx.cgContext.addEllipse(in: CGRect(origin: CGPoint.zero, size: original.size))
-			ctx.cgContext.closePath()
+        let rounded = renderer.image { ctx in
+            ctx.cgContext.addEllipse(in: CGRect(origin: CGPoint.zero, size: original.size))
+            ctx.cgContext.closePath()
 
-			original.draw(at: CGPoint.zero)
-		}
+            original.draw(at: CGPoint.zero)
+        }
 
-		imageView.image = rounded
+        imageView.image = rounded
     }
 
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
-		imageView.alpha = 0
+        imageView.alpha = 0
 
-		UIView.animate(withDuration: 3) { [unowned self] in
-			self.imageView.alpha = 1
-		}
-	}
+        UIView.animate(withDuration: 3) { [unowned self] in
+            self.imageView.alpha = 1
+        }
+    }
 
-	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // challenge 1 (bonus)
         guard let image = image else { return }
         
-		let defaults = UserDefaults.standard
-		var currentVal = defaults.integer(forKey: image)
-		currentVal += 1
+        let defaults = UserDefaults.standard
+        var currentVal = defaults.integer(forKey: image)
+        currentVal += 1
 
-		defaults.set(currentVal, forKey:image)
+        defaults.set(currentVal, forKey:image)
 
-		// tell the parent view controller that it should refresh its table counters when we go back
-		// challenge 1 (bonus)
+        // tell the parent view controller that it should refresh its table counters when we go back
+        // challenge 1 (bonus)
         owner?.dirty = true
-	}
+    }
 }
