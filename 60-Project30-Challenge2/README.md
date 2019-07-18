@@ -2,7 +2,9 @@
 
 https://www.hackingwithswift.com/read/30/7/wrap-up
 
-Based on [Milestone projects 1-3](../06-Milestone-Projects1-3). Bonus: improve scrolling performance.
+Based on [Milestone projects 1-3](../06-Milestone-Projects1-3).
+
+Bonus: improve scrolling performance.
 
 ## Challenge
 
