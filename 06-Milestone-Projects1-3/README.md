@@ -9,7 +9,7 @@ Bonus:
 - swipe or tap left/right to switch to previous/next flag.
 
 Notes:
-- see [Project 30 - Challenge 2](../Project30-Challenge2) for a version of this project with optimized performance
+- see [Project 30 - Challenge 2](../60-Project30-Challenge2) for a version of this project with optimized performance
 
 ## Challenge
 
