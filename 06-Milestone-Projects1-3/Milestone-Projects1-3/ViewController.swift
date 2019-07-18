@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Milestone-Project1-3
+//  Milestone-Projects1-3
 //
 
 import UIKit

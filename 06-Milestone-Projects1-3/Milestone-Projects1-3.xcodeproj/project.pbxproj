@@ -516,7 +516,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A09C006227CBFA3007E3831 /* Milestone-Project1-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Project1-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A09C006227CBFA3007E3831 /* Milestone-Projects1-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Projects1-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A09C009227CBFA3007E3831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A09C00B227CBFA3007E3831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A09C00E227CBFA3007E3831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1040,7 +1040,7 @@
 		0A09BFFD227CBFA3007E3831 = {
 			isa = PBXGroup;
 			children = (
-				0A09C008227CBFA3007E3831 /* Milestone-Project1-3 */,
+				0A09C008227CBFA3007E3831 /* Milestone-Projects1-3 */,
 				0A09C007227CBFA3007E3831 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1048,12 +1048,12 @@
 		0A09C007227CBFA3007E3831 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A09C006227CBFA3007E3831 /* Milestone-Project1-3.app */,
+				0A09C006227CBFA3007E3831 /* Milestone-Projects1-3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A09C008227CBFA3007E3831 /* Milestone-Project1-3 */ = {
+		0A09C008227CBFA3007E3831 /* Milestone-Projects1-3 */ = {
 			isa = PBXGroup;
 			children = (
 				0A09C009227CBFA3007E3831 /* AppDelegate.swift */,
@@ -1068,7 +1068,7 @@
 				0A55AEE42283DB7B008B5154 /* flags_hd */,
 				0A55AFDE2283DB7C008B5154 /* flags_sd */,
 			);
-			path = "Milestone-Project1-3";
+			path = "Milestone-Projects1-3";
 			sourceTree = "<group>";
 		};
 		0A55AEE42283DB7B008B5154 /* flags_hd */ = {
@@ -1586,9 +1586,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A09C005227CBFA3007E3831 /* Milestone-Project1-3 */ = {
+		0A09C005227CBFA3007E3831 /* Milestone-Projects1-3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A09C018227CBFA5007E3831 /* Build configuration list for PBXNativeTarget "Milestone-Project1-3" */;
+			buildConfigurationList = 0A09C018227CBFA5007E3831 /* Build configuration list for PBXNativeTarget "Milestone-Projects1-3" */;
 			buildPhases = (
 				0A09C002227CBFA3007E3831 /* Sources */,
 				0A09C003227CBFA3007E3831 /* Frameworks */,
@@ -1598,9 +1598,9 @@
 			);
 			dependencies = (
 			);
-			name = "Milestone-Project1-3";
+			name = "Milestone-Projects1-3";
 			productName = Project3.5;
-			productReference = 0A09C006227CBFA3007E3831 /* Milestone-Project1-3.app */;
+			productReference = 0A09C006227CBFA3007E3831 /* Milestone-Projects1-3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1618,7 +1618,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A09C001227CBFA3007E3831 /* Build configuration list for PBXProject "Milestone-Project1-3" */;
+			buildConfigurationList = 0A09C001227CBFA3007E3831 /* Build configuration list for PBXProject "Milestone-Projects1-3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1631,7 +1631,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A09C005227CBFA3007E3831 /* Milestone-Project1-3 */,
+				0A09C005227CBFA3007E3831 /* Milestone-Projects1-3 */,
 			);
 		};
 /* End PBXProject section */
@@ -2304,12 +2304,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Milestone-Project1-3/Info.plist";
+				INFOPLIST_FILE = "Milestone-Projects1-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "clarknt.100-days-of-swift.Milestone-Project1-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "clarknt.100-days-of-swift.Milestone-Projects1-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2322,12 +2322,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Milestone-Project1-3/Info.plist";
+				INFOPLIST_FILE = "Milestone-Projects1-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "clarknt.100-days-of-swift.Milestone-Project1-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "clarknt.100-days-of-swift.Milestone-Projects1-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2337,7 +2337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A09C001227CBFA3007E3831 /* Build configuration list for PBXProject "Milestone-Project1-3" */ = {
+		0A09C001227CBFA3007E3831 /* Build configuration list for PBXProject "Milestone-Projects1-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A09C016227CBFA5007E3831 /* Debug */,
@@ -2346,7 +2346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A09C018227CBFA5007E3831 /* Build configuration list for PBXNativeTarget "Milestone-Project1-3" */ = {
+		0A09C018227CBFA5007E3831 /* Build configuration list for PBXNativeTarget "Milestone-Projects1-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A09C019227CBFA5007E3831 /* Debug */,
