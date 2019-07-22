@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/19
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/2/6/wrap-up).
 
+## Topics
+
+UIButton, CALayer, IBAction
+
 ## Challenges
 
 1. Try showing the player’s score in the navigation bar, alongside the flag to guess.

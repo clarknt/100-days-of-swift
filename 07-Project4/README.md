@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/24
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/4/6/wrap-up).
 
+## Topics
+
+WKWebView, Action sheets, UIToolbar, UIProgressView
+
 ## Challenges
 
 1. If users try to visit a URL that isn’t allowed, show an alert saying it’s blocked.
