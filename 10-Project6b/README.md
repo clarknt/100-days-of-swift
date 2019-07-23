@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/read/6/3/auto-layout-in-code-addconstraints-wit
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/6/6/wrap-up).
 
+## Topics
+
+Auto Layout, Constraints, Visual Format Language
+
 ## Challenges
 
 1. Try replacing the widthAnchor of our labels with leadingAnchor and trailingAnchor constraints, which more explicitly pin the label to the edges of its parent.
