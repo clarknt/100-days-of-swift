@@ -2,6 +2,10 @@
 
 https://www.hackingwithswift.com/100/39
 
+## Topics
+
+Grand Central Dispatch, PerformSelector
+
 ## Challenges
 
 1. [Challenge 1](../15-Project9-Challenge1)

@@ -7,6 +7,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/8/6
 Bonus:
 - Go back to level 1 once all levels have been played
 
+## Topics
+
+UI in code, Text alignment, Layout Margins, UIFont
+
 ## Challenges
 
 1. Use the techniques you learned in project 2 to draw a thin gray line around the buttons view, to make it stand out from the rest of the UI.
