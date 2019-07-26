@@ -6,6 +6,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/10/
 
 Pictures from [@valentinantonini](https://unsplash.com/photos/7sUCTP_tmIQ), [@worldsbetweenlines](https://unsplash.com/photos/yS-hgcuNqZw), [@alexwoods](https://unsplash.com/photos/pZVi92S-ZMs), [@t_rampersad](https://unsplash.com/photos/pI0iZY5BURs), [@artemkovalev](https://unsplash.com/photos/fk3XUcfTAvk)
 
+## Topics
+
+UICollectionView, UIImagePickerController, NSObject
+
 ## Challenges
 
 1. Add a second UIAlertController that gets shown when the user taps a picture, asking them whether they want to rename the person or delete them.

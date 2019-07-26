@@ -8,6 +8,10 @@ Bonus:
 - different fire color depending on slot
 - automated randomized boxes with new game instead of edit
 
+## Topics
+
+SpriteKit, Nodes, UITouch, Physics Body, SKAction, Collisions, Emitters
+
 ## Challenges
 
 1. The pictures we’re using in have other ball pictures rather than just “ballRed”. Try writing code to use a random ball color each time they tap the screen.

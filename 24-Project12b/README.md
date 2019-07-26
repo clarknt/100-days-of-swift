@@ -8,6 +8,10 @@ Bonus:
 - Use background thread for saving
 - Save on deletion
 
+## Topics
+
+UserDefaults, JSON, NSCoding
+
 ## Challenges
 
 1. [Challenge 1](../25-Project12-Challenge1)
