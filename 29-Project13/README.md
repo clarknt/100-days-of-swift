@@ -4,6 +4,8 @@ https://www.hackingwithswift.com/100/52
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/13/6/wrap-up).
 
+## Topics
+
 ## Challenges
 
 1. Try making the Save button show an error if there was no image in the image view.
