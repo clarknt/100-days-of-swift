@@ -9,6 +9,10 @@ Game Over sounds under [CC Attribution license](https://creativecommons.org/lice
 Bonus:
 - New game option
 
+## Topics
+
+SKCropNode, SKTexture, SKAction
+
 ## Challenges
 
 1. Record your own voice saying "Game over!" and have it play when the game ends.

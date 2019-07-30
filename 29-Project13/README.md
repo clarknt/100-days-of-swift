@@ -6,6 +6,8 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/13/
 
 ## Topics
 
+UISlider, UIImagePickerController, CIContext, CIFilter, Saving photos
+
 ## Challenges
 
 1. Try making the Save button show an error if there was no image in the image view.
