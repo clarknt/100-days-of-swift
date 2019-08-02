@@ -60,14 +60,15 @@ class CardCell: UICollectionViewCell {
     }
     
     func resizeCard() {
-        if !__CGSizeEqualToSize(container!.frame.size, frame.size) {
-            container.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        let size = frame.size
+        if !__CGSizeEqualToSize(container!.frame.size, size) {
+            container.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         }
-        if !__CGSizeEqualToSize(front!.frame.size, frame.size) {
-            front.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        if !__CGSizeEqualToSize(front!.frame.size, size) {
+            front.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         }
         if !__CGSizeEqualToSize(back!.frame.size, frame.size) {
-            back.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+            back.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         }
     }
     

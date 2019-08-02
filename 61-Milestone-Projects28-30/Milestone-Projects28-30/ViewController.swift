@@ -179,7 +179,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let layoutMargins = collectionView.layoutMargins
         let leftRightMargin = layoutMargins.left + layoutMargins.right
         let topBottomMargin = CGFloat(0) // no need for layoutMargins.top + layoutMargins.bottom
-        
+
         var widthCardNumber: CGFloat
         var heightCardNumber: CGFloat
         
