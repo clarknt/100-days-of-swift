@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/60
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/guide/6/3/challenge).
 
+## Topics
+
+MapKit, MKMapView, MKAnnotation, CLLocationCoordinate2D
+
 ## Challenges
 
 1. You should create a custom Country struct that has properties for each of the facts you have in your JSON file. You can then have a [Country] array in your view controller.

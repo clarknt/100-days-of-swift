@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/64
 
 This project does not have a GUI and has limited content, the goal being practicing debugging. Published for the sake of completion.
 
+## Topics
+
+Debugging
+
 ## Challenges
 
 1. [Challenge 1](../39-Project18-Challenges1-2)
