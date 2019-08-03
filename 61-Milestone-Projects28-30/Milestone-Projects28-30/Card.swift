@@ -11,6 +11,8 @@ import Foundation
 enum CardSide {
     case front
     case back
+    case matched
+    case complete
 }
 
 class Card {

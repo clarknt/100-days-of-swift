@@ -20,6 +20,14 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard (cardsLongNumber * cardsShortNumber) % 2 == 0 else {
+            fatalError("Odd number of cards")
+        }
+        
+        // some ipad don't automatically refresh the collection view when rotated
+        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
+
         buildCards()
     }
 
@@ -55,7 +63,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         frontImages += frontImages
         // shuffle images
         frontImages.shuffle()
-        
+
         for i in 0..<cardsNumber {
             cards.append(Card(frontImage: frontImages[i], backImage: backImage!))
         }
@@ -70,8 +78,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
         guard let cell = dequeuedCell as? CardCell else { return dequeuedCell }
 
-        let card = cards[indexPath.row]
-        cell.set(frontImage: card.frontImage, backImage: card.backImage)
+        cell.set(card: cards[indexPath.row])
 
         return dequeuedCell
     }
@@ -97,7 +104,9 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func matchedCards() {
-        for (position, _) in flippedCards {
+        for (position, card) in flippedCards {
+            card.visibleSide = .matched
+
             let indexPath = IndexPath(item: position, section: 0);
             if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
                 // wait for flip animatiom to complete
@@ -113,12 +122,16 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     func checkCompletion() {
         for card in cards {
-            if card.visibleSide == .back {
+            if card.visibleSide != .matched && card.visibleSide != .complete {
                 return
             }
         }
         
         // all cards complete
+        for card in cards {
+            card.visibleSide = .complete
+        }
+        
         animateCompletion()
     }
     
@@ -160,6 +173,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         }
     }
     
+    func didRotate(_: Notification) -> Void {
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return getCardSize(collectionView: collectionView)
     }
@@ -167,7 +184,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     func getCardSize(collectionView: UICollectionView) -> CGSize {
         let width = collectionView.frame.size.width
         let height = collectionView.frame.size.height
-        
+
         let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         let minInterimSpacing = layout?.minimumInteritemSpacing ?? 0
         let minLineSpacing = layout?.minimumLineSpacing ?? 0
@@ -194,8 +211,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             heightCardNumber = CGFloat(cardsShortNumber)
         }
         
-        let availableWidth = width - leftRightMargin - leftRightInsets - minInterimSpacing * widthCardNumber
-        let availableHeight = height - topBottomMargin - topBottomInsets - minLineSpacing * heightCardNumber
+        let availableWidth = width - leftRightMargin - leftRightInsets - minInterimSpacing * (widthCardNumber - 1)
+        let availableHeight = height - topBottomMargin - topBottomInsets - minLineSpacing * (heightCardNumber - 1)
         
         guard availableWidth > widthCardNumber && availableHeight > heightCardNumber else {
             fatalError("Too many cards to display")
