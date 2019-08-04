@@ -16,8 +16,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     // too high values will have spacing between cells becoming larger than screen
     // exemple on iPhone XS, limit is around 60x30 (values unplayable anyway)
-    let cardsLongNumber = 3
-    let cardsShortNumber = 4
+    let cardsLongNumber = 4
+    let cardsShortNumber = 3
     
     let cardsDirectory = "Cards.bundle/"
     let currentCards = "Blocks"
