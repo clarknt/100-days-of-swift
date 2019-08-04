@@ -11,10 +11,11 @@
 		95E2165822E80258001B4703 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2165722E80258001B4703 /* CardCell.swift */; };
 		95E2165A22E80953001B4703 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2165922E80953001B4703 /* Card.swift */; };
 		95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECED3822E79C26001E70BE /* AppDelegate.swift */; };
-		95ECED3B22E79C26001E70BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECED3A22E79C26001E70BE /* ViewController.swift */; };
+		95ECED3B22E79C26001E70BE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECED3A22E79C26001E70BE /* GameViewController.swift */; };
 		95ECED3E22E79C26001E70BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED3C22E79C26001E70BE /* Main.storyboard */; };
 		95ECED4022E79C28001E70BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED3F22E79C28001E70BE /* Assets.xcassets */; };
 		95ECED4322E79C28001E70BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED4122E79C28001E70BE /* LaunchScreen.storyboard */; };
+		95EF2C5922F5E52800D4CC0C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		95E2165922E80953001B4703 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		95ECED3522E79C26001E70BE /* Milestone-Projects28-30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Projects28-30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95ECED3822E79C26001E70BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95ECED3A22E79C26001E70BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95ECED3A22E79C26001E70BE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		95ECED3D22E79C26001E70BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95ECED3F22E79C28001E70BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95ECED4222E79C28001E70BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95ECED4422E79C28001E70BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				95ECED3822E79C26001E70BE /* AppDelegate.swift */,
-				95ECED3A22E79C26001E70BE /* ViewController.swift */,
 				95E2165922E80953001B4703 /* Card.swift */,
 				95E2165722E80258001B4703 /* CardCell.swift */,
+				95ECED3A22E79C26001E70BE /* GameViewController.swift */,
+				95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */,
 				95ECED3C22E79C26001E70BE /* Main.storyboard */,
 				95ECED3F22E79C28001E70BE /* Assets.xcassets */,
 				95ECED4122E79C28001E70BE /* LaunchScreen.storyboard */,
@@ -145,9 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95ECED3B22E79C26001E70BE /* ViewController.swift in Sources */,
+				95ECED3B22E79C26001E70BE /* GameViewController.swift in Sources */,
 				95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */,
 				95E2165822E80258001B4703 /* CardCell.swift in Sources */,
+				95EF2C5922F5E52800D4CC0C /* SettingsViewController.swift in Sources */,
 				95E2165A22E80953001B4703 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

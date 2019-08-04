@@ -8,34 +8,67 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class GameViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
+    var removeFlippedCardsTask: DispatchWorkItem!
     
-    // too high values will trigger a fatal error due to spacing between cells becoming larger than screen
-    // exemple on iPhone XS, limit is around 60x30 (values already unplayable anyway)
-    let cardsLongNumber = 4
-    let cardsShortNumber = 3
+    // too high values will have spacing between cells becoming larger than screen
+    // exemple on iPhone XS, limit is around 60x30 (values unplayable anyway)
+    let cardsLongNumber = 3
+    let cardsShortNumber = 4
+    
+    let cardsDirectory = "Cards.bundle/"
+    let currentCards = "Blocks"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Match Pairs"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New game", style: .plain, target: self, action: #selector(newGame))
+
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settings))
+
+        // some iPads don't automatically refresh the collection view when rotated
+        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
+        
+        newGame()
+    }
+
+    @objc func newGame() {
         guard (cardsLongNumber * cardsShortNumber) % 2 == 0 else {
             fatalError("Odd number of cards")
         }
+
+        cards = [Card]()
+        resetFlippedCards()
         
-        // some ipad don't automatically refresh the collection view when rotated
-        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
+        loadCards()
 
-        buildCards()
+        collectionView.reloadData()
     }
+    
+    func resetFlippedCards() {
+        removeFlippedCardsTask?.cancel()
 
-    func buildCards() {
+        removeFlippedCardsTask = DispatchWorkItem { [weak self] in
+            self?.flippedCards.removeAll(keepingCapacity: true)
+        }
+
+        flippedCards.removeAll(keepingCapacity: true)
+    }
+    
+//    @objc func settings() {
+//
+//    }
+    
+    func loadCards() {
         var backImage: String? = nil
         var frontImages = [String]()
         
-        let urls = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: "Cards.bundle/Characters")!
+        let urls = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: cardsDirectory + currentCards)!
         for url in urls {
             if url.lastPathComponent.starts(with: "back.") {
                 backImage = url.path
@@ -80,39 +113,36 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
         cell.set(card: cards[indexPath.row])
 
-        return dequeuedCell
+        return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
 
         guard flippedCards.count < 2 else { return }
-        guard cards[indexPath.row].visibleSide == .back else { return }
+        guard cards[indexPath.row].state == .back else { return }
 
+        cards[indexPath.row].state = .front
+        cell.animateFlipTo(state: .front)
         flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
-        cards[indexPath.row].visibleSide = .front
-        cell.flipTo(side: .front)
-
+        
         if flippedCards.count == 2 {
             if flippedCards[0].card.frontImage == flippedCards[1].card.frontImage {
-                matchedCards()
+                matchingCards()
             }
             else {
-                unmatchedCards()
+                unmatchingCards()
             }
         }
     }
     
-    func matchedCards() {
+    func matchingCards() {
         for (position, card) in flippedCards {
-            card.visibleSide = .matched
+            card.state = .matched
 
             let indexPath = IndexPath(item: position, section: 0);
             if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
-                // wait for flip animatiom to complete
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    cell.animateFound()
-                }
+                cell.animateMatch()
             }
         }
         flippedCards.removeAll(keepingCapacity: true)
@@ -122,55 +152,47 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     func checkCompletion() {
         for card in cards {
-            if card.visibleSide != .matched && card.visibleSide != .complete {
+            if card.state != .matched && card.state != .complete {
                 return
             }
         }
         
         // all cards complete
         for card in cards {
-            card.visibleSide = .complete
+            card.state = .complete
         }
         
         animateCompletion()
     }
     
     func animateCompletion() {
-        // work on background thread to allow sleeping
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) { [weak self] in
-            guard self != nil else { return }
-            
-            for i in 0..<self!.cards.count {
-                // 100ms sleep to start each animation with a delay
-                usleep(100000)
-                
-                DispatchQueue.main.async {
-                    let indexPath = IndexPath(item: i, section: 0);
-                    if let cell = self!.collectionView.cellForItem(at: indexPath) as? CardCell {
-                        cell.animateCompletion()
-                    }
-                }
+        var delay: TimeInterval = 0
+
+        for i in 0..<cards.count {
+            let indexPath = IndexPath(item: i, section: 0);
+            if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
+                cell.animateCompleteGame(delay: delay)
             }
+
+            // 50ms to start animating each card with a delay
+            delay += 0.05
         }
     }
     
-    func unmatchedCards() {
-        // give the player 1 second to look at the cards
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            guard self != nil else { return }
-            
-            for (position, card) in self!.flippedCards {
-                if card.visibleSide == .front {
-                    card.visibleSide = .back
-                    
-                    let indexPath = IndexPath(item: position, section: 0);
-                    if let cell = self?.collectionView.cellForItem(at: indexPath) as? CardCell {
-                        cell.flipTo(side: .back)
-                    }
+    func unmatchingCards() {
+        for (position, card) in flippedCards {
+            if card.state == .front {
+                card.state = .back
+                
+                let indexPath = IndexPath(item: position, section: 0);
+                if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
+                    // give the player 1 second to look at the cards
+                    cell.animateFlipTo(state: .back, delay: 1)
                 }
             }
-            self!.flippedCards.removeAll(keepingCapacity: true)
         }
+        // wait for card to turn back before allowing the player to select another one
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: removeFlippedCardsTask)
     }
     
     func didRotate(_: Notification) -> Void {
@@ -185,21 +207,17 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let width = collectionView.frame.size.width
         let height = collectionView.frame.size.height
 
+        let layoutMargins = collectionView.layoutMargins
+        let leftRightMargin = layoutMargins.left + layoutMargins.right
+        let topBottomMargin = layoutMargins.top + layoutMargins.bottom
+        
         let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         let minInterimSpacing = layout?.minimumInteritemSpacing ?? 0
         let minLineSpacing = layout?.minimumLineSpacing ?? 0
         
-        let insets = collectionView.adjustedContentInset
-        let leftRightInsets = insets.left + insets.right
-        let topBottomInsets = insets.top + insets.bottom
-        
-        let layoutMargins = collectionView.layoutMargins
-        let leftRightMargin = layoutMargins.left + layoutMargins.right
-        let topBottomMargin = CGFloat(0) // no need for layoutMargins.top + layoutMargins.bottom
-
         var widthCardNumber: CGFloat
         var heightCardNumber: CGFloat
-        
+
         // portrait
         if height > width {
             widthCardNumber = CGFloat(cardsShortNumber)
@@ -211,8 +229,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             heightCardNumber = CGFloat(cardsShortNumber)
         }
         
-        let availableWidth = width - leftRightMargin - leftRightInsets - minInterimSpacing * (widthCardNumber - 1)
-        let availableHeight = height - topBottomMargin - topBottomInsets - minLineSpacing * (heightCardNumber - 1)
+        let availableWidth = width - leftRightMargin - minInterimSpacing * (widthCardNumber - 1)
+        let availableHeight = height - topBottomMargin - minLineSpacing * (heightCardNumber - 1)
         
         guard availableWidth > widthCardNumber && availableHeight > heightCardNumber else {
             fatalError("Too many cards to display")

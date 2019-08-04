@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CardSide {
+enum CardState {
     case front
     case back
     case matched
@@ -16,7 +16,7 @@ enum CardSide {
 }
 
 class Card {
-    var visibleSide: CardSide = .back
+    var state: CardState = .back
     
     var backImage: String
     var frontImage: String

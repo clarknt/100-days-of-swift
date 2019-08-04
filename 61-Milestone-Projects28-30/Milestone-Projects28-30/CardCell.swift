@@ -11,61 +11,113 @@ import UIKit
 class CardCell: UICollectionViewCell {
     var front: UIImageView!
     var back: UIImageView!
-    var container: UIView!
     
     var card: Card?
     
-    fileprivate var hideAnimationComplete = true
-    fileprivate var showAnimationComplete = true
-    fileprivate var animationComplete: Bool {
-        return hideAnimationComplete && showAnimationComplete
-    }
-
-    fileprivate var flipQueue = [CardSide]()
+    fileprivate let flipDuration = 0.3
+    fileprivate let matchDuration = 2.0
+    fileprivate let completeDuration = 2.0
+    
+    fileprivate var animateFlipToTask: DispatchWorkItem?
+    fileprivate var animateMatchTask: DispatchWorkItem?
+    fileprivate var animateCompleteGameTask: DispatchWorkItem?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        buildCard()
+        build()
     }
     
-    func buildCard() {
+    func set(card: Card) {
+        self.card = card
+        front.image = UIImage(named: card.frontImage)
+        back.image = UIImage(named: card.backImage)
+        reset(state: card.state)
+    }
+
+    func animateFlipTo(state: CardState, delay: TimeInterval = 0) {
+        guard state == .front || state == .back else { fatalError("Can only flip to front or back") }
+        
+        animateFlipToTask = DispatchWorkItem { [weak self] in
+            let duration = self?.flipDuration ?? 0
+            self?.animateFlipTo(state: state, duration: duration)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: animateFlipToTask!)
+    }
+    
+    func animateMatch() {
+        animateMatchTask = DispatchWorkItem {
+            [weak self] in
+            guard let matchDuration = self?.matchDuration else { return }
+
+            UIView.animate(withDuration: matchDuration, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
+                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            })
+        }
+        // wait for the flip completion, either from this card or the other card
+        DispatchQueue.main.asyncAfter(deadline: .now() + flipDuration, execute: animateMatchTask!)
+    }
+    
+    func animateCompleteGame(delay: TimeInterval = 0) {
+        // wait for the flip and part of match completion, either from this card or the other cards
+        let totalDelay = flipDuration + matchDuration / 2 + delay
+        
+        animateCompleteGameTask = DispatchWorkItem {
+            [weak self] in
+            guard let completeDuration = self?.completeDuration else { return }
+            
+            UIView.animate(withDuration: completeDuration, delay: delay, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
+                self?.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + totalDelay, execute: animateCompleteGameTask!)
+    }
+    
+    // use invalidateLayout() after rotation to force recomputing cell size
+    override func layoutSubviews() {
+        //super.layoutSubviews()
+        resize()
+    }
+    
+    // MARK:- Private functions
+    
+    fileprivate func build() {
         let size = frame.size
-        container = UIView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         
         front = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         front.contentMode = .scaleAspectFit
-        front.backgroundColor = .white
+        front.isHidden = true
         
         back = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         back.contentMode = .scaleAspectFit
-        back.backgroundColor = .white
-
-        // put back view in front
-        let backTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 0, 0.1)
-        back.layer.transform = backTransform
         
-        // and front view in back
-        let frontTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 0, -0.1)
-        front.layer.transform = frontTransform
-        // flip view as it will be seen from behind
-        front.transform = CGAffineTransform(scaleX: -1, y: 1)
-        
-        container.addSubview(back)
-        container.addSubview(front)
-
-        addSubview(container)
+        addSubview(front)
+        addSubview(back)
     }
     
-    override func layoutSubviews() {
-        resizeCard()
-        super.layoutSubviews()
-    }
-    
-    func resizeCard() {
-        let size = frame.size
-        if !__CGSizeEqualToSize(container!.frame.size, size) {
-            container.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+    fileprivate func reset(state: CardState) {
+        // cells are reused by the collection view, make sure to clean everything
+        cancelAnimations()
+
+        // reset card position
+        switch state {
+        case .back:
+            animateFlipTo(state: .back, duration: 0)
+            transform = CGAffineTransform(scaleX: 1, y: 1)
+        case .front:
+            animateFlipTo(state: .front, duration: 0)
+            transform = CGAffineTransform(scaleX: 1, y: 1)
+        case .matched:
+            animateFlipTo(state: .front, duration: 0)
+//            transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        case .complete:
+            animateFlipTo(state: .front, duration: 0)
+            transform = CGAffineTransform(scaleX: 1, y: 1)
         }
+    }
+    
+    fileprivate func resize() {
+        let size = frame.size
+
         if !__CGSizeEqualToSize(front!.frame.size, size) {
             front.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         }
@@ -75,133 +127,46 @@ class CardCell: UICollectionViewCell {
         
         // reapply visible face and / or scaling
         if let card = card {
-            set(side: card.visibleSide)
+            reset(state: card.state)
         }
     }
     
-    fileprivate func set(side: CardSide) {
-        switch side {
-        case .back:
-            flipToNotAnimated(side: .back)
-        case .front:
-            flipToNotAnimated(side: .front)
-        case .matched:
-            flipToNotAnimated(side: .front)
-            DispatchQueue.main.async { [weak self] in
-                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-            }
-        case .complete:
-            flipToNotAnimated(side: .front)
-        }
-    }
-    
-    fileprivate func flipToNotAnimated(side: CardSide) {
-        if side == .front {
-            guard getFacingSide() == .back else { return }
-        }
-        if side == .back {
-            guard getFacingSide() == .front else { return }
-        }
-
-        let initialAngle = side == .front ? 0 : CGFloat.pi
-        let angle = initialAngle + CGFloat.pi
-
-        var transform = CATransform3DIdentity
-        transform.m34 = -1 / 500
-        transform = CATransform3DRotate(transform, angle, 0, 1, 0)
-        container.layer.sublayerTransform = transform
-    }
-    
-    func set(card: Card) {
-        front.image = UIImage(named: card.frontImage)
-        back.image = UIImage(named: card.backImage)
-        self.card = card
-    }
+    fileprivate func cancelAnimations() {
+        layer.removeAllAnimations()
+        front.layer.removeAllAnimations()
+        back.layer.removeAllAnimations()
         
-    func animateFound() {
-        // make sure card is facing front
-        flipToNotAnimated(side: .front)
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: { [weak self] in
-            self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-        })
+        // cancel timers that will trigger animations
+        animateFlipToTask?.cancel()
+        animateMatchTask?.cancel()
+        animateCompleteGameTask?.cancel()
     }
     
-    func animateCompletion() {
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: { [weak self] in
-            self?.transform = CGAffineTransform(scaleX: 1, y: 1)
-        })
-    }
-    
-    func flipTo(side: CardSide) {
-        if animationComplete {
-            triggerFlipAnimation(side: side)
+    fileprivate func animateFlipTo(state: CardState, duration: Double, completionHandler: (() -> ())? = nil) {
+        let from: UIView, to: UIView
+        let transition: AnimationOptions
+        
+        if state == .front {
+            guard getFacingSide() == .back else { return }
+            from = back
+            to = front
+            transition = .transitionFlipFromRight
         }
         else {
-            flipQueue.append(side)
-        }
-    }
-    
-    fileprivate func triggerFlipAnimation(side: CardSide) {
-        if side == .front {
-            guard getFacingSide() == .back else { return }
-        }
-        if side == .back {
             guard getFacingSide() == .front else { return }
+            from = front
+            to = back
+            transition = .transitionFlipFromLeft
         }
         
-        hideAnimationComplete = false
-        showAnimationComplete = false
-
-        let initialAngle = side == .front ? 0 : CGFloat.pi
+        UIView.transition(from: from, to: to, duration: duration, options: [transition, .showHideTransitionViews])
+    }
+    
+    fileprivate func getFacingSide() -> CardState {
+        if back.isHidden {
+            return .front
+        }
         
-        animateFlip(duration: 0.3, initialAngle: initialAngle) { [weak self] in
-            self?.hideAnimationComplete = true
-            self?.showAnimationComplete = true
-        }
-    }
-
-    fileprivate func getFacingSide() -> CardSide {
-        // m11, m33 in the transformation matrix should be 1, 1 when back is facing, -1, -1 when front is facing
-        if container.layer.sublayerTransform.m11 > 0 && container.layer.sublayerTransform.m33 > 0 {
-            return .back
-        }
-        return .front
-    }
-    
-    fileprivate func animateFlip(duration: Double, initialAngle: CGFloat = 0, completionHandler: (() -> ())?) {
-        let fps: Double = 30
-
-        // UIView animation is not working with sublayerTransform: animate manually
-        DispatchQueue.global().async { [weak self] in
-            let loops = Int(fps * duration)
-
-            for i in 1...loops {
-                usleep(useconds_t(1000000 / fps))
-                
-                var angle = initialAngle + CGFloat.pi * CGFloat(i) / CGFloat(loops)
-
-                // make sure exact .pi is reached
-                if i == loops {
-                    angle = initialAngle + CGFloat.pi
-                }
-                
-                var transform = CATransform3DIdentity
-                transform.m34 = -1 / 500
-                transform = CATransform3DRotate(transform, angle, 0, 1, 0)
-                DispatchQueue.main.async {
-                    self?.container.layer.sublayerTransform = transform
-                }
-            }
-            
-            completionHandler?()
-        }
-    }
-    
-    fileprivate func checkFlipQueue() {
-        if animationComplete && !flipQueue.isEmpty {
-            let side = flipQueue[0]
-            flipQueue.remove(at: 0)
-            triggerFlipAnimation(side: side)
-        }
+        return .back
     }
 }
