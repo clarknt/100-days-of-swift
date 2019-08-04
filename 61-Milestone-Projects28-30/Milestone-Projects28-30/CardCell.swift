@@ -98,20 +98,28 @@ class CardCell: UICollectionViewCell {
         // cells are reused by the collection view, make sure to clean everything
         cancelAnimations()
 
+        var flipTarget: CardState
+        var scaleFactor: CGFloat
+        
         // reset card position
         switch state {
         case .back:
-            animateFlipTo(state: .back, duration: 0)
-            transform = CGAffineTransform(scaleX: 1, y: 1)
+            flipTarget = .back
+            scaleFactor = 1
         case .front:
-            animateFlipTo(state: .front, duration: 0)
-            transform = CGAffineTransform(scaleX: 1, y: 1)
+            flipTarget = .front
+            scaleFactor = 1
         case .matched:
-            animateFlipTo(state: .front, duration: 0)
-//            transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            flipTarget = .front
+            scaleFactor = 0.6
         case .complete:
-            animateFlipTo(state: .front, duration: 0)
-            transform = CGAffineTransform(scaleX: 1, y: 1)
+            flipTarget = .front
+            scaleFactor = 1
+        }
+
+        animateFlipTo(state: flipTarget, duration: 0)
+        DispatchQueue.main.async { [weak self] in
+            self?.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
         }
     }
     

@@ -13,14 +13,46 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
     var removeFlippedCardsTask: DispatchWorkItem!
+    var backImageSize: CGSize!
+    var cardSize: CardSize!
     
-    // too high values will have spacing between cells becoming larger than screen
-    // exemple on iPhone XS, limit is around 60x30 (values unplayable anyway)
-    let cardsLongNumber = 4
-    let cardsShortNumber = 3
+    var combinations = [
+        (1, 4),  (2, 2),  //   4
+        (1, 6),  (2, 3),  //   6
+        (1, 8),  (2, 4),  //   8
+        (1, 10), (2, 5),  //  10
+        (2, 6),  (3, 4),  //  12
+        (2, 7),           //  14
+        (2, 8),  (4, 4),  //  16
+        (2, 9),  (3, 6),  //  18
+        (2, 10), (4, 5),  //  20
+        (3, 8),  (4, 6),  //  24
+        (4, 7),           //  28
+        (3, 10), (6, 5),  //  30
+        (4, 8),           //  32
+        (4, 9),  (6, 6),  //  36
+        (4, 10), (5, 8),  //  40
+        (6, 7),           //  42
+        (6, 8),           //  48
+        (5, 10),          //  50
+        (6, 9),  (7, 8),  //  54
+        (6, 10),          //  60
+        (8, 8),           //  64
+        (7, 10),          //  70
+        (8, 9),           //  72
+        (8, 10),          //  80
+        (9, 10),          //  90
+        (10, 10)          // 100
+    ]
+    var currentCombination = 0
+    
+    var gridSide1 = 3
+    var gridSide2 = 4
     
     let cardsDirectory = "Cards.bundle/"
-    let currentCards = "Blocks"
+    var currentCards = "LastGuardian"
+
+//    var combinationButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +61,23 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New game", style: .plain, target: self, action: #selector(newGame))
 
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settings))
+//        combinationButtonItem = UIBarButtonItem(title: "\(gridSide1), \(gridSide2)", style: .plain, target: self, action: #selector(settings))
+//        navigationItem.rightBarButtonItem = combinationButtonItem
 
         // some iPads don't automatically refresh the collection view when rotated
         NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
+        
+        // values will be overriden later
+        cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: gridSide1, gridSide2: gridSide2)
         
         newGame()
     }
 
     @objc func newGame() {
-        guard (cardsLongNumber * cardsShortNumber) % 2 == 0 else {
+        guard (gridSide1 * gridSide2) % 2 == 0 else {
             fatalError("Odd number of cards")
         }
-
+        
         cards = [Card]()
         resetFlippedCards()
         
@@ -61,7 +97,17 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
 //    @objc func settings() {
+//        currentCombination += 1
+//        if currentCombination >= combinations.count {
+//            currentCombination = 0
+//        }
 //
+//        (gridSide1, gridSide2) = combinations[currentCombination]
+//        combinationButtonItem.title = "\(gridSide1), \(gridSide2)"
+//        cardSize.gridSide1 = gridSide1
+//        cardSize.gridSide2 = gridSide2
+//
+//        newGame()
 //    }
     
     func loadCards() {
@@ -69,6 +115,7 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         var frontImages = [String]()
         
         let urls = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: cardsDirectory + currentCards)!
+        
         for url in urls {
             if url.lastPathComponent.starts(with: "back.") {
                 backImage = url.path
@@ -78,10 +125,12 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
             }
         }
         
-        // no back card image found
+        // get image size
         guard backImage != nil else { fatalError("No back image found") }
+        guard let size = UIImage(named: backImage!)?.size else { fatalError("Cannot get image size") }
+        cardSize.imageSize = size
 
-        let cardsNumber = cardsLongNumber * cardsShortNumber
+        let cardsNumber = gridSide1 * gridSide2
         
         // more images than required grid
         while frontImages.count > cardsNumber / 2 {
@@ -200,45 +249,6 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return getCardSize(collectionView: collectionView)
-    }
-    
-    func getCardSize(collectionView: UICollectionView) -> CGSize {
-        let width = collectionView.frame.size.width
-        let height = collectionView.frame.size.height
-
-        let layoutMargins = collectionView.layoutMargins
-        let leftRightMargin = layoutMargins.left + layoutMargins.right
-        let topBottomMargin = layoutMargins.top + layoutMargins.bottom
-        
-        let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        let minInterimSpacing = layout?.minimumInteritemSpacing ?? 0
-        let minLineSpacing = layout?.minimumLineSpacing ?? 0
-        
-        var widthCardNumber: CGFloat
-        var heightCardNumber: CGFloat
-
-        // portrait
-        if height > width {
-            widthCardNumber = CGFloat(cardsShortNumber)
-            heightCardNumber = CGFloat(cardsLongNumber)
-        }
-        // landscape
-        else {
-            widthCardNumber = CGFloat(cardsLongNumber)
-            heightCardNumber = CGFloat(cardsShortNumber)
-        }
-        
-        let availableWidth = width - leftRightMargin - minInterimSpacing * (widthCardNumber - 1)
-        let availableHeight = height - topBottomMargin - minLineSpacing * (heightCardNumber - 1)
-        
-        guard availableWidth > widthCardNumber && availableHeight > heightCardNumber else {
-            fatalError("Too many cards to display")
-        }
-        
-        let cardWidth = availableWidth / widthCardNumber
-        let cardHeight = availableHeight / heightCardNumber
-
-        return CGSize(width: cardWidth, height: cardHeight)
+        return cardSize.getCardSize(collectionView: collectionView)
     }
 }

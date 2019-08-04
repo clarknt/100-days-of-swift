@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95C434F422F3669A00E0A92E /* Cards.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95C434F322F3669A00E0A92E /* Cards.bundle */; };
+		95D8BEC322F769B200268F7F /* CardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D8BEC222F769B200268F7F /* CardSize.swift */; };
 		95E2165822E80258001B4703 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2165722E80258001B4703 /* CardCell.swift */; };
 		95E2165A22E80953001B4703 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2165922E80953001B4703 /* Card.swift */; };
 		95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECED3822E79C26001E70BE /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		95C434F322F3669A00E0A92E /* Cards.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cards.bundle; sourceTree = "<group>"; };
+		95D8BEC222F769B200268F7F /* CardSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSize.swift; sourceTree = "<group>"; };
 		95E2165722E80258001B4703 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		95E2165922E80953001B4703 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		95ECED3522E79C26001E70BE /* Milestone-Projects28-30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Projects28-30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 				95ECED3822E79C26001E70BE /* AppDelegate.swift */,
 				95E2165922E80953001B4703 /* Card.swift */,
 				95E2165722E80258001B4703 /* CardCell.swift */,
+				95D8BEC222F769B200268F7F /* CardSize.swift */,
 				95ECED3A22E79C26001E70BE /* GameViewController.swift */,
 				95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */,
 				95ECED3C22E79C26001E70BE /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D8BEC322F769B200268F7F /* CardSize.swift in Sources */,
 				95ECED3B22E79C26001E70BE /* GameViewController.swift in Sources */,
 				95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */,
 				95E2165822E80258001B4703 /* CardCell.swift in Sources */,
