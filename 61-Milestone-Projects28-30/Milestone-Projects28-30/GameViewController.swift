@@ -25,6 +25,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var currentCardSizeValid = false
     var currentCardSize: CGSize!
     
+    var previousWindowBounds: CGRect?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +36,6 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsTapped))
 
-        // some iPads don't automatically refresh the collection view when rotated
-        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
-        
         let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
         // values will be overriden later
         cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: n1, gridSide2: n2)
@@ -44,6 +43,24 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         newGame()
     }
     
+    // monitor actual window size change, occuring when rotating device
+    // but also when using split view on ipad
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        // avoid an infinite loop by making sure there was an actual change in size
+        if let currentBounds = view.window?.bounds {
+            if let previousBounds = previousWindowBounds {
+                if currentBounds != previousBounds {
+                    currentCardSizeValid = false
+                    collectionView?.collectionViewLayout.invalidateLayout()
+                }
+            }
+        }
+        
+        previousWindowBounds = view.window?.bounds
+    }
+
     @objc func newGame() {
         let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
 
@@ -216,11 +233,6 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         }
         // wait for card to turn back before allowing the player to select another one
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: removeFlippedCardsTask)
-    }
-    
-    func didRotate(_: Notification) -> Void {
-        currentCardSizeValid = false
-        collectionView.collectionViewLayout.invalidateLayout()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
