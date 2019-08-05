@@ -12,6 +12,7 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
     var removeFlippedCardsTask: DispatchWorkItem!
+    
     var backImageSize: CGSize!
     var cardSize: CardSize!
     
@@ -26,6 +27,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var currentCardSize: CGSize!
     
     var previousWindowBounds: CGRect?
+    
+    var animateCompleteGameTask: DispatchWorkItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +76,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         cards = [Card]()
         resetFlippedCards()
+        
+        animateCompleteGameTask?.cancel()
         
         loadCards()
 
@@ -206,17 +211,26 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func animateCompletion() {
-        var delay: TimeInterval = 0
+        animateCompleteGameTask = DispatchWorkItem { [weak self] in
+            var delay: TimeInterval = 0
 
-        for i in 0..<cards.count {
-            let indexPath = IndexPath(item: i, section: 0);
-            if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
-                cell.animateCompleteGame(delay: delay)
+            guard let count = self?.cards.count else { return }
+            
+            for i in 0..<count {
+                let indexPath = IndexPath(item: i, section: 0);
+                if let cell = self?.collectionView.cellForItem(at: indexPath) as? CardCell {
+                    cell.animateCompleteGame(delay: delay)
+                }
+                
+                // 50ms to start animating each card with a delay
+                delay += 0.05
             }
-
-            // 50ms to start animating each card with a delay
-            delay += 0.05
         }
+        
+        // this delay was originally in CardCell like the delay for the other animations,
+        // but it resulted in not fluid annimation (group of cards being animated together
+        // instead of a fixed delay between each one)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: animateCompleteGameTask!)
     }
     
     func unmatchingCards() {

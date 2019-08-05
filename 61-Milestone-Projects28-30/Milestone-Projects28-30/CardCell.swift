@@ -59,18 +59,9 @@ class CardCell: UICollectionViewCell {
     }
     
     func animateCompleteGame(delay: TimeInterval = 0) {
-        // wait for the flip and part of match completion, either from this card or the other cards
-        let totalDelay = flipDuration + matchDuration / 2 + delay
-        
-        animateCompleteGameTask = DispatchWorkItem {
-            [weak self] in
-            guard let completeDuration = self?.completeDuration else { return }
-            
-            UIView.animate(withDuration: completeDuration, delay: delay, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
-                self?.transform = CGAffineTransform(scaleX: 1, y: 1)
-            })
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + totalDelay, execute: animateCompleteGameTask!)
+        UIView.animate(withDuration: completeDuration, delay: delay, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: { [weak self] in
+            self?.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
     }
     
     // use invalidateLayout() after rotation to force recomputing cell size
