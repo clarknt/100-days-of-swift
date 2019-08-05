@@ -8,23 +8,131 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+protocol SettingsDelegate {
+    func settings(_ settings: SettingsViewController, didUpdateCards cards: String)
+    
+    func settings(_ settings: SettingsViewController, didUpdateGrid grid: Int, didUpdateGridElement gridElement: Int)
+}
 
+class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    var cards: [String]!
+    var grids: Grids!
+    
+    let cardsDirectory = "Cards.bundle/"
+
+    var delegate: SettingsDelegate?
+
+    var currentCards: String!
+    var currentGrid: Int!
+    var currentGridElement: Int!
+
+    @IBOutlet weak var cardsTable: UITableView!
+    @IBOutlet weak var gridSizeTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard isParametersSet() else { fatalError("Parameters not provided") }
+
+        navigationItem.largeTitleDisplayMode = .never
+        title = "Settings"
+
+        loadCards()
+        
+        cardsTable.delegate = self
+        cardsTable.dataSource = self
+        selectCurrentCard()
+        
+        grids = Grids()
+        
+        gridSizeTable.delegate = self
+        gridSizeTable.dataSource = self
+        selectCurrentGrid()
+    }
+
+    func loadCards() {
+        let urls = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: cardsDirectory)!
+        
+        cards = [String]()
+        
+        for url in urls {
+            cards.append(url.lastPathComponent)
+        }
+        
+        cards.sort()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func selectCurrentCard() {
+        guard let index = cards.firstIndex(of: currentCards) else { return }
+        let indexPath = IndexPath(row: index, section: 0)
+        cardsTable.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+        cardsTable.scrollToRow(at: indexPath, at: .middle, animated: true)
     }
-    */
+    
+    func selectCurrentGrid() {
+        let indexPath = IndexPath(row: currentGridElement, section: currentGrid)
+        gridSizeTable.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+        gridSizeTable.scrollToRow(at: indexPath, at: .middle, animated: true)
+    }
+    
+    func setParameters(currentCards: String, currentGrid: Int, currentGridElement: Int) {
+        self.currentCards = currentCards
+        self.currentGrid = currentGrid
+        self.currentGridElement = currentGridElement
+    }
 
+    func isParametersSet() -> Bool {
+        return currentCards != nil && currentGrid != nil && currentGridElement != nil
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if tableView == cardsTable {
+            return 1
+        }
+
+        return grids.grids.count
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView == cardsTable {
+            return ""
+        }
+
+        return "Cards: \(grids.grids[section].numberOfElements)"
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == cardsTable {
+            return cards.count
+        }
+
+        return grids.grids[section].combinations.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == cardsTable {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            
+            cell.textLabel?.text = cards[indexPath.row]
+            
+            return cell
+        }
+
+        let (n1, n2) = grids.grids[indexPath.section].combinations[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = "\(n1) x \(n2)"
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == cardsTable {
+            delegate?.settings(self, didUpdateCards: cards[indexPath.row])
+        }
+        else {
+            delegate?.settings(self, didUpdateGrid: indexPath.section, didUpdateGridElement: indexPath.row)
+        }
+    }
 }

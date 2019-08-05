@@ -8,51 +8,22 @@
 
 import UIKit
 
-class GameViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
+class GameViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, SettingsDelegate {
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
     var removeFlippedCardsTask: DispatchWorkItem!
     var backImageSize: CGSize!
     var cardSize: CardSize!
     
-    var combinations = [
-        (1, 4),  (2, 2),  //   4
-        (1, 6),  (2, 3),  //   6
-        (1, 8),  (2, 4),  //   8
-        (1, 10), (2, 5),  //  10
-        (2, 6),  (3, 4),  //  12
-        (2, 7),           //  14
-        (2, 8),  (4, 4),  //  16
-        (2, 9),  (3, 6),  //  18
-        (2, 10), (4, 5),  //  20
-        (3, 8),  (4, 6),  //  24
-        (4, 7),           //  28
-        (3, 10), (6, 5),  //  30
-        (4, 8),           //  32
-        (4, 9),  (6, 6),  //  36
-        (4, 10), (5, 8),  //  40
-        (6, 7),           //  42
-        (6, 8),           //  48
-        (5, 10),          //  50
-        (6, 9),  (7, 8),  //  54
-        (6, 10),          //  60
-        (8, 8),           //  64
-        (7, 10),          //  70
-        (8, 9),           //  72
-        (8, 10),          //  80
-        (9, 10),          //  90
-        (10, 10)          // 100
-    ]
-    var currentCombination = 0
-    
-    var gridSide1 = 3
-    var gridSide2 = 4
+    var grids = Grids()
+    var currentGrid = 4
+    var currentGridElement = 1
     
     let cardsDirectory = "Cards.bundle/"
     var currentCards = "LastGuardian"
 
-//    var combinationButtonItem: UIBarButtonItem!
+    var currentCardSizeValid = false
+    var currentCardSize: CGSize!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,28 +32,34 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New game", style: .plain, target: self, action: #selector(newGame))
 
-//        combinationButtonItem = UIBarButtonItem(title: "\(gridSide1), \(gridSide2)", style: .plain, target: self, action: #selector(settings))
-//        navigationItem.rightBarButtonItem = combinationButtonItem
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsTapped))
 
         // some iPads don't automatically refresh the collection view when rotated
         NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main, using: didRotate)
         
+        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
         // values will be overriden later
-        cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: gridSide1, gridSide2: gridSide2)
+        cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: n1, gridSide2: n2)
         
         newGame()
     }
-
+    
     @objc func newGame() {
-        guard (gridSide1 * gridSide2) % 2 == 0 else {
+        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
+
+        guard (n1 * n2) % 2 == 0 else {
             fatalError("Odd number of cards")
         }
         
+        cardSize.gridSide1 = n1
+        cardSize.gridSide2 = n2
+
         cards = [Card]()
         resetFlippedCards()
         
         loadCards()
 
+        currentCardSizeValid = false
         collectionView.reloadData()
     }
     
@@ -96,28 +73,24 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         flippedCards.removeAll(keepingCapacity: true)
     }
     
-//    @objc func settings() {
-//        currentCombination += 1
-//        if currentCombination >= combinations.count {
-//            currentCombination = 0
-//        }
-//
-//        (gridSide1, gridSide2) = combinations[currentCombination]
-//        combinationButtonItem.title = "\(gridSide1), \(gridSide2)"
-//        cardSize.gridSide1 = gridSide1
-//        cardSize.gridSide2 = gridSide2
-//
-//        newGame()
-//    }
+    @objc func settingsTapped() {
+        if let settings = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController {
+            settings.setParameters(currentCards: currentCards, currentGrid: currentGrid, currentGridElement: currentGridElement)
+            settings.delegate = self
+            navigationController?.pushViewController(settings, animated: true)
+        }
+    }
     
     func loadCards() {
         var backImage: String? = nil
         var frontImages = [String]()
-        
+
         let urls = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: cardsDirectory + currentCards)!
         
         for url in urls {
-            if url.lastPathComponent.starts(with: "back.") {
+            // convention: unique names to avoid caching issue
+            // and starting with 1 for sorting
+            if url.lastPathComponent.starts(with: "1\(currentCards)_back.") {
                 backImage = url.path
             }
             else {
@@ -130,7 +103,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         guard let size = UIImage(named: backImage!)?.size else { fatalError("Cannot get image size") }
         cardSize.imageSize = size
 
-        let cardsNumber = gridSide1 * gridSide2
+        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
+        let cardsNumber = n1 * n2
         
         // more images than required grid
         while frontImages.count > cardsNumber / 2 {
@@ -245,10 +219,28 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func didRotate(_: Notification) -> Void {
+        currentCardSizeValid = false
         collectionView.collectionViewLayout.invalidateLayout()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return cardSize.getCardSize(collectionView: collectionView)
+        if currentCardSizeValid {
+            return currentCardSize
+        }
+        
+        currentCardSize = cardSize.getCardSize(collectionView: collectionView)
+        currentCardSizeValid = true
+        return currentCardSize
+    }
+    
+    func settings(_ settings: SettingsViewController, didUpdateCards cards: String) {
+        currentCards = cards
+        newGame()
+    }
+    
+    func settings(_ settings: SettingsViewController, didUpdateGrid grid: Int, didUpdateGridElement gridElement: Int) {
+        currentGrid = grid
+        currentGridElement = gridElement
+        newGame()
     }
 }

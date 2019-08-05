@@ -31,6 +31,7 @@ class CardCell: UICollectionViewCell {
         self.card = card
         front.image = UIImage(named: card.frontImage)
         back.image = UIImage(named: card.backImage)
+
         reset(state: card.state)
     }
 
