@@ -20,7 +20,7 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var currentGridElement = 1
     
     let cardsDirectory = "Cards.bundle/"
-    var currentCards = "LastGuardian"
+    var currentCards = "Characters"
 
     var currentCardSizeValid = false
     var currentCardSize: CGSize!
