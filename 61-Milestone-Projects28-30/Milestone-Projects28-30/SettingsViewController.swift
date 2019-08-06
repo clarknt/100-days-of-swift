@@ -16,7 +16,6 @@ protocol SettingsDelegate {
 
 class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var cards: [String]!
-    var grids: Grids!
     
     let cardsDirectory = "Cards.bundle/"
 
@@ -42,8 +41,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         cardsTable.delegate = self
         cardsTable.dataSource = self
         selectCurrentCard()
-        
-        grids = Grids()
         
         gridSizeTable.delegate = self
         gridSizeTable.dataSource = self
@@ -90,7 +87,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return 1
         }
 
-        return grids.grids.count
+        return grids.count
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -98,7 +95,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return ""
         }
 
-        return "Cards: \(grids.grids[section].numberOfElements)"
+        return "Cards: \(grids[section].numberOfElements)"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,7 +103,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return cards.count
         }
 
-        return grids.grids[section].combinations.count
+        return grids[section].combinations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -118,11 +115,11 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return cell
         }
 
-        let (n1, n2) = grids.grids[indexPath.section].combinations[indexPath.row]
+        let (gridSide1, gridSide2) = grids[indexPath.section].combinations[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = "\(n1) x \(n2)"
+        cell.textLabel?.text = "\(gridSide1) x \(gridSide2)"
         
         return cell
     }

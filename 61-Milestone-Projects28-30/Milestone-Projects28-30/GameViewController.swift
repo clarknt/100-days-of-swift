@@ -16,7 +16,6 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var backImageSize: CGSize!
     var cardSize: CardSize!
     
-    var grids = Grids()
     var currentGrid = 4
     var currentGridElement = 1
     
@@ -39,9 +38,9 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsTapped))
 
-        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
-        // values will be overriden later
-        cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: n1, gridSide2: n2)
+        let (gridSide1, gridSide2) = grids[currentGrid].combinations[currentGridElement]
+        // loading default values, they will be overriden later
+        cardSize = CardSize(imageSize: CGSize(width: 50, height: 50), gridSide1: gridSide1, gridSide2: gridSide2)
         
         newGame()
     }
@@ -65,14 +64,14 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
 
     @objc func newGame() {
-        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
+        let (gridSide1, gridSide2) = grids[currentGrid].combinations[currentGridElement]
 
-        guard (n1 * n2) % 2 == 0 else {
+        guard (gridSide1 * gridSide2) % 2 == 0 else {
             fatalError("Odd number of cards")
         }
         
-        cardSize.gridSide1 = n1
-        cardSize.gridSide2 = n2
+        cardSize.gridSide1 = gridSide1
+        cardSize.gridSide2 = gridSide2
 
         cards = [Card]()
         resetFlippedCards()
@@ -125,8 +124,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         guard let size = UIImage(named: backImage!)?.size else { fatalError("Cannot get image size") }
         cardSize.imageSize = size
 
-        let (n1, n2) = grids.grids[currentGrid].combinations[currentGridElement]
-        let cardsNumber = n1 * n2
+        let (gridSide1, gridSide2) = grids[currentGrid].combinations[currentGridElement]
+        let cardsNumber = gridSide1 * gridSide2
         
         // more images than required grid
         while frontImages.count > cardsNumber / 2 {
