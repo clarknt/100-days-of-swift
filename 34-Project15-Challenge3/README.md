@@ -4,7 +4,7 @@ https://www.hackingwithswift.com/read/15/5/wrap-up
 
 ## Challenge
 
-Go back to project 2 and make the flags scale down with a little bounce when pressed.
+>Go back to project 2 and make the flags scale down with a little bounce when pressed.
 
 ## Screenshots
 

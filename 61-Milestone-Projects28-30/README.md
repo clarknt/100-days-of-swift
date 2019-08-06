@@ -4,15 +4,7 @@ https://www.hackingwithswift.com/100/99
 
 Focus for this one has been put on cards fitting every screen size and orientation, and animation. Number and type of cards are customizable. 
 
-Blocks assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Kenney](https://www.kenney.nl/assets/isometric-blocks).
-
-Characters assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Game Art 2D](https://www.gameart2d.com/freebies.html).
-
-Dice, vehicle and part of back of the cards assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Kenney](https://www.kenney.nl/assets/boardgame-pack).
-
-Last Guardian characters assets under [CC attribution 3.0](https://creativecommons.org/licenses/by/3.0/legalcode) thanks to [Philipp Lenssen](http://blogoscoped.com/archive/2006-08-08-n51.html).
-
-Playing cards assets under [CC attribution-sharealike 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) thanks to [minime453](https://opengameart.org/content/vintage-playing-cards?page=3).
+Blocks assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Kenney](https://www.kenney.nl/assets/isometric-blocks). Characters assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Game Art 2D](https://www.gameart2d.com/freebies.html). Dice, vehicle and part of back of the cards assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Kenney](https://www.kenney.nl/assets/boardgame-pack). Last Guardian characters assets under [CC attribution 3.0](https://creativecommons.org/licenses/by/3.0/legalcode) thanks to [Philipp Lenssen](http://blogoscoped.com/archive/2006-08-08-n51.html). Playing cards assets under [CC attribution-sharealike 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) thanks to [minime453](https://opengameart.org/content/vintage-playing-cards?page=3).
 
 ## Challenge
 

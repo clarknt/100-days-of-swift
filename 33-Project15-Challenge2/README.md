@@ -4,7 +4,7 @@ https://www.hackingwithswift.com/read/15/5/wrap-up
 
 ## Challenge
 
-Go back to project 13 and make the image view fade in when a new picture is chosen. To make this work, set the alpha to 0 first.
+>Go back to project 13 and make the image view fade in when a new picture is chosen. To make this work, set the alpha to 0 first.
 
 ## Screenshots
 
