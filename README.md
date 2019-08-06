@@ -10,7 +10,7 @@ Type               | Number  | Completion
 :---               |  :---:  |   :---:
 Projects           | 30 / 30 | 100%
 Challenges         | 90 / 90 | 100%
-Milestone Projects |  9 / 10 | 90%
+Milestone Projects | 10 / 10 | 100%
 Other              |  1 / 1  | 100%
 
 ## Preview
@@ -79,4 +79,4 @@ Projects / Topics                                                               
 [Project 29](58-Project29) (with challenges)                                       <br/><sub> SKTexture, Filling a path, Mixing UIKit and SpriteKit, Texture atlases  </sub> | ![screen1](58-Project29/screenshots/small/screen01.png) ![screen2](58-Project29/screenshots/small/screen02.png) ![screen3](58-Project29/screenshots/small/screen03.png) ![screen4](58-Project29/screenshots/small/screen04.png) |
 [Project 30](59-Project30) (with challenges 1 and 3)                               <br/><sub> Instruments, Time Profiler, Allocations, Shadows, Table cells in code   </sub> | ![screen1](59-Project30/screenshots/small/screen01.png) ![screen2](59-Project30/screenshots/small/screen02.png) |
 [Project 30 - Challenge 2](60-Project30-Challenge2) (base: Milestone projects 1-3) <br/><sub>                                                                         </sub> | ![screen1](60-Project30-Challenge2/screenshots/small/screen01.png) ![screen2](60-Project30-Challenge2/screenshots/small/screen02.png) |
-
+[Milestone projects 28-30](61-Milestone-Projects28-30)                             <br/><sub>                                                                         </sub> | ![screen1](61-Milestone-Projects28-30/screenshots/small/screen01.png) ![screen2](61-Milestone-Projects28-30/screenshots/small/screen02.png) ![screen3](61-Milestone-Projects28-30/screenshots/small/screen03.png) ![screen4](61-Milestone-Projects28-30/screenshots/small/screen04.png) ![screen5](61-Milestone-Projects28-30/screenshots/small/screen05.png) |

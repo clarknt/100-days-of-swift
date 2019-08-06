@@ -2,9 +2,7 @@
 
 https://www.hackingwithswift.com/100/99
 
-Focus for this one has been put on cards fitting every screen size and orientation, and animation.
-
-Number and type of cards are customizable. 
+Focus for this one has been put on cards fitting every screen size and orientation, and animation. Number and type of cards are customizable. 
 
 Blocks assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Kenney](https://www.kenney.nl/assets/isometric-blocks).
 
