@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		959C996322FA20CE0024C511 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C996222FA20CE0024C511 /* Test.swift */; };
 		95C434F422F3669A00E0A92E /* Cards.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95C434F322F3669A00E0A92E /* Cards.bundle */; };
 		95D8BEC322F769B200268F7F /* CardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D8BEC222F769B200268F7F /* CardSize.swift */; };
 		95D8BEC522F7894900268F7F /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D8BEC422F7894900268F7F /* Grid.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		959C996222FA20CE0024C511 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		95C434F322F3669A00E0A92E /* Cards.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cards.bundle; sourceTree = "<group>"; };
 		95D8BEC222F769B200268F7F /* CardSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSize.swift; sourceTree = "<group>"; };
 		95D8BEC422F7894900268F7F /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		95ECED2C22E79C26001E70BE = {
 			isa = PBXGroup;
 			children = (
+				959C996222FA20CE0024C511 /* Test.swift */,
 				95ECED3722E79C26001E70BE /* Milestone-Projects28-30 */,
 				95ECED3622E79C26001E70BE /* Products */,
 			);
@@ -159,6 +162,7 @@
 			files = (
 				95D8BEC322F769B200268F7F /* CardSize.swift in Sources */,
 				95ECED3B22E79C26001E70BE /* GameViewController.swift in Sources */,
+				959C996322FA20CE0024C511 /* Test.swift in Sources */,
 				95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */,
 				95E2165822E80258001B4703 /* CardCell.swift in Sources */,
 				95EF2C5922F5E52800D4CC0C /* SettingsViewController.swift in Sources */,

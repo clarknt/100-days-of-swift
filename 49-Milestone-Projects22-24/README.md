@@ -9,6 +9,7 @@ Bonus:
 
 ## Challenge
 
+From [Hacking with Swift](https://www.hackingwithswift.com/guide/9/3/challenge):
 >Your challenge this time is not to build a project from scratch. Instead, I want you to implement three Swift language extensions using what you learned in project 24. I’ve ordered them easy to hard, so you should work your way from first to last if you want to make your life easy!
 >
 >Here are the extensions I’d like you to implement:

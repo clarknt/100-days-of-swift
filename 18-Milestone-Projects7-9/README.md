@@ -10,6 +10,7 @@ Bonus:
 
 ## Challenge
 
+From [Hacking with Swift](https://www.hackingwithswift.com/guide/4/3/challenge):
 >This is the first challenge that involves you creating a game. You’ll still be using UIKit, though, so it’s a good chance to practice your app skills too.
 >
 >The challenge is this: make a hangman game using UIKit. As a reminder, this means choosing a random word from a list of possibilities, but presenting it to the user as a series of underscores. So, if your word was “RHYTHM” the user would see “??????”.

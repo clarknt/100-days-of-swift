@@ -6,6 +6,8 @@ The "Learn Core Graphics" playground (see link above) contains challenges to be 
 
 ## Challenges
 
+Quotes are from the [Hacking with Swift Core Graphics Playground](https://www.hackingwithswift.com/playgrounds).
+
 ### Drawing shapes
 
 #### Rectangles

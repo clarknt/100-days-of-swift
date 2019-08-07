@@ -8,6 +8,7 @@ Blocks assets under [CC0 License](https://creativecommons.org/publicdomain/zero/
 
 ## Challenge
 
+From [Hacking with Swift](https://www.hackingwithswift.com/guide/11/3/challenge):
 >Your challenge is to create a memory pairs game that has players find pairs of cards – it’s sometimes called Concentration, Pelmanism, or Pairs. At the very least you should:
 >
 >- Come up with a list of pairs. Traditionally this is two pictures, but you could also use capital cities (e.g. one card says France and its match says Paris), languages (e.g one card says “hello” and the other says “bonjour”), and so on.

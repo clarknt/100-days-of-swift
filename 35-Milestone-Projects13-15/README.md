@@ -8,6 +8,7 @@ Countries API thanks to [REST Countries](https://restcountries.eu/)
 
 ## Challenge
 
+From [Hacking with Swift](https://www.hackingwithswift.com/guide/6/3/challenge):
 >Your challenge is to make an app that contains facts about countries: show a list of country names in a table view, then when one is tapped bring in a new screen that contains its capital city, size, population, currency, and any other facts that interest you. The type of facts you include is down to you – Wikipedia has a huge selection to choose from.
 >
 >To make this app, I would recommend you blend parts of project 1 project 7. That means showing the country names in a table view, then showing the detailed information in a second table view.
