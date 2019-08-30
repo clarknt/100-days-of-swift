@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/72
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/21/4/wrap-up).
 
+## Topics
+
+Notifications, UNUserNotificationCenter, UNNotificationRequest
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/21/4/wrap-up):

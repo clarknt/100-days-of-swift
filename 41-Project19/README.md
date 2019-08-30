@@ -7,6 +7,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/19/
 Bonus:
 - Swipe to delete from table
 
+## Topics
+
+Safari Extensions, NSExtensionItem, UITextView, NotificationCenter
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/19/8/wrap-up):

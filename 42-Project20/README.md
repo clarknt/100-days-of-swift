@@ -8,6 +8,10 @@ Bonus:
 - Add explode button as an alternative to shake
 - Add game over and restart functions
 
+## Topics
+
+UIBezierPath, SKAction follow, Emitter nodes
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/20/5/wrap-up):
