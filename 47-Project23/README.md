@@ -7,6 +7,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/23/
 Bonus:
 - New game option
 
+## Topics
+
+SKShapeNode, AVAudioPlayer, CGPath, UIBezierPath, SKTexture
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/23/8/wrap-up):

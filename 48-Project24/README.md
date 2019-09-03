@@ -6,6 +6,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/24/
 
 This is a playground project.
 
+## Topics
+
+Strings, NSAttributedString
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/24/5/wrap-up):

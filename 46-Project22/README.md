@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/75
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/22/4/wrap-up).
 
+## Topics
+
+iBeacons, Core Location, CLBeaconRegion
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/22/4/wrap-up):
