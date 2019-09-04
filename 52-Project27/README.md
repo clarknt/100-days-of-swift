@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/88
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/27/7/wrap-up).
 
+## Topics
+
+Core Graphics, UIGraphicsImageRenderer, Fills and Strokes, Transforms
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/27/7/wrap-up):

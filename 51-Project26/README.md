@@ -6,6 +6,10 @@ Includes solutions to the [challenges](https://www.hackingwithswift.com/read/26/
 
 Portal assets under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) thanks to [Mumu](https://opengameart.org/content/shiny-orbs-64x64).
 
+## Topics
+
+Accelerometer, CMMotionManager, Load level from file, Physics Bitmasks
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/26/5/wrap-up):
