@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/92
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/28/5/wrap-up).
 
+## Topics
+
+Biometrics authentication, Touch ID, Face ID, iOS keychain
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/28/5/wrap-up):

@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/94
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/29/6/wrap-up).
 
+## Topics
+
+SKTexture, Filling a path, Mixing UIKit and SpriteKit, Texture atlases
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/29/6/wrap-up):

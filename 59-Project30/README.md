@@ -4,6 +4,10 @@ https://www.hackingwithswift.com/100/97
 
 Includes solutions to the [challenges](https://www.hackingwithswift.com/read/30/7/wrap-up).
 
+## Topics
+
+Instruments, Time Profiler, Allocations, Shadows, Table cells in code
+
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/read/30/7/wrap-up):
