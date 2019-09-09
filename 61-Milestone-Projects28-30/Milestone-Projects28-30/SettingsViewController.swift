@@ -8,13 +8,22 @@
 
 import UIKit
 
+// MARK:- SettingsDelegate
+
 protocol SettingsDelegate {
     func settings(_ settings: SettingsViewController, didUpdateCards cards: String)
     
     func settings(_ settings: SettingsViewController, didUpdateGrid grid: Int, didUpdateGridElement gridElement: Int)
 }
 
-class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+
+// MARK:- SettingsViewController
+
+class SettingsViewController: UIViewController {
+
+    // MARK:- Properties
+
     var cards: [String]!
     
     let cardsDirectory = "Cards.bundle/"
@@ -27,7 +36,9 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var cardsTable: UITableView!
     @IBOutlet weak var gridSizeTable: UITableView!
-    
+
+    // MARK:- Functions
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -81,6 +92,13 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     func isParametersSet() -> Bool {
         return currentCards != nil && currentGrid != nil && currentGridElement != nil
     }
+}
+
+
+
+// MARK:- UITableViewDataSource
+
+extension SettingsViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         if tableView == cardsTable {
@@ -97,7 +115,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
 
         return "Cards: \(grids[section].numberOfElements)"
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == cardsTable {
             return cards.count
@@ -105,25 +123,32 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
 
         return grids[section].combinations.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == cardsTable {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            
+
             cell.textLabel?.text = cards[indexPath.row]
-            
+
             return cell
         }
 
         let (gridSide1, gridSide2) = grids[indexPath.section].combinations[indexPath.row]
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+
         cell.textLabel?.text = "\(gridSide1) x \(gridSide2)"
-        
+
         return cell
     }
-    
+}
+
+
+
+// MARK:- UITableViewDelegate
+
+extension SettingsViewController: UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == cardsTable {
             delegate?.settings(self, didUpdateCards: cards[indexPath.row])

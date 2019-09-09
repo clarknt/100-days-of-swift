@@ -8,7 +8,10 @@
 
 import UIKit
 
-class GameViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, SettingsDelegate {
+class GameViewController: UICollectionViewController {
+
+    // MARK:- Properties
+
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
     var removeFlippedCardsTask: DispatchWorkItem!
@@ -28,6 +31,8 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
     var previousWindowBounds: CGRect?
     
     var animateCompleteGameTask: DispatchWorkItem?
+
+    // MARK:- Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -146,40 +151,6 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cards.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let dequeuedCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-
-        guard let cell = dequeuedCell as? CardCell else { return dequeuedCell }
-
-        cell.set(card: cards[indexPath.row])
-
-        return cell
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-
-        guard flippedCards.count < 2 else { return }
-        guard cards[indexPath.row].state == .back else { return }
-
-        cards[indexPath.row].state = .front
-        cell.animateFlipTo(state: .front)
-        flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
-        
-        if flippedCards.count == 2 {
-            if flippedCards[0].card.frontImage == flippedCards[1].card.frontImage {
-                matchingCards()
-            }
-            else {
-                unmatchingCards()
-            }
-        }
-    }
-    
     func matchingCards() {
         for (position, card) in flippedCards {
             card.state = .matched
@@ -247,25 +218,85 @@ class GameViewController: UICollectionViewController, UICollectionViewDelegateFl
         // wait for card to turn back before allowing the player to select another one
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: removeFlippedCardsTask)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if currentCardSizeValid {
-            return currentCardSize
-        }
-        
-        currentCardSize = cardSize.getCardSize(collectionView: collectionView)
-        currentCardSizeValid = true
-        return currentCardSize
-    }
-    
+}
+
+
+
+// MARK:- SettingsDelegate
+
+extension GameViewController: SettingsDelegate {
+
     func settings(_ settings: SettingsViewController, didUpdateCards cards: String) {
         currentCards = cards
         newGame()
     }
-    
+
     func settings(_ settings: SettingsViewController, didUpdateGrid grid: Int, didUpdateGridElement gridElement: Int) {
         currentGrid = grid
         currentGridElement = gridElement
         newGame()
+    }
+}
+
+// MARK:- UICollectionViewDataSource
+
+extension GameViewController {
+
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cards.count
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let dequeuedCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+
+        guard let cell = dequeuedCell as? CardCell else { return dequeuedCell }
+
+        cell.set(card: cards[indexPath.row])
+
+        return cell
+    }
+}
+
+
+
+// MARK:- UITableViewDelegate
+
+extension GameViewController {
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+
+        guard flippedCards.count < 2 else { return }
+        guard cards[indexPath.row].state == .back else { return }
+
+        cards[indexPath.row].state = .front
+        cell.animateFlipTo(state: .front)
+        flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
+
+        if flippedCards.count == 2 {
+            if flippedCards[0].card.frontImage == flippedCards[1].card.frontImage {
+                matchingCards()
+            }
+            else {
+                unmatchingCards()
+            }
+        }
+    }
+}
+
+
+
+// MARK:- UICollectionViewDelegateFlowLayout
+
+extension GameViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if currentCardSizeValid {
+            return currentCardSize
+        }
+
+        currentCardSize = cardSize.getCardSize(collectionView: collectionView)
+        currentCardSizeValid = true
+        return currentCardSize
     }
 }

@@ -9,6 +9,9 @@
 import UIKit
 
 class CardCell: UICollectionViewCell {
+
+    // MARK:- Properties
+
     var front: UIImageView!
     var back: UIImageView!
     
@@ -21,7 +24,9 @@ class CardCell: UICollectionViewCell {
     fileprivate var animateFlipToTask: DispatchWorkItem?
     fileprivate var animateMatchTask: DispatchWorkItem?
     fileprivate var animateCompleteGameTask: DispatchWorkItem?
-    
+
+    // MARK:- Functions
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         build()
