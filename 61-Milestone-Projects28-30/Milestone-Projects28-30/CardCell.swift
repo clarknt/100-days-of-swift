@@ -137,14 +137,14 @@ class CardCell: UICollectionViewCell {
     }
     
     fileprivate func cancelAnimations() {
-        layer.removeAllAnimations()
-        front.layer.removeAllAnimations()
-        back.layer.removeAllAnimations()
-        
         // cancel timers that will trigger animations
         animateFlipToTask?.cancel()
         animateMatchTask?.cancel()
         animateCompleteGameTask?.cancel()
+
+        layer.removeAllAnimations()
+        front.layer.removeAllAnimations()
+        back.layer.removeAllAnimations()
     }
     
     fileprivate func animateFlipTo(state: CardState, duration: Double, completionHandler: (() -> ())? = nil) {
