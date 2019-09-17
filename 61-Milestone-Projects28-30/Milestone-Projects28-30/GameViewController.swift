@@ -36,7 +36,6 @@ class GameViewController: UICollectionViewController {
 
 
 
-
     // MARK:- Functions
     
     override func viewDidLoad() {

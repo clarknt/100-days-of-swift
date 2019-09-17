@@ -27,7 +27,7 @@ class UnmatchedCardsAnimator {
 
     // cancel whole animation
     func cancel() {
-        // TODO add synchronization lock
+        // could add a synchronization lock there
         waiter?.cancel()
         waiter = nil
 

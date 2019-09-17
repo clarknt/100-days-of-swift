@@ -14,10 +14,9 @@ class CardCell: UICollectionViewCell {
 
     var front: UIImageView!
     var back: UIImageView!
-    
+
     var card: Card?
-    
-    
+
 
 
     // MARK:- Functions
@@ -26,7 +25,7 @@ class CardCell: UICollectionViewCell {
         super.init(coder: coder)
         build()
     }
-    
+
     func set(card: Card) {
         self.card = card
         front.image = UIImage(named: card.frontImage)
@@ -60,11 +59,11 @@ class CardCell: UICollectionViewCell {
     func animateMatch() {
         transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
     }
-    
+
     func animateCompleteGame() {
         transform = CGAffineTransform(scaleX: 1, y: 1)
     }
-    
+
     // use invalidateLayout() after rotation to force recomputing cell size
     override func layoutSubviews() {
         resize()
@@ -87,14 +86,14 @@ class CardCell: UICollectionViewCell {
         addSubview(front)
         addSubview(back)
     }
-    
+
     fileprivate func reset(state: CardState) {
         // cells are reused by the collection view, make sure to clean everything
         cancelAnimations()
 
         var flipTarget: CardState
         var scaleFactor: CGFloat
-        
+
         // reset card position
         switch state {
         case .back:
@@ -116,7 +115,7 @@ class CardCell: UICollectionViewCell {
             self?.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
         }
     }
-    
+
     fileprivate func resize() {
         let size = frame.size
 
@@ -126,24 +125,32 @@ class CardCell: UICollectionViewCell {
         if !__CGSizeEqualToSize(back!.frame.size, frame.size) {
             back.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         }
-        
-        // reapply visible face and / or scaling
+
         if let card = card {
-            reset(state: card.state)
+            rescaleAfterResize(state: card.state)
         }
     }
-    
+
+    fileprivate func rescaleAfterResize(state: CardState) {
+        if state == .matched {
+            // aync allows scale animation to continue if in progress
+            DispatchQueue.main.async { [weak self] in
+                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            }
+        }
+    }
+
     fileprivate func cancelAnimations() {
         layer.removeAllAnimations()
         front.layer.removeAllAnimations()
         back.layer.removeAllAnimations()
     }
-    
+
     fileprivate func getFacingSide() -> CardState {
         if back.isHidden {
             return .front
         }
-        
+
         return .back
     }
 }

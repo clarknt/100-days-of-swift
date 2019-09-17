@@ -21,7 +21,7 @@ class MatchedCardsAnimator {
 
     // cancel whole animation
     func cancel() {
-        // TODO add synchronization lock
+        // could add a synchronization lock there
         flipToFrontAnimator?.stopAnimation(true)
         flipToFrontAnimator = nil
 
