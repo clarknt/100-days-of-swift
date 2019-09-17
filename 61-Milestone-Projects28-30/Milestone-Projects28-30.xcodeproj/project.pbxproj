@@ -18,7 +18,11 @@
 		95ECED3E22E79C26001E70BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED3C22E79C26001E70BE /* Main.storyboard */; };
 		95ECED4022E79C28001E70BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED3F22E79C28001E70BE /* Assets.xcassets */; };
 		95ECED4322E79C28001E70BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ECED4122E79C28001E70BE /* LaunchScreen.storyboard */; };
+		95EE97D7232FF0FC00AF2CAC /* MatchedCardsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE97D6232FF0FC00AF2CAC /* MatchedCardsAnimator.swift */; };
+		95EE97D9232FF51C00AF2CAC /* UnmatchedCardsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE97D8232FF51C00AF2CAC /* UnmatchedCardsAnimator.swift */; };
+		95EE97DB233074B800AF2CAC /* CompletionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE97DA233074B800AF2CAC /* CompletionAnimator.swift */; };
 		95EF2C5922F5E52800D4CC0C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */; };
+		95F5B5C4232ABA48008D8AB0 /* FlipCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5B5C3232ABA48008D8AB0 /* FlipCardAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +39,11 @@
 		95ECED3F22E79C28001E70BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95ECED4222E79C28001E70BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95ECED4422E79C28001E70BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EE97D6232FF0FC00AF2CAC /* MatchedCardsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedCardsAnimator.swift; sourceTree = "<group>"; };
+		95EE97D8232FF51C00AF2CAC /* UnmatchedCardsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnmatchedCardsAnimator.swift; sourceTree = "<group>"; };
+		95EE97DA233074B800AF2CAC /* CompletionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionAnimator.swift; sourceTree = "<group>"; };
 		95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		95F5B5C3232ABA48008D8AB0 /* FlipCardAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +78,14 @@
 			children = (
 				95ECED3822E79C26001E70BE /* AppDelegate.swift */,
 				95E2165922E80953001B4703 /* Card.swift */,
-				95E2165722E80258001B4703 /* CardCell.swift */,
 				95D8BEC222F769B200268F7F /* CardSize.swift */,
+				95E2165722E80258001B4703 /* CardCell.swift */,
 				95ECED3A22E79C26001E70BE /* GameViewController.swift */,
 				95EF2C5822F5E52800D4CC0C /* SettingsViewController.swift */,
+				95F5B5C3232ABA48008D8AB0 /* FlipCardAnimator.swift */,
+				95EE97D6232FF0FC00AF2CAC /* MatchedCardsAnimator.swift */,
+				95EE97D8232FF51C00AF2CAC /* UnmatchedCardsAnimator.swift */,
+				95EE97DA233074B800AF2CAC /* CompletionAnimator.swift */,
 				95D8BEC422F7894900268F7F /* Grid.swift */,
 				95D8BEC622F789D700268F7F /* Grids.swift */,
 				95ECED3C22E79C26001E70BE /* Main.storyboard */,
@@ -157,12 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EE97DB233074B800AF2CAC /* CompletionAnimator.swift in Sources */,
 				95D8BEC322F769B200268F7F /* CardSize.swift in Sources */,
 				95ECED3B22E79C26001E70BE /* GameViewController.swift in Sources */,
 				95ECED3922E79C26001E70BE /* AppDelegate.swift in Sources */,
 				95E2165822E80258001B4703 /* CardCell.swift in Sources */,
 				95EF2C5922F5E52800D4CC0C /* SettingsViewController.swift in Sources */,
+				95EE97D7232FF0FC00AF2CAC /* MatchedCardsAnimator.swift in Sources */,
 				95D8BEC522F7894900268F7F /* Grid.swift in Sources */,
+				95EE97D9232FF51C00AF2CAC /* UnmatchedCardsAnimator.swift in Sources */,
+				95F5B5C4232ABA48008D8AB0 /* FlipCardAnimator.swift in Sources */,
 				95E2165A22E80953001B4703 /* Card.swift in Sources */,
 				95D8BEC722F789D700268F7F /* Grids.swift in Sources */,
 			);

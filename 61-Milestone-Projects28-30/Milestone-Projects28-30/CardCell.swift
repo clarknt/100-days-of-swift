@@ -17,13 +17,8 @@ class CardCell: UICollectionViewCell {
     
     var card: Card?
     
-    fileprivate let flipDuration = 0.3
-    fileprivate let matchDuration = 2.0
-    fileprivate let completeDuration = 2.0
     
-    fileprivate var animateFlipToTask: DispatchWorkItem?
-    fileprivate var animateMatchTask: DispatchWorkItem?
-    fileprivate var animateCompleteGameTask: DispatchWorkItem?
+
 
     // MARK:- Functions
 
@@ -40,53 +35,55 @@ class CardCell: UICollectionViewCell {
         reset(state: card.state)
     }
 
-    func animateFlipTo(state: CardState, delay: TimeInterval = 0) {
+    func animateFlipTo(state: CardState) {
         guard state == .front || state == .back else { fatalError("Can only flip to front or back") }
-        
-        animateFlipToTask = DispatchWorkItem { [weak self] in
-            let duration = self?.flipDuration ?? 0
-            self?.animateFlipTo(state: state, duration: duration)
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: animateFlipToTask!)
-    }
-    
-    func animateMatch() {
-        animateMatchTask = DispatchWorkItem {
-            [weak self] in
-            guard let matchDuration = self?.matchDuration else { return }
 
-            UIView.animate(withDuration: matchDuration, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
-                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-            })
+        let from: UIView, to: UIView
+        let transition: AnimationOptions
+
+        if state == .front {
+            guard getFacingSide() == .back else { return }
+            from = back
+            to = front
+            transition = .transitionFlipFromRight
         }
-        // wait for the flip completion, either from this card or the other card
-        DispatchQueue.main.asyncAfter(deadline: .now() + flipDuration, execute: animateMatchTask!)
+        else {
+            guard getFacingSide() == .front else { return }
+            from = front
+            to = back
+            transition = .transitionFlipFromLeft
+        }
+
+        UIView.transition(from: from, to: to, duration: 0, options: [transition, .showHideTransitionViews])
+    }
+
+    func animateMatch() {
+        transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
     }
     
-    func animateCompleteGame(delay: TimeInterval = 0) {
-        UIView.animate(withDuration: completeDuration, delay: delay, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: { [weak self] in
-            self?.transform = CGAffineTransform(scaleX: 1, y: 1)
-        })
+    func animateCompleteGame() {
+        transform = CGAffineTransform(scaleX: 1, y: 1)
     }
     
     // use invalidateLayout() after rotation to force recomputing cell size
     override func layoutSubviews() {
-        //super.layoutSubviews()
         resize()
     }
-    
+
+
+
     // MARK:- Private functions
-    
+
     fileprivate func build() {
         let size = frame.size
-        
+
         front = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         front.contentMode = .scaleAspectFit
         front.isHidden = true
-        
+
         back = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         back.contentMode = .scaleAspectFit
-        
+
         addSubview(front)
         addSubview(back)
     }
@@ -114,7 +111,7 @@ class CardCell: UICollectionViewCell {
             scaleFactor = 1
         }
 
-        animateFlipTo(state: flipTarget, duration: 0)
+        animateFlipTo(state: flipTarget)
         DispatchQueue.main.async { [weak self] in
             self?.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
         }
@@ -137,34 +134,9 @@ class CardCell: UICollectionViewCell {
     }
     
     fileprivate func cancelAnimations() {
-        // cancel timers that will trigger animations
-        animateFlipToTask?.cancel()
-        animateMatchTask?.cancel()
-        animateCompleteGameTask?.cancel()
-
         layer.removeAllAnimations()
         front.layer.removeAllAnimations()
         back.layer.removeAllAnimations()
-    }
-    
-    fileprivate func animateFlipTo(state: CardState, duration: Double, completionHandler: (() -> ())? = nil) {
-        let from: UIView, to: UIView
-        let transition: AnimationOptions
-        
-        if state == .front {
-            guard getFacingSide() == .back else { return }
-            from = back
-            to = front
-            transition = .transitionFlipFromRight
-        }
-        else {
-            guard getFacingSide() == .front else { return }
-            from = front
-            to = back
-            transition = .transitionFlipFromLeft
-        }
-        
-        UIView.transition(from: from, to: to, duration: duration, options: [transition, .showHideTransitionViews])
     }
     
     fileprivate func getFacingSide() -> CardState {

@@ -14,8 +14,7 @@ class GameViewController: UICollectionViewController {
 
     var cards = [Card]()
     var flippedCards = [(position: Int, card: Card)]()
-    var removeFlippedCardsTask: DispatchWorkItem!
-    
+
     var backImageSize: CGSize!
     var cardSize: CardSize!
     
@@ -30,7 +29,13 @@ class GameViewController: UICollectionViewController {
     
     var previousWindowBounds: CGRect?
     
-    var animateCompleteGameTask: DispatchWorkItem?
+    var flipAnimator = FlipCardAnimator()
+    var matchedCardsAnimators = [MatchedCardsAnimator]()
+    var unmatchedCardsAnimator = UnmatchedCardsAnimator()
+    var completionAnimator = CompletionAnimator()
+
+
+
 
     // MARK:- Functions
     
@@ -80,8 +85,7 @@ class GameViewController: UICollectionViewController {
 
         cards = [Card]()
         resetFlippedCards()
-        
-        animateCompleteGameTask?.cancel()
+        cancelAnimators()
         
         loadCards()
 
@@ -90,15 +94,19 @@ class GameViewController: UICollectionViewController {
     }
     
     func resetFlippedCards() {
-        removeFlippedCardsTask?.cancel()
-
-        removeFlippedCardsTask = DispatchWorkItem { [weak self] in
-            self?.flippedCards.removeAll(keepingCapacity: true)
-        }
-
         flippedCards.removeAll(keepingCapacity: true)
     }
-    
+
+    func cancelAnimators() {
+        flipAnimator.cancel()
+        unmatchedCardsAnimator.cancel()
+        for animator in matchedCardsAnimators {
+            animator.cancel()
+        }
+        matchedCardsAnimators.removeAll()
+        completionAnimator.cancel()
+    }
+
     @objc func settingsTapped() {
         if let settings = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController {
             settings.setParameters(currentCards: currentCards, currentGrid: currentGrid, currentGridElement: currentGridElement)
@@ -151,21 +159,27 @@ class GameViewController: UICollectionViewController {
         }
     }
     
-    func matchingCards() {
-        for (position, card) in flippedCards {
-            card.state = .matched
+    func matchCards() {
+        guard let (oldCard, oldCell) = getFlippedCard(at: 0) else { return }
+        guard let (newCard, newCell) = getFlippedCard(at: 1) else { return }
 
-            let indexPath = IndexPath(item: position, section: 0);
-            if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
-                cell.animateMatch()
-            }
+        oldCard.state = .matched
+        newCard.state = .matched
+
+        let animator = MatchedCardsAnimator()
+        matchedCardsAnimators.append(animator)
+
+        animator.start(oldCell: oldCell, newCell: newCell) { [weak self] in
+            self?.matchedCardsAnimators.removeAll(where: { $0 === animator })
+            self?.checkCompletion()
         }
+
         flippedCards.removeAll(keepingCapacity: true)
-        
-        checkCompletion()
     }
     
     func checkCompletion() {
+        guard matchedCardsAnimators.isEmpty else { return }
+
         for card in cards {
             if card.state != .matched && card.state != .complete {
                 return
@@ -176,47 +190,43 @@ class GameViewController: UICollectionViewController {
         for card in cards {
             card.state = .complete
         }
-        
-        animateCompletion()
-    }
-    
-    func animateCompletion() {
-        animateCompleteGameTask = DispatchWorkItem { [weak self] in
-            var delay: TimeInterval = 0
 
-            guard let count = self?.cards.count else { return }
-            
-            for i in 0..<count {
-                let indexPath = IndexPath(item: i, section: 0);
-                if let cell = self?.collectionView.cellForItem(at: indexPath) as? CardCell {
-                    cell.animateCompleteGame(delay: delay)
-                }
-                
-                // 50ms to start animating each card with a delay
-                delay += 0.05
-            }
-        }
-        
-        // this delay was originally in CardCell like the delay for the other animations,
-        // but it resulted in not fluid annimation (group of cards being animated together
-        // instead of a fixed delay between each one)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: animateCompleteGameTask!)
+        completionAnimator.start(cards: cards, collectionView: collectionView)
     }
-    
-    func unmatchingCards() {
-        for (position, card) in flippedCards {
-            if card.state == .front {
-                card.state = .back
-                
-                let indexPath = IndexPath(item: position, section: 0);
-                if let cell = collectionView.cellForItem(at: indexPath) as? CardCell {
-                    // give the player 1 second to look at the cards
-                    cell.animateFlipTo(state: .back, delay: 1)
-                }
-            }
+
+    func unmatchCards() {
+        guard let (oldCard, oldCell) = getFlippedCard(at: 0) else { return }
+        guard let (newCard, newCell) = getFlippedCard(at: 1) else { return }
+
+        oldCard.state = .back
+        newCard.state = .back
+
+        unmatchedCardsAnimator.start(oldCell: oldCell, newCell: newCell) { [weak self] in
+            self?.resetFlippedCards()
         }
-        // wait for card to turn back before allowing the player to select another one
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: removeFlippedCardsTask)
+    }
+
+    func forceFinishUnmatchCards() {
+        guard let (_, oldCell) = getFlippedCard(at: 0) else { return }
+        guard let (_, newCell) = getFlippedCard(at: 1) else { return }
+
+        // won't have any effect if no unmatching is currently going on
+        unmatchedCardsAnimator.forceFlipToBack(oldCell: oldCell, newCell: newCell)
+
+        resetFlippedCards()
+    }
+
+    func getFlippedCard(at index: Int) -> (Card, CardCell)? {
+        let (position, card) = flippedCards[index]
+
+        let indexPath = IndexPath(item: position, section: 0)
+
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else {
+            print("Get card error")
+            return nil
+        }
+
+        return (card, cell)
     }
 }
 
@@ -237,6 +247,9 @@ extension GameViewController: SettingsDelegate {
         newGame()
     }
 }
+
+
+
 
 // MARK:- UICollectionViewDataSource
 
@@ -266,20 +279,34 @@ extension GameViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
 
-        guard flippedCards.count < 2 else { return }
+       // guard flippedCards.count < 2 else { return }
         guard cards[indexPath.row].state == .back else { return }
 
         cards[indexPath.row].state = .front
-        cell.animateFlipTo(state: .front)
-        flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
 
-        if flippedCards.count == 2 {
+        if flippedCards.count == 0 {
+            flipAnimator.flipTo(state: .front, cell: cell)
+            flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
+            return
+        }
+
+        if flippedCards.count == 1 {
+            flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
+
             if flippedCards[0].card.frontImage == flippedCards[1].card.frontImage {
-                matchingCards()
+                matchCards()
             }
             else {
-                unmatchingCards()
+                unmatchCards()
             }
+            return
+        }
+
+        if flippedCards.count == 2 {
+            forceFinishUnmatchCards()
+            flipAnimator.flipTo(state: .front, cell: cell)
+            flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
+            return
         }
     }
 }
