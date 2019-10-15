@@ -1,4 +1,4 @@
-# Milestone Projects 10-12
+# Milestone Projects 10-12 - Photo captions
 
 https://www.hackingwithswift.com/100/50
 

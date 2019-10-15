@@ -1,4 +1,4 @@
-# Project 26
+# Project 26 - Marble Maze
 
 https://www.hackingwithswift.com/100/85
 

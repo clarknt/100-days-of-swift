@@ -1,4 +1,4 @@
-# Milestone Projects 19-21
+# Milestone Projects 19-21 - Swift Extensions
 
 https://www.hackingwithswift.com/100/82
 

@@ -1,4 +1,4 @@
-# Milestone Projects 25-27
+# Milestone Projects 25-27 - Meme Generator
 
 https://www.hackingwithswift.com/100/90
 

@@ -1,4 +1,4 @@
-# Project 13
+# Project 13 - Instafilter
 
 https://www.hackingwithswift.com/100/52
 

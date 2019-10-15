@@ -1,4 +1,4 @@
-# Project 11
+# Project 11 - Pachinko
 
 https://www.hackingwithswift.com/100/45
 

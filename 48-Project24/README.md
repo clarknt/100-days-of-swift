@@ -1,4 +1,4 @@
-# Project 24
+# Project 24 - Swift Strings
 
 https://www.hackingwithswift.com/100/80
 

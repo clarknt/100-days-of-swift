@@ -1,4 +1,4 @@
-# Project 14
+# Project 14 - Whack-a-Penguin
 
 https://www.hackingwithswift.com/100/55
 

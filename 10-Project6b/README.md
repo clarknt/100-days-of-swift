@@ -1,4 +1,4 @@
-# Project 6b
+# Project 6b - Auto Layout
 
 https://www.hackingwithswift.com/read/6/3/auto-layout-in-code-addconstraints-with-visual-format-language
 

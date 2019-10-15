@@ -1,4 +1,4 @@
-# Project 15
+# Project 15 - Animation
 
 https://www.hackingwithswift.com/100/57
 

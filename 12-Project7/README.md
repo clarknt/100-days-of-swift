@@ -1,4 +1,4 @@
-# Project 7
+# Project 7 - Whitehouse Petitions
 
 https://www.hackingwithswift.com/100/33
 

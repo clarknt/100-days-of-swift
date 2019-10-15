@@ -1,4 +1,4 @@
-# Project 22
+# Project 22 - Detect-a-Beacon
 
 https://www.hackingwithswift.com/100/75
 

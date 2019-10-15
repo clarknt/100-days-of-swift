@@ -1,4 +1,4 @@
-# Project 6a
+# Project 6a - Auto Layout
 
 https://www.hackingwithswift.com/100/30
 

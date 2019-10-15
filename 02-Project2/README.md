@@ -1,4 +1,4 @@
-# Project 2
+# Project 2 - Guess the Flag
 
 https://www.hackingwithswift.com/100/19
 

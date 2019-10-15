@@ -1,4 +1,4 @@
-# Milestone Projects 7-9
+# Milestone Projects 7-9 - Hangman
 
 https://www.hackingwithswift.com/100/41
 

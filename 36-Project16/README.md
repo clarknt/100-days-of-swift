@@ -1,4 +1,4 @@
-# Project 16
+# Project 16 - Capital Cities
 
 https://www.hackingwithswift.com/100/60
 

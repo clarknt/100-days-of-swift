@@ -1,4 +1,4 @@
-# Project 5
+# Project 5 - Word Scramble
 
 https://www.hackingwithswift.com/100/27
 

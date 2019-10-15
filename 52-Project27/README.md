@@ -1,4 +1,4 @@
-# Project 27
+# Project 27 - Core Graphics
 
 https://www.hackingwithswift.com/100/88
 

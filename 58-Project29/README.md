@@ -1,4 +1,4 @@
-# Project 29
+# Project 29 - Exploding Monkeys
 
 https://www.hackingwithswift.com/100/94
 

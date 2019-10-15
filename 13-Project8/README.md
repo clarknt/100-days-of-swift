@@ -1,4 +1,4 @@
-# Project 8
+# Project 8 - 7 Swifty Words
 
 https://www.hackingwithswift.com/100/36
 

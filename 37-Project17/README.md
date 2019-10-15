@@ -1,4 +1,4 @@
-# Project 17
+# Project 17 - Space Race
 
 https://www.hackingwithswift.com/100/62
 

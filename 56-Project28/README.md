@@ -1,4 +1,4 @@
-# Project 28
+# Project 28 - Secret Swift
 
 https://www.hackingwithswift.com/100/92
 

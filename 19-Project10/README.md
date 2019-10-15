@@ -1,4 +1,4 @@
-# Project 10
+# Project 10 - Names to faces
 
 https://www.hackingwithswift.com/100/42
 

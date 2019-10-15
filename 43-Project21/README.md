@@ -1,4 +1,4 @@
-# Project 21
+# Project 21 - Local Notifications
 
 https://www.hackingwithswift.com/100/72
 

@@ -1,4 +1,4 @@
-# Project 19
+# Project 19 - Javascript Injection
 
 https://www.hackingwithswift.com/100/67
 

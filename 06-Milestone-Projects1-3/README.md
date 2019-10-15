@@ -1,4 +1,4 @@
-# Milestone Projects 1-3
+# Milestone Projects 1-3 - Country Flags
 
 https://www.hackingwithswift.com/100/23
 

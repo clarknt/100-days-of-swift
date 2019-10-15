@@ -1,4 +1,4 @@
-# Project 3
+# Project 3 - Social Media
 
 https://www.hackingwithswift.com/100/22
 

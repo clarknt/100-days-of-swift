@@ -1,4 +1,4 @@
-# Project 30
+# Project 30 - Instruments
 
 https://www.hackingwithswift.com/100/97
 

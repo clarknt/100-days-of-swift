@@ -1,4 +1,4 @@
-# Project 9
+# Project 9 - Grand Central Dispatch
 
 https://www.hackingwithswift.com/100/39
 

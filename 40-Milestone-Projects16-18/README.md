@@ -1,4 +1,4 @@
-# Milestone Projects 16-18
+# Milestone Projects 16-18 - Shooting Gallery
 
 https://www.hackingwithswift.com/100/66
 

@@ -1,4 +1,4 @@
-# Project 1
+# Project 1 - Storm Viewer
 
 https://www.hackingwithswift.com/100/16
 

@@ -1,4 +1,4 @@
-# Project 23
+# Project 23 - Swifty Ninja
 
 https://www.hackingwithswift.com/100/77
 
