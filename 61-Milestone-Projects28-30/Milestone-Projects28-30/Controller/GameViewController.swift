@@ -271,14 +271,13 @@ extension GameViewController {
 
 
 
-// MARK:- UITableViewDelegate
+// MARK:- UICollectionViewDelegate
 
 extension GameViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
 
-       // guard flippedCards.count < 2 else { return }
         guard cards[indexPath.row].state == .back else { return }
 
         cards[indexPath.row].state = .front
@@ -302,6 +301,13 @@ extension GameViewController {
         }
 
         if flippedCards.count == 2 {
+            // one of the two front facing cards
+            if indexPath.row == flippedCards[0].position || indexPath.row == flippedCards[1].position {
+                cards[indexPath.row].state = .back
+                forceFinishUnmatchCards()
+                return
+            }
+            // another card
             forceFinishUnmatchCards()
             flipAnimator.flipTo(state: .front, cell: cell)
             flippedCards.append((position: indexPath.row, card: cards[indexPath.row]))
