@@ -12,7 +12,6 @@ Auto Layout, Constraints, Visual Format Language
 
 ## Challenges
 
-From [Hacking with Swift](https://www.hackingwithswift.com/read/6/6/wrap-up):
 >1. [Challenge 1](Project6b/)
 >2. [Challenge 2](Project6b/)
 >3. [Challenge 3](Project6b/)
