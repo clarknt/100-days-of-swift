@@ -27,8 +27,6 @@ class GameViewController: UICollectionViewController {
     var currentCardSizeValid = false
     var currentCardSize: CGSize!
     
-    var previousWindowBounds: CGRect?
-    
     var flipAnimator = FlipCardAnimator()
     var matchedCardsAnimators = [MatchedCardsAnimator]()
     var unmatchedCardsAnimator = UnmatchedCardsAnimator()
@@ -54,22 +52,29 @@ class GameViewController: UICollectionViewController {
         newGame()
     }
     
-    // monitor actual window size change, occuring when rotating device
-    // but also when using split view on ipad
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        // avoid an infinite loop by making sure there was an actual change in size
-        if let currentBounds = view.window?.bounds {
-            if let previousBounds = previousWindowBounds {
-                if currentBounds != previousBounds {
-                    currentCardSizeValid = false
-                    collectionView?.collectionViewLayout.invalidateLayout()
-                }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        updateCardSize()
+    }
+
+    private func updateCardSize() {
+        currentCardSizeValid = false
+        collectionView?.collectionViewLayout.invalidateLayout()
+
+        for cell in collectionView.visibleCells {
+            if let cell = cell as? CardCell {
+                cell.updateAfterRotateOrResize()
             }
         }
-        
-        previousWindowBounds = view.window?.bounds
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // going to settings, rotating, then going back means updating size
+        // is required (viewWillTransition is not enough in that case)
+        updateCardSize()
     }
 
     @objc func newGame() {

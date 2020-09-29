@@ -64,12 +64,18 @@ class CardCell: UICollectionViewCell {
         transform = CGAffineTransform(scaleX: 1, y: 1)
     }
 
-    // use invalidateLayout() after rotation to force recomputing cell size
-    override func layoutSubviews() {
-        resize()
+    func updateAfterRotateOrResize() {
+        DispatchQueue.main.async { [weak self] in
+            self?.updateImagesSize()
+        }
+
+        if card?.state == .matched {
+            // aync allows scale animation to continue if in progress
+            DispatchQueue.main.async { [weak self] in
+                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            }
+        }
     }
-
-
 
     // MARK:- Private functions
 
@@ -94,6 +100,8 @@ class CardCell: UICollectionViewCell {
         var flipTarget: CardState
         var scaleFactor: CGFloat
 
+        updateImagesSize()
+
         // reset card position
         switch state {
         case .back:
@@ -116,28 +124,11 @@ class CardCell: UICollectionViewCell {
         }
     }
 
-    fileprivate func resize() {
+    fileprivate func updateImagesSize() {
         let size = frame.size
 
-        if !__CGSizeEqualToSize(front!.frame.size, size) {
-            front.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        }
-        if !__CGSizeEqualToSize(back!.frame.size, frame.size) {
-            back.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        }
-
-        if let card = card {
-            rescaleAfterResize(state: card.state)
-        }
-    }
-
-    fileprivate func rescaleAfterResize(state: CardState) {
-        if state == .matched {
-            // aync allows scale animation to continue if in progress
-            DispatchQueue.main.async { [weak self] in
-                self?.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-            }
-        }
+        front.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        back.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
     }
 
     fileprivate func cancelAnimations() {
